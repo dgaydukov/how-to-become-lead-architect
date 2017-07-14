@@ -11,15 +11,15 @@ You don't need to clone this project, because it's just a one big tutorial, so y
 Add additional notes about how to deploy this on a live system
 
 ## Interesting code examples
-* [Example1](https://example.com) - example 1
+* [JsBrainFuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/examples/brainfuck) - Look out at funny task
 
 ## SeniorDeveloper
 
-Please read [SeniorDeveloper](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for info, who can be considered as Senior Developer
+Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorDeveloper.md) for info, who can be considered as Senior Developer
 
 ## Links
 
-Loot out [Links](https://gist.github.com/PurpleBooth/b24679402957c63ec426) fot interesting internet articles you should read
+Loot out [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
 
 ## Authors
 
