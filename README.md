@@ -13,9 +13,13 @@ Add additional notes about how to deploy this on a live system
 ## Interesting code examples
 * [JsBrainFuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/examples/brainfuck.js) - Look out at funny task
 
-## SeniorDeveloper
+## Senior Developer
 
 Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorDeveloper.md) for info, who can be considered as Senior Developer
+
+## Senior FrontEnd Architect
+
+Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorFrontendArchitect.md) for info, who can be considered as FrontEnd Architect
 
 ## Links
 

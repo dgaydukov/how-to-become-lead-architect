@@ -2,9 +2,10 @@
 
 ## React
  * [react-eslint-webpack-babel](https://www.robinwieruch.de/react-eslint-webpack-babel)
+ * [ReactTDD](https://medium.com/@arturbasak/tdd-react-js-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-d354ec1562fa)
 
 ## Angular
- * [zero-angular-hero](https://blog.goyello.com/2017/06/14/zero-angular-hero)
+ * [From zero to Angular hero](https://blog.goyello.com/2017/06/14/zero-angular-hero)
 
 ## Vanilla Js
  * [the-difference-between-throttling-and-debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing)
@@ -14,6 +15,10 @@
 
 ## Node.js
  * [top-10-mistakes-node-developers-make](https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make)
+
+
+## PostCSS
+ * [russian article about postcss](https://habrahabr.ru/company/oleg-bunin/blog/310710)
 
 
 ## Linux Shell
