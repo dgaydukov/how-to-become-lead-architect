@@ -19,7 +19,7 @@ Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senio
 
 ## Senior FrontEnd Architect
 
-Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorFrontendArchitect.md) for info, who can be considered as FrontEnd Architect
+Please read [SeniorFrontendArchitect](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorFrontendArchitect.md) for info, who can be considered as FrontEnd Architect
 
 ## Links
 
