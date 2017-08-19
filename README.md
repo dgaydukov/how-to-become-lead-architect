@@ -1,6 +1,7 @@
 # How to become a Senior Javascript Developer
 
-This project is an accumulation of thoughts about becoming senior in js development
+This project is an accumulation of thoughts about becoming senior in js development.
+I also want to create a kind of guide with tasks and code examples, to show all interesting solutions to problems i encountered
 
 ## Getting Started
 
