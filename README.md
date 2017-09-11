@@ -26,6 +26,14 @@ Please read [SeniorFrontendArchitect](https://github.com/dgaydukov/how-to-become
 
 Look out at [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
 
+## Regex
+
+Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
+
+## Algorithms
+
+Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
+
 ## Authors
 
 * **Gaydukov Dmitiry** - *Initial work* - [ReactVsAngular](https://github.com/dgaydukov/react-vs-angular)
