@@ -39,7 +39,3 @@ README.md           ##project description
 * [CheatSheet](https://www.debuggex.com/cheatsheet/regex/javascript) - simple js cheatsheet
 * [RegexHub](https://projects.lukehaas.me/regexhub ) - everyday regex expression
 * [RegexChallenge](http://callumacrae.github.io/regex-tuesday/ ) - regex tuesday challenges
-
-## Authors
-
-* **Gaydukov Dmitiry** - *Initial work* - [ReactVsAngular](https://github.com/dgaydukov/react-vs-angular)

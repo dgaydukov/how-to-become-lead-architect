@@ -28,11 +28,11 @@ Look out at [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-devel
 
 ## Regex
 
-Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
+Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) fot interesting internet articles you should read
 
 ## Algorithms
 
-Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
+Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) fot interesting internet articles you should read
 
 ## Authors
 
