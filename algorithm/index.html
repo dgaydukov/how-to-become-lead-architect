@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    function triangle(p, q, r) {
+        console.log(p,q,r)
+        return p+q>r && p+r>q && q+r>p;
+    }
+
+    function solution(arr) {
+        var len = arr.length;
+        for(var i = 0; i < len; i++){
+            for(var j = i+1; j < len; j++){
+                if(triangle(arr[i], arr[j], arr[j+1])){
+                    return 1;
+                }
+            }
+        }
+        return 0;
+    }
+
+    console.log(solution([10, 2, 5, 1, 8, 20] ));
+
+
+</script>
+</body>
+</html>
