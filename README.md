@@ -1,38 +1,33 @@
 # How to become a Senior Javascript Developer
 
-This project is an accumulation of thoughts about becoming senior in js development.
-I also want to create a kind of guide with tasks and code examples, to show all interesting solutions to problems i encountered
+This project is an accumulation of thoughts about becoming Senior Developer.
+Having 10+ years of coding experience, i look back and see, that if i had a guide like this, i would have been succeded much more.
+So i want to share my knowledge with you and set you on path to become a senior developer.
+I also want to create a kind of guide with tasks and code examples, to show all interesting solutions to problems i have encountered.
 
 ## Getting Started
 
 You don't need to clone this project, because it's just a one big tutorial, so you can read it online
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Interesting code examples
-* [JsBrainFuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/examples/brainfuck.js) - Look out at funny task
-
 ## Senior Developer
 
-Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorDeveloper.md) for info, who can be considered as Senior Developer
-
-## Senior FrontEnd Architect
-
-Please read [SeniorFrontendArchitect](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorFrontendArchitect.md) for info, who can be considered as FrontEnd Architect
+Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorDeveloper.md) for my thoughts about, who can be considered as Senior Developer.
 
 ## Links
 
-Look out at [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read
+Look out at [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read.
 
 ## Regex
 
-Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) fot interesting internet articles you should read
+Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) fot interesting internet articles you should read.
 
 ## Algorithms
 
-Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) fot interesting internet articles you should read
+Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) fot interesting internet articles you should read.
+
+## Algorithms
+
+Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) fot interesting internet articles you should read.
 
 ## Authors
 
