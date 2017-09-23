@@ -1,7 +1,11 @@
 'use strict';
 
-/*
-* Recursion version. But take too much time to calculate for 100
+
+/**
+ * Recursion version. But take too much time to calculate for 100
+ * 
+ * @param n
+ * @returns {*}
  */
 function fibonacciRecursion(n) {
     if(n == 1 || n == 2){
@@ -10,8 +14,12 @@ function fibonacciRecursion(n) {
     return fibonacciRecursion(n-1)+fibonacciRecursion(n-2);
 }
 
-/*
-* Dynamic programming version. Take no time to calculate for 100
+
+/**
+ * Dynamic programming version. Take no time to calculate for 100
+ * 
+ * @param n
+ * @returns {*}
  */
 function fibonacciDP(n) {
     var f = [];

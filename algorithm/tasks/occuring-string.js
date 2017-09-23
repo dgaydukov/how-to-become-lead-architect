@@ -1,8 +1,11 @@
 'use strict';
 
-/*
-* Define a function that takes an array of strings, and returns the most commonly occurring string that array
-* Difficulty O(n), because we use only one iteration
+/**
+ * Define a function that takes an array of strings, and returns the most commonly occurring string that array
+ * Difficulty O(n), because we use only one iteration
+ * 
+ * @param array
+ * @returns {{string: string, occurringNumber: number}}
  */
 function findOccurringString(array) {
     var hash = {},

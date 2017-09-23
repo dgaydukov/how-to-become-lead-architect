@@ -15,19 +15,19 @@ Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senio
 
 ## Links
 
-Look out at [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) fot interesting internet articles you should read.
+Look out at [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) for interesting internet articles you should read.
 
 ## Regex
 
-Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) fot interesting internet articles you should read.
+Look out at [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) for interesting internet articles you should read.
 
 ## Algorithms
 
-Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) fot interesting internet articles you should read.
+Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) for interesting internet articles you should read.
 
-## Algorithms
+## Design & Architecture problems
 
-Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/README.md) fot interesting internet articles you should read.
+* [Inheritance vs Composition](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design/inheritance-vs-composition.md) for better understanding of inheritance pattern.
 
 ## Authors
 

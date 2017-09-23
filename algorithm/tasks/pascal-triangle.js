@@ -1,6 +1,11 @@
 'use strict';
 
-
+/**
+ * 
+ * 
+ * @param n
+ * @returns {Array}
+ */
 function pascalTriangle(n) {
     var arr = [];
     for(var i = 1; i <= n+1; i++){

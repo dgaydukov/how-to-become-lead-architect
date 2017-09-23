@@ -1,13 +1,12 @@
 'use strict';
 
-/*
-* Given a 50,000 word dictionary, find me an efficient way to find anagrams
-* 
-* for each word in the dictionary, take and sort it's characters..... make becomes aekm, 
-* then see if it (the sorted word) exists in a hash 
+/**
+ * Given a 50,000 word dictionary, find me an efficient way to find anagrams
+ * Solution: For each word in the dictionary, take and sort it's characters..... make becomes aekm,
+ * then see if it (the sorted word) exists in a hash
+ * @param arr
+ * @returns {{}}
  */
-
-
 function anagram(arr) {
     var hash = {},
         anagrams = {};
