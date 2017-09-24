@@ -7,8 +7,16 @@ Here i will share interesting algorithmic tasks that i met in my school informat
 #### Codility
 
 
-* Lesson 1 [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js)
-[codility](https://codility.com/programmers/lessons/1-iterations/)
+* [Lesson 1](https://codility.com/programmers/lessons/1-iterations/) [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js)
+
+* [Lesson 2](https://codility.com/programmers/lessons/2-arrays/) [OddOccurrencesInArray](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-OddOccurrencesInArray.js)
+* [Lesson 2](https://codility.com/programmers/lessons/2-arrays/) [CyclicRotation](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-CyclicRotation.js)
+
+* [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) [FrogJmp](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-FrogJmp.js)
+* [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) [PermMissingElem](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-PermMissingElem.js)
+* [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) [TapeEquilibrium](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-TapeEquilibrium.js)
+
+
 
 #### Tasks
 This parts contains interesting tasks i have encountered
