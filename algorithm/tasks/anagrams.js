@@ -4,6 +4,9 @@
  * Given a 50,000 word dictionary, find me an efficient way to find anagrams
  * Solution: For each word in the dictionary, take and sort it's characters..... make becomes aekm,
  * then see if it (the sorted word) exists in a hash
+ * Time Complexity is (n - number of words, m - average length) O(n * m * log m)
+ *
+ *
  * @param arr
  * @returns {{}}
  */
