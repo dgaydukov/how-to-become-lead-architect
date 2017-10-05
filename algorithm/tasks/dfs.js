@@ -21,7 +21,7 @@ class Node{
 }
 
 /**
- * Depth First search
+ * Deep First search
  *
  * @param value
  * @param node
@@ -42,7 +42,7 @@ const dfs = (value, node) => {
 }
 
 /**
- * Depth First search (second version)
+ * Deep First search (second version)
  *
  * @param value
  * @param node
