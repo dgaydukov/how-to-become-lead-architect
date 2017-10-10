@@ -1,6 +1,26 @@
 'use strict';
 
-const bucketSort = (list)=>{
+/**
+ * The idea is that computer memory makes sorting for us
+ * After we fill bucket, all values of array will be bucket keys, and computer memory automatically sort keys
+ * You can write following code
+ * const arr = [];
+ * arr[100] = 1;
+ * arr[50] = 1;
+ * arr[0] = 1;
+ * After you console.log array, you will notice, that it size is 101, and it's keys alreay sorted
+ * (101) [1, undefined × 49, 1, undefined × 49, 1]
+ * 0: 1
+ * 50: 1
+ * 100: 1
+ * 
+ * So this kind of sorting works for O(n) only because sorting happens in computer memory. Memory works in this way - it's just allocate memory, so when you insert
+ * unsorted keys, memory sort them automatically
+ *
+ * @param list
+ * @returns {*}
+ */
+const countingSort = (list)=>{
     var bucket = [],idx = 0;
     for(var i = 0;i<list.length;i++){
         bucket[list[i]] = bucket[list[i]] || 0
@@ -42,6 +62,6 @@ const radixSort = (arr)=>{
 }
 
 console.log(
-    bucketSort([101, 203, 5, 87, 76, 48, 1000]),
+    countingSort([101, 203, 5, 87, 76, 48, 1000]),
     radixSort([101, 203, 5, 87, 76, 48, 1000])
 )
