@@ -73,4 +73,12 @@ This parts contains interesting tasks i have encountered
 * [fibonacci](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/fibonacci.js)
 * [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/pascal-triangle.js)
 * [leibniz-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/leibniz-triangle.js)
-* [occuring-string](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/occuring-string.js)
+* [occur
+
+#### Unified State Exams (ЕГЭ)
+Some interesting tasks from Russian high school exams on informatics subject.
+
+* [executor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/executor.js)
+* [game-strategy](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/game-strategy.js)
+* [graph-perms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/graph-perms.js)
+* [robot](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/robot.js)

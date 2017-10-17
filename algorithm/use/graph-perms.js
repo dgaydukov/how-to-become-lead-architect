@@ -1,14 +1,14 @@
-'use strict'
+'use strict';
 
 /*
-There are 4 cities on the map A, B, C, D
+ There are 4 cities on the map A, B, C, D
  between A and B there are 3 roads
  between A and C there are 2 roads
  between B and C there are 4 roads
  between B and D there are 3 roads
  between C and D there are 3 roads
-How many different ways exist to move from A to D, if use every road exactly once
-*/
+ How many different ways exist to move from A to D, if use every road exactly once
+ */
 
 const solution = (graph, from = "A") => {
     let roads = 1;
