@@ -45,6 +45,49 @@ const permutator = (inputArr) => {
     return result;
 }
 
+
+
+
 console.log(
     permutator([1,2,3,4])
 )
+
+
+/**
+ * Permutation solution using first & next functions
+ *
+ * @param arr
+ * @returns {*[]}
+ */
+const perms = (arr) => {
+    const perms = [first(arr).join(" ")];
+    let n = 0;
+    while(arr = next(arr)){
+        perms.push(arr.join(" "));
+        n++;
+        if(n == 30){
+            break;
+        }
+    }
+    return perms;
+}
+
+const first = (arr) => arr.sort();
+
+const next = (arr) => {
+    const len = arr.length;
+    for(let i = len-1; i > 0; i--){
+        if(arr[i-1] < arr[i]){
+            const swap = arr[i-1];
+            arr[i-1] = arr[i];
+            arr[i] = swap;
+            return [].concat(arr.slice(0,i), arr.slice(i, len).sort());
+        }
+    }
+    return false;
+}
+
+
+console.log(
+    perms([1,2,3,4])
+);

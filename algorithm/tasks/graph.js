@@ -5,19 +5,21 @@
  */
 class Node{
     constructor(value){
-        this.children = [];
+        const children = [];
         this.getValue = () => value;
-    }
 
-    setChildren(...children){
-        for(let i = 0, len = children.length; i < len; i++){
-            this.children.push(children[i])
+        this.setChildren = (...list) => {
+            for(let i = 0, len = list.length; i < len; i++){
+                children.push(list[i])
+            }
+        }
+
+        this.getChildren = () => {
+            return children;
         }
     }
 
-    getChildren(){
-        return this.children;
-    }
+
 }
 
 /**
@@ -26,21 +28,24 @@ class Node{
  * DFS is easy to implement recursively because you can use the call stack as the stack. You can't do that with BFS, because you need a queue
  */
 class GraphSearch{
-    constructor(value, node){
-        this.getValue = () => value;
+    constructor(node, value){
         this.getNode = () => node;
+        this.getValue = () => value;
     }
 
     recursiveDFS(node){
         node = node || this.getNode();
+        node.visited = true;
         if(this.getValue() == node.getValue()){
             return node;
         }
         const children = node.getChildren();
         for(let i = 0, len = children.length; i < len; i++){
-            const child = this.recursiveDFS(children[i])
-            if(child){
-                return child;
+            if(!children[i].visited){
+                const child = this.recursiveDFS(children[i])
+                if(child){
+                    return child;
+                }
             }
         }
     }
@@ -51,13 +56,16 @@ class GraphSearch{
         while (stack.length > 0){
             iteration++;
             const node = stack.pop();
+            node.visited = true;
             if(this.getValue() == node.getValue()){
                 console.log("DFS iteration", iteration)
                 return node;
             }
             const children = node.getChildren();
             for(let i = 0, len = children.length; i < len; i++){
-                stack.push(children[i])
+                if(!children[i].visited){
+                    stack.push(children[i]);
+                }
             }
         }
     }
@@ -68,13 +76,16 @@ class GraphSearch{
         while (stack.length > 0){
             iteration++;
             const node = stack.shift();
+            node.visited = true;
             if(this.getValue() == node.getValue()){
                 console.log("BFS iteration", iteration)
                 return node;
             }
             const children = node.getChildren();
             for(let i = 0, len = children.length; i < len; i++){
-                stack.push(children[i])
+                if(!children[i].visited){
+                    stack.push(children[i]);
+                }
             }
         }
     }
@@ -96,16 +107,16 @@ const node1 = new Node(1),
     node12 = new Node(12);
 
 node1.setChildren(node2, node7, node8);
-node2.setChildren(node3, node6);
+node2.setChildren(node3, node6, node1);
 node3.setChildren(node4, node5);
 node8.setChildren(node9, node12);
 node9.setChildren(node10, node11);
 
-const search = new GraphSearch(11, node1);
+const search = new GraphSearch(node1, 11);
 
 console.log(
     node1.getChildren(),
+    //search.recursiveDFS(),
     search.DFS(),
-    search.BFS(),
-    search.recursiveDFS()
+    search.BFS()
 )

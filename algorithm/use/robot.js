@@ -1,17 +1,17 @@
 'use strict';
 
 /*
-Initial Task
-Robot lives in square and can move every time in one position (top, bottom, right, left)
-You are given a task to find from how many start position robot will move to the same position
-while left-is-free do move-left
-while top-is-free do move-top
-while right-is-free do move-right
-while bottom-is-free do move-bottom
+ Initial Task
+ Robot lives in square and can move every time in one position (top, bottom, right, left)
+ You are given a task to find from how many start position robot will move to the same position
+ while left-is-free do move-left
+ while top-is-free do move-top
+ while right-is-free do move-right
+ while bottom-is-free do move-bottom
 
-Additional tasks
-1. White function to build html labyrinth representation based on array
-2. White 2 classes Robot and AnimatedRobot to walk throught array
+ Additional tasks
+ 1. White function to build html labyrinth representation based on array
+ 2. White 2 classes Robot and AnimatedRobot to walk throught array
 
  */
 
