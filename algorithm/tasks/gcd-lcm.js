@@ -20,6 +20,14 @@ const gcd = (a, b) => {
     }
 }
 
+
+const gcd = (a, b) => {
+    if(b == 0){
+        return a;
+    }
+    return gcd(b, a%b)
+}
+
 /**
  *  Least common multiple
  *  The least common multiple (lcm) of two integers a and b is the smallest positive integer that  is divisible by both a and b
