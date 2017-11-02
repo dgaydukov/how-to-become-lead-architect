@@ -22,10 +22,10 @@ function fibonacciRecursion(n) {
  * @returns {*}
  */
 function fibonacciDP(n) {
-    var f = [];
+    const f = [];
     f[1] = 1;
     f[2] = 2;
-    for(var i = 3; i < n; i++){
+    for(let i = 3; i < n; i++){
         f[i] = f[i-1]+f[i-2];
     }
     return f[n-1];
