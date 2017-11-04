@@ -31,3 +31,4 @@
 * [Etherium JS API](https://github.com/ethereum/wiki/wiki/JavaScript-API)
 * [Bitcoin in a nutshell](https://habrahabr.ru/post/319868)
 * [Dive into Ethereum](https://habrahabr.ru/post/327236)
+* [Fout vs Foit](https://www.zachleat.com/web/fout-vs-foit)

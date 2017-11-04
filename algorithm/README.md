@@ -82,3 +82,15 @@ Some interesting tasks from Russian high school exams on informatics subject.
 * [game-strategy](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/game-strategy.js)
 * [graph-perms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/graph-perms.js)
 * [robot](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/robot.js)
+
+
+### Useful Links
+* [Codility](https://codility.com/programmers/lessons)
+* [Google interview question](https://code.google.com/codejam/past-contests)
+* [Project Euler](https://projecteuler.net/archives)
+* [CodeJam](https://code.google.com/codejam/past-contests)
+* [LeetCode](https://leetcode.com/problemset/algorithms)
+
+
+
+
