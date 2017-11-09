@@ -1,5 +1,18 @@
 'use strict';
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 let stop = 0;
 
 const getShortestPathRecursive = (from, to, graph, path, pathLen) => {
@@ -134,7 +147,7 @@ const dijkstra = (graph) => {
 };
 
 console.log(
-    getShortestPath("X", "Y", problem),
+    //getShortestPath("X", "Y", problem),
     //dijkstra(problem)
 );
 
