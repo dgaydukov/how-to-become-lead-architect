@@ -4,6 +4,30 @@
 
 
 
+const getHuffmanTree = (hash) => {
+    const tree = {};
+    Object.keys(hash).map((key,i)=>{
+        tree[i] = {
+            key: key,
+            value: hash[key],
+            children: []
+        }
+    });
+    return tree;
+}
+
+const hash = {
+    A: 15,
+    B: 7,
+    C: 6,
+    D: 6,
+    E: 5,
+}
+
+console.log(
+    //getHuffmanTree(hash)
+)
+
 
 
 
