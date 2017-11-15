@@ -29,6 +29,10 @@ Look out at [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-
 
 * [Inheritance vs Composition](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design/inheritance-vs-composition.md) for better understanding of inheritance pattern.
 
+## Tutorial
+
+Check out my [js tutorial](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/js-tutorial.md) for getting basic js knowledge.
+
 ## Authors
 
 * **Gaydukov Dmitiry** - *Initial work* - [ReactVsAngular](https://github.com/dgaydukov/react-vs-angular)
