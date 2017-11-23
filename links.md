@@ -12,6 +12,7 @@
 * [ReactTDD](https://medium.com/@arturbasak/tdd-react-js-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-d354ec1562fa)
 * [rendering-through-virtualization](https://blog.jscrambler.com/optimizing-react-rendering-through-virtualization)
 * [pure-components-with-weakmaps](https://bytes.referralcandy.com/react-pure-components-now-with-more-weakmaps-f676ce8162e7)
+* [inferno](https://github.com/infernojs/inferno)
 
 ## Angular
 * [From zero to Angular hero](https://blog.goyello.com/2017/06/14/zero-angular-hero)

@@ -90,6 +90,7 @@ Some interesting tasks from Russian high school exams on informatics subject.
 * [Project Euler](https://projecteuler.net/archives)
 * [CodeJam](https://code.google.com/codejam/past-contests)
 * [LeetCode](https://leetcode.com/problemset/algorithms)
+* [graphs-and-trees](https://github.com/donnemartin/interactive-coding-challenges#graphs-and-trees)
 
 
 
