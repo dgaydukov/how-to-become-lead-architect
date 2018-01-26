@@ -36,3 +36,7 @@
 * [Bitcoin in a nutshell](https://habrahabr.ru/post/319868)
 * [Dive into Ethereum](https://habrahabr.ru/post/327236)
 * [Fout vs Foit](https://www.zachleat.com/web/fout-vs-foit)
+
+
+## Master Degree
+* [Russian(сделай из себя магистра)](https://habrahabr.ru/post/251747)
