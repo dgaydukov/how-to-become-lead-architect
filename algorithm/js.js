@@ -64,7 +64,34 @@ const f = (n)=>{
 }
 
 console.log(
-    f(10**3),
+    //f(10**3),
 )
 
+/**
+ * @param {*} a 
+ * @param {*} k 
+ */
+function maxLength(a, k) {
+    const len = a.length;
+    let sum = 0,max=0;
+    for(let i = 0; i < len; i++){
+        sum += a[i];
+        for(let j = i+1; j < len; j++){
+            sum += a[j];
+            if(sum > k){
+                sum -= a[j];
+                if(max < j){
+                    max = j;
+                }
+                sum = 0;
+                break;
+            }
+        }
+        sum -= a[i];
+    }
+    return max;
+}
 
+console.log(
+    maxLength([3,1,2,1],4)
+)
