@@ -1,9 +1,16 @@
 # Who created Bitcoin
 
-novel cryptography
-custom peer-to-peer protocol
-proof of work concept
-special purpose scripting language
-UTXO (unspent transaction output) model
-merkle tree
-mining fee
+### Desctiption
+
+
+### Technology List
+
+Bitcoin brought a whole set of ideas into one technology
+
+* Novel cryptography
+* Peering network (custom peer-to-peer protocol)
+* PoW (proof of work) concept
+* special purpose scripting language
+* UTXO (unspent transaction output) model
+* Merkle tree
+* Mining fee
