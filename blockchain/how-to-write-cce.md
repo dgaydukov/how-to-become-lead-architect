@@ -13,18 +13,12 @@ So let's got the the list of projects our Exchange consist of:
 
 ### Project List
 
-* [Ethereum Proxy](https://github.com/dgaydukov/nodejs-cce-blockchain-ethereum) - This project is a set up above ethereum node. Basically it executes 4 functions
--create address
--check address balance
--create transactions
--push when address balance change
+* [Ethereum Proxy](https://github.com/dgaydukov/nodejs-cce-blockchain-ethereum) - This project is a set above Ethereum node. Basically it executes 
+3 simple functions: create address, create transactions, push when address balance change or transaction confirmation changed
 The service communicate with others by the means of Kafka
 
-* [Bitcoin Proxy](https://github.com/dgaydukov/nodejs-cce-blockchain-bitcoin) - This project is a set up above bitcoin node. Basically it executes 4 functions
--create address
--check address balance
--create transactions
--push when address balance change
+* [Bitcoin Proxy](https://github.com/dgaydukov/nodejs-cce-blockchain-bitcoin) - This project is a set above Bitcoin node. Basically it executes 
+3 simple functions: create address, create transactions, push when address balance change or transaction confirmation changed
 The service communicate with others by the means of Kafka
 
 * [Connector](https://github.com/dgaydukov/nodejs-cce-core-connector) - This is a simple proxy that communicate data from WebSocket to Kafka. Since all internal
@@ -44,3 +38,4 @@ on his account, make change deals with other users.
 
 ### Conclusion
 
+At the end we should get a simple [mvp](https://en.wikipedia.org/wiki/Minimum_viable_product) that can perform simple exchange activity
