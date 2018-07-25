@@ -1,4 +1,4 @@
-# Design Problems
+# Design & Architecture problems
 
 ### Description
 
