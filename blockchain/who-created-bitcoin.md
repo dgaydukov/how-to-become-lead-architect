@@ -1,6 +1,9 @@
 # Who created Bitcoin
 
-### Desctiption
+## Plan
+* [Description](#description)
+* [Technology List](#technology-list)
+* [Conclusion](#conclusion)
 
 
 ### Technology List
@@ -14,3 +17,6 @@ Bitcoin brought a whole set of ideas into one technology
 * UTXO (unspent transaction output) model
 * Merkle tree
 * Mining fee
+
+
+### Conclusion

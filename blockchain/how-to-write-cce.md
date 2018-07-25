@@ -1,5 +1,10 @@
 # How to create CCE (Crypto Currency Exchange)
 
+## Plan
+* [Description](#description)
+* [Project List](#project-list)
+* [Conclusion](#conclusion)
+
 ### Description
 
 Here I'am going to build a simple Crypto Currency Exchange to show all the power and beauty of Node.js and blockchain technology.
