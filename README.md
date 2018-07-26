@@ -21,7 +21,7 @@ Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senio
 * [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) for interesting internet articles you should read.
 * [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/algorithm/README.md) for interesting algorithmic solutions.
 * [BlockChain](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/blockchain/README.md) for all interesting stuff about blockchain & bitcoin.
-* [Design & Architecture problems](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/design/README.md) for design & artitecture proglems.
+* [Design & Architecture problems](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/design-%26-architecture) for design & artitecture proglems.
 * [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) for interesting internet articles you should read.
 
 

@@ -26,6 +26,9 @@ for(let i = 0; i < 10; i ++){
     sequentialPromiseList.push(asyncFunc.bind(this, i))
 }
 
+/**
+* here in parallelPromiseList we have already executing promises
+*/
 Promise.all(parallelPromiseList)
     .then(data=>{
         console.log("parallelPromiseList resolve", data)
@@ -34,6 +37,9 @@ Promise.all(parallelPromiseList)
         console.log("parallelPromiseList fail", ex)
     })
 
+/**
+* here in sequentialPromiseList we have wrapped promises, that will execute one after another
+*/
 Promise.mapSeries(sequentialPromiseList, func=>{
         return func()
     })
