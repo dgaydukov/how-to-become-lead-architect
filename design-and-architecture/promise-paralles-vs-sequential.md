@@ -8,6 +8,7 @@ For this we have method `Promise.mapSeries`, but to use it you have to use [blue
 The point is that you have to pass to `Promise.mapSeries` not already executing promises, but promise wrapped in function, so this 
 will guarantee that every next promise will be executing only after the previous have resolved.
 Here you can check out an example:
+
 ```typescript
 import {Promise} from "bluebird"
 

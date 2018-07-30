@@ -2,7 +2,7 @@
 
 ### Problem Description
 
-You all probably know about problem called "callback hell". Javascript by design is asyncronos language. So almost every operation that take time
+You all probably know about problem called "callback hell". Javascript by design is asyncronous language. So almost every operation that take time
 (http request, file read) executes asyncronosly without blocking execution process. But what if you need to execute them syncronysly.
 Let's say you have to complete 3 request and only after this return. Well, in such case you should execute every new block as a callback
 to the previous function. But it can be difficult to read. The simple solution is a promise.

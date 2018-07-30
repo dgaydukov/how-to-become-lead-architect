@@ -3,9 +3,9 @@
 ### Problem Description
 When you use async await construction with a defined set of async functions everything is clear. But when you have a list of functions, things get tricky
 , so you have to use loops. But from may [previous](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/async-await-vs-promise.md)
-you know that async await is just synthetic sugar above `Promise`. When you got this, everything become clear. 
+you know that `Async/Await` is just synthetic sugar above `Promise`. When you got this, everything become clear. 
 So loops can be executed in 2 ways. One by one - sequential or all at once - parallel. So i will show en example of both of this.
-And also i will show antipattern that you should avoid in production code.
+And also i will show anti-pattern that you should avoid in production code.
 
 
 ```typescript

@@ -75,3 +75,8 @@ const getUserBalance = () => {
 getUserBalance().then(data=>console.log("promise", data))
 getUserBalanceAA().then(data=>console.log("async,await", data))
 ```
+
+### Main Advantage
+
+So the main advantage of `Async/Await` vs `Promise`, is that with `Promise`, whenever you need to make async call (ajax, fileread and so on) you 
+have to break you code with `return` and `then`.
