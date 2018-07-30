@@ -1,4 +1,4 @@
-# Async Await inside a Loop
+# 10 Tips to write HighLoad Node.js Apps
 
 ### Problem Description
 When you use async await construction with a defined set of async functions everything is clear. But when you have a list of functions, things get tricky
