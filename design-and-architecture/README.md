@@ -7,6 +7,7 @@ This section will be organised as a list of articles with source code examples
 
 ### List of Articles
 
+* [Async Await inside a Loop](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/async-await-inside-a-loop.md)
 * [Async Await vs Promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/async-await-vs-promise.md)
 * [Callback vs Promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/callback-vs-promise.md)
 * [Inheritance vs Composition](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/inheritance-vs-composition.md)
