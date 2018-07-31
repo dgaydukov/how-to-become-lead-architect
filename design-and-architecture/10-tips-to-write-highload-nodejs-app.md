@@ -31,5 +31,8 @@ To connect classes inside your project I suggest to use [EventEmitter](https://n
 
 ### Use MQ for back-to-back connection and REST/WebSocket to back-to-front connection
 
-The idea is pretty simple. If you want to connect 2 or more backend services you should use asyncronos message broker. Personally
-i use [Kafka](https://kafka.apache.org/)
+Basically you have 3 main types of service to service connection
+* MQ - the best to connect internal backend services. Personally I use [Kafka](https://kafka.apache.org/)
+* REST - the best way to connect server-to-client. If you have a website or mobile app you would better connect them to you backend server through the REST
+* WebSocket - basically you can use it for both back-to-back & back-to-front. But I suggest to use it when you want to connect back-to-back and other
+microservice can't use message queue for some reasons

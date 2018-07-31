@@ -1,4 +1,4 @@
-# 10 Tips to write HighLoad Node.js Apps
+# Design & Architecture problems
 
 ### Description
 
