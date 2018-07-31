@@ -67,7 +67,7 @@ Here we just execute multiple callback without any return. If you run it will re
 /**
 * Antipattern - just execute multiple callback in parallel
 */
-const completeParallelLoop = async(arr)=>{
+const parallelLoop1 = async(arr)=>{
     let total = 0
     arr.forEach(async(userId)=>{
         const balance = await getBalance(userId)
@@ -76,6 +76,18 @@ const completeParallelLoop = async(arr)=>{
     return total
 }
 
+/**
+* Behave the same way
+*/
+const parallelLoop2 = async(arr)=>{
+    let total = 0;
+    arr.map(async(userId)=>{
+        const balance = await getBalance(userId)
+        total += balance
+    })
+    return total
+}
 
-completeParallelLoop(arr).then(total=>console.log("completeParallelLoop", total))
+parallelLoop1(arr).then(total=>console.log("completeParallelLoop", total))
+parallelLoop2(arr).then(total=>console.log("completeParallelLoop", total))
 ```
