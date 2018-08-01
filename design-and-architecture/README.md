@@ -14,3 +14,4 @@ This section will be organised as a list of articles with source code examples
 * [Inheritance vs Composition](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/inheritance-vs-composition.md)
 * [Promise Parallel vs Sequential execution](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/promise-paralles-vs-sequential.md)
 * [Promise.race real world example](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/promise-race-real-wordl-example.md)
+* [You don't need generators](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/you-dont-need-generators.md)

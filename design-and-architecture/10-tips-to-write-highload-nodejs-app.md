@@ -31,7 +31,10 @@ I think there are should be no comments. Always write tests.
 ### Always use Promise/Async-Await (Never use callbacks)
 
 Callback hell is a nasty thing. You should avoid it at any cost. Use Promises instead, and today you can use `async/await`, that is way more better
-than promises for code readability.
+than promises for code readability. Cause in case of promises if you have many async calls you have to create a chain of `then` functions + also have to pass
+there another variable return not just new promise but `Promise.all([someValue, promise])`.
+There is also es6 generators. But as you can read [here](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/you-dont-need-generators.md)
+there is not practical application of this concept. Yes it's a cool feature, but `async/await` is way more enough
 
 
 ### Use EventEmitter when need to connect multiple classes
