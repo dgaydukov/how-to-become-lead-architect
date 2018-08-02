@@ -18,7 +18,10 @@ So let's got the the list of projects our Exchange consist of:
 
 ### Project List
 
-* [Ethereum Proxy](https://github.com/dgaydukov/nodejs-cce-blockchain-ethereum) - This project is a set above Ethereum node. Basically it executes 
+* [ICO](https://github.com/dgaydukov/nodejs-cce-ico) - This is a start point of our project. Here we create smart contract that will collect money
+deliver tokens and guarantee that all goes well.
+
+* [Ethereum Proxy](https://github.com/dgaydukov/nodejs-cce-blockchain-ethereum) - This project is a set above Ethereum node. Basically it executes
 3 simple functions: create address, create transactions, push when address balance change or transaction confirmation changed
 The service communicate with others by the means of Kafka
 
