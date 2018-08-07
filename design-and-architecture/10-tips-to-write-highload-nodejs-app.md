@@ -7,7 +7,7 @@
 * [3. Always use Promise/Async-Await (Never use callbacks)](#always-use-promise/async-await-(never-use-callbacks))
 * [4. Use EventEmitter when need to connect multiple classes](#use-eventemitter-when-need-to-connect-multiple-classes)
 * [5. Use MQ for back-to-back connection and REST/WebSocket to back-to-front connection](#use-mq-for-back-to-back-connection-and-rest/websocket-to-back-to-front-connection)
-
+* [6. Be stateless and use redis](#be-stateless-and-use-redis)
 
 ### Intro
 
@@ -49,3 +49,34 @@ Basically you have 3 main types of service to service connection
 * REST - the best way to connect server-to-client. If you have a website or mobile app you would better connect them to you backend server through the REST
 * WebSocket - basically you can use it for both back-to-back & back-to-front. But I suggest to use it when you want to connect back-to-back and other
 microservice can't use message queue for some reasons
+
+
+### Be stateless and use redis
+
+Your app should be stateless, so in case of crash, it will start and function normally without losing any state data.
+In case you really need a state use some professional tools like [Redis](https://github.com/NodeRedis/node_redis) or [Hazelcast](https://hazelcast.org/clients/node-js/)
+Personally i use Redis, just because i started to use it first and for now it's enough.
+Redis can be used also for other stuff like pub/sub functionality - so you can build message broker on this. But my advice - use Kafka
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
