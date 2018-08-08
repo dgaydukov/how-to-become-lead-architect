@@ -1,4 +1,4 @@
-# You don't need generators
+# Understanding Node.js EventEmitter
 
 ### Problem Description
 
