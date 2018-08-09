@@ -1,65 +1,82 @@
 'use strict'
 
+/**
+ * Here is my 2 solutions to solve binary search algorithm
+ */
+
 
 /**
- * Simple BinarySearch implementation
- *
- * @param arr
- * @param key
- * @param iteration
- * @returns {*}
+ * The simple and most straight forward solution
+ * The idea is simple. We have a range (left & right) where our number (search) is
+ * So for every iteration we change this range
+ * Here is the solution to search 31
+    0 99 49
+    0 48 24
+    25 48 36
+    25 35 30
+ * So first the range is 0..99, then we move to 0..48 and so on, till we get the result
  */
-const binarySearch = (arr, key, iteration) => {
-    iteration = iteration || 0;
-    iteration++;
-    const len = arr.length,
-        middle = Math.floor(len/2),
-        left = arr.slice(0, middle),
-        right = arr.slice(middle, len);
-    if(len == 1){
-        return {iteration:iteration, key: arr[0]==key?key:-1}
-    }
-    if(key < arr[middle]){
-        return binarySearch(left, key, iteration);
-    }
-    else if(key > arr[middle]){
-        return binarySearch(right, key, iteration);
-    }
-    else if(key == arr[middle]){
-        return {iteration:iteration, key: arr[middle]}
-    }
-}
-
-const binarySearchStack = (arr, key) => {
-    let iteration = 0,
-        stack = arr.slice();
-    while(stack.length > 1){
-        iteration++;
-        const len = stack.length,
-            middle = Math.floor(len/2),
-            left = stack.slice(0, middle),
-            right = stack.slice(middle, len);
-        if(key < stack[middle]){
-            stack = left;
+(()=>{
+    const binarySearch = (arr, search)=>{
+        let left = 0;
+        let right = arr.length - 1
+        if(arr[left] > search || arr[right] < search){
+            return -1
         }
-        else if(key > stack[middle]){
-            stack = right;
+        while(left <= right){
+            const mid = Math.floor((left + right)/2)
+            if(arr[mid] == search){
+                return mid
+            }
+            else if(arr[mid] < search){
+                left = mid + 1
+            }
+            else{
+                right = mid -1
+            }
+        }
+    }
+
+    const arr = []
+    const search = 31
+    for(let i = 1; i <= 100; i++){
+        arr.push(i)
+    }
+
+    console.log('result', binarySearch(arr, search))
+})()
+
+
+
+/**
+ * The same solution as previous, only done with recursion
+ * Generally the first one is better, because loops are more native and more clear to understand then recursion
+ * The only different is that we path our range (left..right) in every function call
+ */
+(()=>{
+    const binarySearch = (arr, search, left = 0, right = 0)=>{
+        left = left || 0;
+        right = right || arr.length - 1
+        if(arr[left] > search || arr[right] < search){
+            return -1
+        }
+        const mid = Math.floor((left + right)/2)
+        if(arr[mid] == search){
+            return mid
+        }
+        else if(arr[mid] < search){
+            return binarySearch(arr, search, mid+1, right)
         }
         else{
-            return {iteration:iteration, key: stack[middle]}
+            return binarySearch(arr, search, left, mid -1)
         }
     }
-    return {iteration:iteration, key: stack[0]==key?key:-1}
-}
 
+    const arr = []
+    const search = 31
+    for(let i = 1; i <= 100; i++){
+        arr.push(i)
+    }
 
-
-const arr = [];
-for(let i = 0; i < 100; i++){
-    arr.push(i+10);
-}
-
-console.log(
-    binarySearch(arr, 55),
-    binarySearchStack(arr, 55),
-)
+    console.log('result', binarySearch(arr, search))
+})()
