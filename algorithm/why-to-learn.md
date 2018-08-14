@@ -1,6 +1,10 @@
 # Why to learn algorithms
 
 
+## Content
+* [Overview](#overview)
+* [Practical Application](#practical-application)
+
 ### Overview
 
 Algorithms can be useful if we want to work with large set of data. Consider simple example to find all divisors of a number of 24.
@@ -41,7 +45,7 @@ const getDivisorsSmart = (n) => {
 ```
 Now try this ```getDivisorsSmart(Number.MAX_SAFE_INTEGER)``` and after a couple of seconds you get your array.
 
-### Practical Applications
+### Practical Application
 
 Where to apply all your knowledge of algorithms. Well, there are a lot of areas. Consider for example React performance on mobile devices. Recently i found out, that React poorly
 perform on mobile devices when you change the state and React re-render your view. Well, you can actually wait, till somebody in React or just out there, will solve this problem.

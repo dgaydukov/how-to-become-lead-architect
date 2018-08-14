@@ -17,9 +17,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 ### Section List
 
-Codility
-
-
+###### Codility
 * [Lesson 1](https://codility.com/programmers/lessons/1-iterations/) [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js)
 
 * [Lesson 2](https://codility.com/programmers/lessons/2-arrays/) [OddOccurrencesInArray](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-OddOccurrencesInArray.js)
@@ -30,8 +28,11 @@ Codility
 * [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) [TapeEquilibrium](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-TapeEquilibrium.js)
 
 
+###### Cryptography
+###### Data structures
+###### Interview
+###### Others
 
-Tasks
 This parts contains interesting tasks i have encountered
 
 * [6-digit-number-multiply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/6-digit-number-multiply.js)
@@ -62,7 +63,8 @@ This parts contains interesting tasks i have encountered
 * [unique-8-chars-pass](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/unique-8-chars-pass.js)
 
 
-Unified State Exams (ЕГЭ)
+###### Unified State Exams (ЕГЭ)
+
 Some interesting tasks from Russian high school exams on informatics subject.
 
 * [executor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/executor.js)
@@ -71,6 +73,8 @@ Some interesting tasks from Russian high school exams on informatics subject.
 * [roads-count](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/roads-count.js)
 * [robot](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/robot.js)
 * [shortest-path](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/shortest-path.js)
+
+
 
 
 ### Useful Links
