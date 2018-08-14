@@ -3,50 +3,7 @@
 Here i will share interesting algorithmic tasks that i met in my school informatics subject & career as programmer.
 
 
-## Why to learn algorithms
-Algorithms can be useful if we want to work with large set of data. Consider simple example to find all divisors of a number of 24.
-Here is simple function in js
-```javascript
-const getDivisors = (n) => {
-    const divisors = [];
-    for(let i = 1; i <= n; i++){
-        if(n % i == 0){
-            divisors.push(i);
-        }
-    }
-    return divisors;
-}
-```
 
-It works great, we can even implement it in one line using new es6 features
-```javascript
-const getDivisorsFilter = (n)=>[...Array(n+1).keys()].slice(1).filter(i=>n%i==0)
-```
-
-And if we use these two functions, to find all divisors for, let's say 24, it will work great. But try to execute ```getDivisors(Number.MAX_SAFE_INTEGER)``` and you
-definitely will crash your browser. There is a simple solution to use
-```javascript
-const getDivisorsSmart = (n) => {
-    const divisors = [],
-        sqrt = Math.floor(Math.sqrt(n));
-    for(let i = 1; i <= sqrt; i++){
-        if(n % i == 0){
-            divisors.push(i);
-            if(n/i != i){
-                divisors.push(n/i);
-            }
-        }
-    }
-    return divisors;
-}
-```
-Now try this ```getDivisorsSmart(Number.MAX_SAFE_INTEGER)``` and after a couple of seconds you get your array.
-
-### Practical Applications
-
-Where to apply all your knowledge of algorithms. Well, there are a lot of areas. Consider for example React performance on mobile devices. Recently i found out, that React poorly
-perform on mobile devices when you change the state and React re-render your view. Well, you can actually wait, till somebody in React or just out there, will solve this problem.
-But maybe it will be You who will solve this problem.
 
 ## Structure
 
@@ -68,31 +25,31 @@ But maybe it will be You who will solve this problem.
 This parts contains interesting tasks i have encountered
 
 * [6-digit-number-multiply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/6-digit-number-multiply.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/anagrams.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/binary-search.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/bitwise.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/brainfuck.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/bubble-sort.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/coins.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/dijkstra.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/equal-sums.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/factorial.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/fibonacci.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/gcd-lcm.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/graph.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/js-time-consumption.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/long-arithmetics.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/merge-sort.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/numeral-system.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/occuring-string.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/pascal-triangle.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/permutations.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/radix-sort.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/sieve-of-eratosthenes.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/stack-queue.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/str-serach.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/sub-array-of-array.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/unique-8-chars-pass.js)
+* [anagrams](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/anagrams.js)
+* [binary-search](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/binary-search.js)
+* [bitwise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/bitwise.js)
+* [brainfuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/brainfuck.js)
+* [bubble-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/bubble-sort.js)
+* [coins](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/coins.js)
+* [dijkstra](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/dijkstra.js)
+* [equal-sums](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/equal-sums.js)
+* [factorial](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/factorial.js)
+* [fibonacci](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/fibonacci.js)
+* [gcd-lcm](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/gcd-lcm.js)
+* [graph](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/graph.js)
+* [js-time-consumption](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/js-time-consumption.js)
+* [long-arithmetics](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/long-arithmetics.js)
+* [merge-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/merge-sort.js)
+* [numeral-system](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/numeral-system.js)
+* [occuring-string](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/occuring-string.js)
+* [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/pascal-triangle.js)
+* [permutations](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/permutations.js)
+* [radix-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/radix-sort.js)
+* [sieve-of-eratosthenes](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/sieve-of-eratosthenes.js)
+* [stack-queue](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/stack-queue.js)
+* [str-serach](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/str-serach.js)
+* [sub-array-of-array](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/sub-array-of-array.js)
+* [unique-8-chars-pass](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/unique-8-chars-pass.js)
 
 
 #### Unified State Exams (ЕГЭ)
