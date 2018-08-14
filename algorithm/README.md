@@ -35,26 +35,34 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 ###### Cryptography
 
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/decode-string.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/huffman-algorithm.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/permutation-cipher.js)
-* [](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/shannon-fano.js)
+Some funny tasks from cryptography fields
+
+* [decode-string](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/decode-string.js)
+* [huffman-algorithm](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/huffman-algorithm.js)
+* [permutation-cipher](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/permutation-cipher.js)
+* [shannon-fano](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/shannon-fano.js)
+* [vigenere-cipher](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/cryptography/vigenere-cipher.js)
 
 ###### Data structures
 
-* []()
-* []()
-* []()
-* []()
-* []()
+My implementation of data structures. Everybody at least one should do it by itself))
+
+* [linked-list](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/data-structures/linked-list.js)
+* [priority-queue](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/data-structures/priority-queue.js)
+* [queue](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/data-structures/queue.js)
+* [stack](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/data-structures/stack.js)
 
 ###### Interview
 
-* []()
-* []()
-* []()
-* []()
-* []()
+Some interesting questions, I was asked when attend an interview
+
+* [array-flatter](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/array-flatter.js)
+* [curry-sum-2](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/curry-sum-2.js)
+* [curry-sum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/curry-sum.js)
+* [first-non-repeated-character](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/first-non-repeated-character.js)
+* [get-nth-element](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/get-nth-element.js)
+* [inheritance](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/inheritance.js)
+* [last-survivor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/last-survivor.js)
 
 ###### Others
 
