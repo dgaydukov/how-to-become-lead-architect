@@ -33,7 +33,7 @@ const getRoadCount = (from, to, graph) => {
  * @param graph
  * @returns {number}
  */
-const getRoadCountByPass = (from, to, bypass, graph) => {
+const getRoadCountWithBypass = (from, to, bypass, graph) => {
     let roads = 0;
     if(graph[from]){
         graph[from].map(item=>{
@@ -42,7 +42,7 @@ const getRoadCountByPass = (from, to, bypass, graph) => {
                     roads++;
                 }
                 else{
-                    roads += getRoadCountByPass(item, to, bypass, graph);
+                    roads += getRoadCountWithBypass(item, to, bypass, graph);
                 }
             }
         });
@@ -50,20 +50,32 @@ const getRoadCountByPass = (from, to, bypass, graph) => {
     return roads;
 }
 
-const getRoadList = (from, to, graph, path) => {
-    const list = [];
-    path = path || from;
-    if(graph[from]){
-        graph[from].map(item=>{
-            path += item;
-            if(item == to){
-                list.push(path);
-            }
-            else{
-                list.push(...getRoadList(item, to, graph, path));
-            }
-        });
+/**
+ * The same technique with recursion
+ * The only diff, is that we wrap the func, so we could return array
+ *
+ * @param from
+ * @param to
+ * @param graph
+ * @param path
+ * @returns {Array}
+ */
+const getRoadList = (from, to, graph, path=from)=>{
+    const list = []
+    const inner = (from, to, graph, path) => {
+        if(graph[from]){
+            graph[from].map(item=>{
+                const _path = path + item
+                if(item == to){
+                    list.push(_path)
+                }
+                else{
+                    inner(item, to, graph, _path)
+                }
+            });
+        }
     }
+    inner(from, to, graph, path)
     return list;
 }
 
@@ -85,6 +97,6 @@ const graph = {
 
 console.log(
     getRoadCount("a", "к", graph),
-    getRoadCountByPass("a", "к", ["б"], graph),
+    getRoadCountWithBypass("a", "к", ["б"], graph),
     getRoadList("a", "к", graph),
 )
