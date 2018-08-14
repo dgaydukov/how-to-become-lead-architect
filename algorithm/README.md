@@ -78,10 +78,12 @@ This parts contains interesting tasks i have encountered
 #### Unified State Exams (ЕГЭ)
 Some interesting tasks from Russian high school exams on informatics subject.
 
-* [executor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/executor.js)
-* [game-strategy](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/game-strategy.js)
-* [graph-perms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/graph-perms.js)
-* [robot](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/use/robot.js)
+* [executor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/executor.js)
+* [game-strategy](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/game-strategy.js)
+* [graph-perms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/graph-perms.js)
+* [roads-count](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/roads-count.js)
+* [robot](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/robot.js)
+* [shortest-path](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/shortest-path.js)
 
 
 ### Useful Links
