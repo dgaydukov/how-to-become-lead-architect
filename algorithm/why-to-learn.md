@@ -1,4 +1,8 @@
-## Why to learn algorithms
+# Why to learn algorithms
+
+
+### Overview
+
 Algorithms can be useful if we want to work with large set of data. Consider simple example to find all divisors of a number of 24.
 Here is simple function in js
 ```javascript

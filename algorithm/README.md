@@ -1,13 +1,23 @@
 # Algorithms
 
+## Content
+* [Description](#description)
+* [Why to learn](#why-to-learn)
+* [Section List](#section-list)
+* [Useful Links](#useful-links)
+
+
+### Description
 Here i will share interesting algorithmic tasks that i met in my school informatics subject & career as programmer.
 
+### Why to learn
 
+Algorithms is very important in developer life. If you want to be a good dev you should know at least some basics.
+[Here](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/why-to-learn.md) are my detailed overview why you should learn them.
 
+### Section List
 
-## Structure
-
-#### Codility
+Codility
 
 
 * [Lesson 1](https://codility.com/programmers/lessons/1-iterations/) [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js)
@@ -21,7 +31,7 @@ Here i will share interesting algorithmic tasks that i met in my school informat
 
 
 
-#### Tasks
+Tasks
 This parts contains interesting tasks i have encountered
 
 * [6-digit-number-multiply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/6-digit-number-multiply.js)
@@ -52,7 +62,7 @@ This parts contains interesting tasks i have encountered
 * [unique-8-chars-pass](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/unique-8-chars-pass.js)
 
 
-#### Unified State Exams (ЕГЭ)
+Unified State Exams (ЕГЭ)
 Some interesting tasks from Russian high school exams on informatics subject.
 
 * [executor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/unified-state-exam/executor.js)
