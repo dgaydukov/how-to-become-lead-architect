@@ -73,7 +73,25 @@ This parts contains interesting tasks i have encountered
 * [fibonacci](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/fibonacci.js)
 * [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/pascal-triangle.js)
 * [leibniz-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/leibniz-triangle.js)
-* [occur
+* [anagrams](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/anagrams.js)
+* [brainfuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/brainfuck.js)
+* [coins](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/coins.js)
+* [fibonacci](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/fibonacci.js)
+* [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/pascal-triangle.js)
+* [leibniz-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/leibniz-triangle.js)
+* [anagrams](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/anagrams.js)
+* [brainfuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/brainfuck.js)
+* [coins](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/coins.js)
+* [fibonacci](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/fibonacci.js)
+* [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/pascal-triangle.js)
+* [leibniz-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/leibniz-triangle.js)
+* [anagrams](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/anagrams.js)
+* [brainfuck](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/brainfuck.js)
+* [coins](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/coins.js)
+* [fibonacci](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/fibonacci.js)
+* [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/pascal-triangle.js)
+* [leibniz-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/leibniz-triangle.js)
+
 
 #### Unified State Exams (ЕГЭ)
 Some interesting tasks from Russian high school exams on informatics subject.
