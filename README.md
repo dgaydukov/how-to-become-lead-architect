@@ -1,5 +1,12 @@
-# How to become a Senior Javascript Developer
+# How to become a Senior Javascript(Node.js) Developer
 
+## Content
+* [Description](#description)
+* [Getting Started](#getting-started)
+* [Section List](#section-list)
+* [Senior Developer](#senior-developer)
+* [Useful Links](#useful-links)
+* [Authors](#authors)
 
 ### Description
 This project is an accumulation of thoughts about becoming Senior Developer.
@@ -11,11 +18,19 @@ I also want to create a kind of guide with tasks and code examples, to show all 
 
 You don't need to clone this project, because it's just a one big tutorial, so you can read it online
 
+### Section List
+
+Here sections of the project
+* [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/algorithm)
+* [BlockChain](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/blockchain)
+* [Design & Architecture problems](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/design-and-architecture)
+* [Js Regex you should know](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/regex)
+
 ### Senior Developer
 
 Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/SeniorDeveloper.md) for my thoughts about, who can be considered as Senior Developer.
 
-### Links
+### Useful Links
 
 * [js tutorial](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/js-tutorial.md) for getting basic js knowledge.
 * [Links](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/links.md) for interesting internet articles you should read.
