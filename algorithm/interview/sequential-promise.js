@@ -1,6 +1,17 @@
-
-
+/**
+ * Task:
+ * We have 10 async function, that we want to execute sequentially one by one
+ * We don't have bluebird (Promise.mapSeries) and don't have async/await
+ * So we have to create it by ourselves
+ *
+ */
 (()=>{
+    /**
+     * async function
+     *
+     * @param n
+     * @returns {Promise<any>}
+     */
     const asyncFunc = (n)=>{
         return new Promise((resolve, reject)=>{
             setTimeout(()=>{
@@ -8,6 +19,12 @@
             }, 1000)
         })
     }
+
+    /**
+     * Solution
+     * Basically with our variable p, we chaining promises
+     * So it would be the same as .then().then().then() ... and so on
+     */
     let p = asyncFunc(1)
     for(let i = 2; i <= 10; i++){
         p = p.then(data=>{

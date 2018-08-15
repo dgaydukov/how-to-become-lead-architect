@@ -1,6 +1,18 @@
-
+/**
+ * We have an array like [1, [2, [3, [4, [5, ...]]]]] with 1 million nested array
+ * We need to write function to flatten it
+ *
+ * Precaution:
+ * 1. You can't use recursion, because it will cause stackoverflow error
+ * 2. You can't use toString() method, because after 1000 depth it will also throw stackoverflow error
+ */
 
 (()=>{
+    /**
+     * Generate nested array at first place
+     * @param n
+     * @returns {*[]}
+     */
     const buildNestedArray = (n)=>{
         let nested = [1, []]
         let list = [];
@@ -11,6 +23,12 @@
         }
         return nested
     }
+
+    /**
+     * Calculate the length (depth) of nested array
+     * @param arr
+     * @returns {number}
+     */
     const getNestedArrayLen = (arr)=>{
         let len = 0;
         let check = true
@@ -24,6 +42,13 @@
         }
         return len
     }
+
+    /**
+     * Flatten nested array
+     * 
+     * @param arr
+     * @returns {Array}
+     */
     const flatten = (arr)=>{
         const flat = []
         let check = true
