@@ -1,5 +1,10 @@
 # Design & Architecture problems
 
+## Content
+* [Description](#description)
+* [List of Articles](#list-of-articles)
+* [Javascript examples](#javascript-examples)
+
 ### Description
 
 In this section i'm going to describe all problems related to design and arhitecture of modern application, including both Backend and Frontend solutions.
@@ -19,4 +24,7 @@ This section will be organised as a list of articles with source code examples
 * [You don't need generators](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/you-dont-need-generators.md)
 
 
-## Js
+## Javascript examples
+
+* [js-class-private-variable](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/js/js-class-private-variable.js)
+* [rest-socket-repository](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/js/rest-socket-repository.js)
