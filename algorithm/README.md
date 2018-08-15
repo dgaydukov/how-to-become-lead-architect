@@ -90,6 +90,7 @@ This parts contains interesting tasks i have encountered
 * [occuring-string](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/occuring-string.js)
 * [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/pascal-triangle.js)
 * [permutations](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/permutations.js)
+* [quicksort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/quicksort.js)
 * [radix-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/radix-sort.js)
 * [sieve-of-eratosthenes](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/sieve-of-eratosthenes.js)
 * [stack-queue](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/stack-queue.js)

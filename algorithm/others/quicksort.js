@@ -1,3 +1,9 @@
+/**
+ * Quicksort algorithm - the fastest one
+ * Done with recursion
+ * 
+ */
+
 (()=>{
     const quickSort = (arr)=>{
         if(arr.length == 0 || arr.length == 1){
