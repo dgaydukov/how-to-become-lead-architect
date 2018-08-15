@@ -3,7 +3,6 @@
 ## Content
 * [Description](#description)
 * [List of Articles](#list-of-articles)
-* [Javascript examples](#javascript-examples)
 
 ### Description
 
@@ -22,9 +21,5 @@ This section will be organised as a list of articles with source code examples
 * [Understanding Node.js EventEmitter](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/understanding-event-emitter.md)
 * [Understanding Node.js Event Loop](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/understanding-event-loop.md)
 * [You don't need generators](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/you-dont-need-generators.md)
-
-
-## Javascript examples
-
 * [js-class-private-variable](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/js/js-class-private-variable.js)
 * [rest-socket-repository](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/js/rest-socket-repository.js)
