@@ -1,13 +1,16 @@
-/**
- * Task:
- * We have a rest with 100 endpoint
- * How we should implement it?
- * What will we do if we have now to give this endpoint with socket.io
- *
- * Answer:
- * We should use repository pattern. In this case we can share repository between rest and socket
- */
+# REST & Socket with Repository pattern
 
+### Description
+
+We have a rest with 100 endpoint
+How we should implement it?
+What will we do if we have now to give this endpoint with socket.io
+
+
+### Solution
+We should use repository pattern. In this case we can share repository between rest and socket
+ 
+```typescript
 (()=>{
     const userRepository = ()=>{
 
@@ -31,3 +34,4 @@
         };
     };
 })()
+```

@@ -1,16 +1,16 @@
-'use strict';
+# Private variables inside js classes
 
 
-/**
- * By default, variables declared with this.var, inside constructor are public.
- * This is because js not truly OOP, so there is no native support for private variables
- * But there are 2 primary ways to
- * 1. is to store all functions inside constructor
- * 2. Use score with WeakMap
- */
+### Description
+
+By default, variables declared with this.var, inside constructor are public.
+This is because js not truly OOP, so there is no native support for private variables
+But there are 2 primary ways to
+* 1. is to store all functions inside constructor
+* 2. Use score with WeakMap
 
 
-
+```typescript
 
 (()=>{
     class User{
@@ -69,3 +69,4 @@
         user2.getName(),
     )
 })();
+```
