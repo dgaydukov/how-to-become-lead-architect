@@ -60,9 +60,11 @@ Some interesting questions, I was asked when attend an interview
 * [curry-sum-2](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/curry-sum-2.js)
 * [curry-sum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/curry-sum.js)
 * [first-non-repeated-character](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/first-non-repeated-character.js)
+* [flatten-nested-array](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/flatten-nested-array.js)
 * [get-nth-element](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/get-nth-element.js)
 * [inheritance](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/inheritance.js)
 * [last-survivor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/last-survivor.js)
+* [sequential-promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/sequential-promise.js)
 
 ###### Others
 
