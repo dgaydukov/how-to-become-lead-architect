@@ -1,7 +1,7 @@
 /**
  * Quicksort algorithm - the fastest one
  * Done with recursion
- * 
+ *
  */
 
 (()=>{

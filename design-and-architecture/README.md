@@ -17,3 +17,6 @@ This section will be organised as a list of articles with source code examples
 * [Understanding Node.js EventEmitter](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/understanding-event-emitter.md)
 * [Understanding Node.js Event Loop](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/understanding-event-loop.md)
 * [You don't need generators](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/you-dont-need-generators.md)
+
+
+## Js
