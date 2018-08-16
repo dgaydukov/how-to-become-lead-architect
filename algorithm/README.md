@@ -57,7 +57,6 @@ My implementation of data structures. Everybody at least one should do it by its
 Some interesting questions, I was asked when attend an interview
 
 * [array-flatter](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/array-flatter.js)
-* [curry-sum-2](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/curry-sum-2.js)
 * [curry-sum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/curry-sum.js)
 * [first-non-repeated-character](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/first-non-repeated-character.js)
 * [flatten-nested-array](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/flatten-nested-array.js)
