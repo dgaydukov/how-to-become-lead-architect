@@ -17,7 +17,7 @@ This section will be organised as a list of articles with source code examples
 * [Callback vs Promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/callback-vs-promise.md)
 * [Inheritance vs Composition](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/inheritance-vs-composition.md)
 * [Private variables inside js classes](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/js-class-private-variable.md)
-* [Node.js threads](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/nodejs-threads.md)
+* [Multi-threading Node.js](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/multi-threaded-nodejs.md)
 * [Promise Parallel vs Sequential execution](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/promise-paralles-vs-sequential.md)
 * [Promise.race real world example](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/promise-race-real-wordl-example.md)
 * [REST & Socket with Repository pattern](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/rest-socket-repository.md)

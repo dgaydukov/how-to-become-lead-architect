@@ -1,4 +1,4 @@
-# Node.js threads
+# Multi-threading Node.js
 
 ### Description
 
