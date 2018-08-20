@@ -1,5 +1,9 @@
 /**
- * External sorting https://en.wikipedia.org/wiki/External_sorting
+ * Once i was asked. You have a 64mb file with digits one per line. You have to sort it, but you have only 8mb RAM.
+ * What will you do?
+ *
+ * This is the general task called external sorting
+ * https://en.wikipedia.org/wiki/External_sorting
  */
 
 (()=>{
