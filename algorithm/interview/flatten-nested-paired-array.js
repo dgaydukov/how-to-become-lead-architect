@@ -1,4 +1,8 @@
 /**
+ * This is a simple task, because we definitely know that each array contain 2 elements first is number and second is array
+ * For general purpose version (multi array) check here:
+ * https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/interview/flatten-nested-array.js
+ *
  * We have an array like [1, [2, [3, [4, [5, ...]]]]] with 1 million nested array
  * We need to write function to flatten it
  *
