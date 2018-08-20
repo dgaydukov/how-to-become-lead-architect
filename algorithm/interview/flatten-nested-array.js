@@ -17,14 +17,14 @@
  *
  */
 (()=>{
-    const getDepth = (arr)=>{
+    const flatten = (arr)=>{
         const flatten = []
         let maxDepth=0;
         const inner = (arr, depth = 0)=>{
+            depth++
             if(maxDepth < depth){
                 maxDepth = depth
             }
-            depth++
             const len = arr.length
             for(let i = 0; i < len; i++){
                 if("object" == typeof arr[i]){
@@ -43,13 +43,25 @@
     const arr = [1, 2, [3, [4, 5, [1, 2,[3,[4,[5,[5,[7,[8,[66]]]]]]]]]], [2, [3, 5, [5, [5, [3, [9, 3, [3]]]]], [1, [3], [2]]]]]
 
     console.log(
-        getDepth(arr)
+        flatten(arr)
+    )
+
+
+    const _flatten = (arr)=>{
+        return arr.toString().split(",").map(n=>Number(n))
+    }
+
+    /**
+     * compare 2 arrays, that they are equal
+     */
+    console.log(
+        JSON.stringify(flatten(arr).flatten) == JSON.stringify(_flatten(arr))
     )
 })();
 
 
 (()=>{
-    const getDepth = (arr)=>{
+    const flatten = (arr)=>{
         const flatten = []
         let maxDepth = 0;
         let list = JSON.parse(JSON.stringify(arr))
@@ -58,7 +70,7 @@
             const len = list.length
             for(let i = 0; i < len; i++){
                 if("object" == typeof list[i]){
-                    sub = sub.concat(list[i])
+                    sub = [].concat(sub, list[i])
                 }
                 else {
                     flatten.push(list[i])
@@ -74,6 +86,6 @@
     const arr = [1, 2, [3, [4, 5, [1, 2,[3,[4,[5,[5,[7,[8,[66]]]]]]]]]], [2, [3, 5, [5, [5, [3, [9, 3, [3]]]]], [1, [3], [2]]]]]
 
     console.log(
-        getDepth(arr)
+        flatten(arr)
     )
 })();
