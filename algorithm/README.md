@@ -86,6 +86,7 @@ This parts contains interesting tasks i have encountered
 * [js-time-consumption](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/js-time-consumption.js)
 * [long-arithmetics](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/long-arithmetics.js)
 * [merge-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/merge-sort.js)
+* [n-list-merge-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/n-list-merge-sort.js)
 * [numeral-system](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/numeral-system.js)
 * [occuring-string](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/occuring-string.js)
 * [pascal-triangle](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/others/pascal-triangle.js)
