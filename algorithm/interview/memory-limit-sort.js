@@ -7,7 +7,9 @@
  *
  *
  * For simple reason i assume that 1mb is 1 number from 0 to 100
- * To execute wiki example just run externalSort(900, 100
+ * To execute wiki example just run externalSort(900, 100)
+ *
+ * Since it's plain javascript you can run it in you browser console
  */
 
 
@@ -22,6 +24,7 @@
         }
         return true
     }
+    // i use standard js sort function
     const quickSort = (arr)=>{
         const sorted = JSON.parse(JSON.stringify(arr))
         sorted.sort((a,b)=>a-b)
@@ -43,9 +46,12 @@
         }
         const arr = generateList(fileLen)
         const loops = fileLen%ramLen == 0 ? fileLen/ramLen : Math.floor(fileLen/ramLen) + 1
+        //sort chunks with quickSort
         for(let i = 0; i < loops; i++){
             disk.list[i] = quickSort(arr.slice(i * ramLen, (i+1) * ramLen))
         }
+
+        //calculate the size of input cells and output buffer
         const inputBufferCellLen = Math.floor(ramLen/2/loops)+1
         const outputBufferLen = ramLen - loops * inputBufferCellLen
 
