@@ -22,6 +22,14 @@
         return eval(func)
     }
 
+    /**
+     * ES6 example using array spreading operator ...
+     *
+     * @param fn
+     * @param context
+     * @param args
+     * @returns {*}
+     */
     function applyES6(fn, context, args){
         context.fn = fn
         return context.fn(...args)
