@@ -1,10 +1,10 @@
 /**
  * In Russia there is a game called "sea battle" https://en.wikipedia.org/wiki/Battleship_(game)
- * You have to write effecient algorithm that will count number of ships on the board
+ * You have to write efficient algorithm that will count number of ships on the board
  *
  */
 (()=>{
-    const getBoatNumber = (m, n)=> {
+    const getShipNumber = (m, n)=> {
         const arr = generateField(m, n)
         const len = m * n
         let number = 0
@@ -64,6 +64,6 @@
 
 
     console.log(
-        getBoatNumber(8, 8)
+        getShipNumber(8, 8)
     )
 })();
