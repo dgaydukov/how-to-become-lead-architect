@@ -1,6 +1,6 @@
 /**
+ * We need to calculate number of occurences
  *
- * 
  * @param str
  * @returns {number}
  */
