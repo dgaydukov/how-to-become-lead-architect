@@ -7,7 +7,8 @@ Finally i decided to move interview questions outside algorithm folder. The reas
 not necessarily related to algorithms. So interview question doesn't relate algorithm folder. But they also doesn't relate to any other folder here. So that's why
 I decided to move them out into kind of a different project.
 
-Why I put them there ont the first place. Well it's a good question.
+Why I put them there ont the first place. Well it's a good question. Probably because when i first started this repo, all interview questions I have remembered
+where related to some algorithmic tasks, that's why initially I put it there. But as the repo grows, and I attend more interview, I decided to move it out.
 
 ### Question List
 
