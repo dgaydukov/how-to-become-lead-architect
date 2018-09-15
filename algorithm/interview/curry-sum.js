@@ -32,6 +32,17 @@
         return inner;
     }
 
+    const sumRecursive = (a)=>{
+        return (b)=>{
+            if(b){
+                return sumRecursive(a+b)
+            }
+            else{
+                return a
+            }
+        }
+    }
+
     console.log(
         sum(2)(3)(),
         sum(1)(2)(3)(4)(),
