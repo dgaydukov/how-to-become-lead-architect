@@ -1,9 +1,15 @@
 /**
- * Once I was asked to write promisify function
+ * Once I was asked to write promisify function that take any standard node.js async function and transform it into promise
  *
  */
 
 (()=>{
+    /**
+     * My realization of promisify
+     *
+     * @param func
+     * @returns {function(*=): Promise<any>}
+     */
     const promisify = (func)=>{
         return (data)=>{
             return new Promise((resolve, reject)=>{
@@ -17,6 +23,12 @@
         }
     }
 
+    /**
+     * Ordinary node.js async function
+     *
+     * @param data
+     * @param cb
+     */
     const asyncFunc = (data, cb)=>{
         let err = null
         if(data == 1){
