@@ -24,7 +24,7 @@ Here sections of the project
 * [Algorithms](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/algorithm)
 * [BlockChain](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/blockchain)
 * [Design & Architecture problems](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/design-and-architecture)
-* [Interesting Interview](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/design-and-architecture)
+* [Interesting Interview](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/README.md)
 * [Js Regex you should know](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/regex)
 
 ### Senior Developer
