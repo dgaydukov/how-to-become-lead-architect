@@ -1,6 +1,14 @@
-
-const _99_str_symmetry_point = (str)=>{
+/**
+ *
+ * 
+ * @param str
+ * @returns {number}
+ */
+const solution = (str)=>{
     const len = str.length
+    if(len == 1){
+        return 0
+    }
     let hash = {}
     let leftStr = ""
     for(let i = 0; i < len; i++){
