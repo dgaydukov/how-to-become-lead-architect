@@ -3,7 +3,7 @@
 
 ### Description
 
-
+Finally i decided to move interview questions outside algorithm folder.
 
 ### Question List
 
