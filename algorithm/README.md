@@ -33,6 +33,14 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [TapeEquilibrium](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-TapeEquilibrium.js)
 
 
+* [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
+    * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
+    * [StrSymmetryPoint](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-StrSymmetryPoint.js)
+    * [TreeHeight](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-TreeHeight.js)
+    * [ArrayInversionCount](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-ArrayInversionCount.js)
+    * [PolygonConcavityIndex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-PolygonConcavityIndex.js)
+
+
 ###### Cryptography
 
 Some funny tasks from cryptography fields
