@@ -16,8 +16,8 @@ Some interesting questions, I was asked when attend an interview
 
 * [call-and-apply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/call-and-apply.js)
 * [curry-sum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/curry-sum.js)
-* [ds-queue-on-two-stacks](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/curry-sum.js)
-* [ds-stack-on-two-queus](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/curry-sum.js)
+* [ds-queue-on-two-stacks](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/ds-queue-on-two-stacks.js)
+* [ds-stack-on-two-queus](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/ds-stack-on-two-queus.js)
 * [first-non-repeated-character](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/first-non-repeated-character.js)
 * [flatten-nested-array](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/flatten-nested-array.js)
 * [flatten-nested-paired-array](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/flatten-nested-paired-array.js)
