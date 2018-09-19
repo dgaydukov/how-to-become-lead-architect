@@ -2,18 +2,20 @@
  * Once I was asked to write queue on 2 stacks
  */
 (()=>{
+
     /**
-     * Queue realization with js array, just to show what is queue and how it works
+     * Simple stack realization, just to show how it works
+     *
      *
      * @returns {{get: (function(): *), put: (function(*=): number), size: (function(): number)}}
      */
-    const queue = ()=>{
+    const stack = ()=>{
         const list = []
         const put = (value)=>{
             return list.push(value)
         }
         const get = ()=>{
-            return list.shift()
+            return list.pop()
         }
         const size = ()=>{
             return list.length
@@ -24,7 +26,6 @@
             size: size,
         }
     }
-
     /**
      * My queue realization with 2 stacks. The idea is that when we need to get element, we reverse stack
      *

@@ -4,18 +4,17 @@
 (()=>{
 
     /**
-     * Simple stack realization, just to show how it works
-     *
+     * Queue realization with js array, just to show what is queue and how it works
      *
      * @returns {{get: (function(): *), put: (function(*=): number), size: (function(): number)}}
      */
-    const stack = ()=>{
+    const queue = ()=>{
         const list = []
         const put = (value)=>{
             return list.push(value)
         }
         const get = ()=>{
-            return list.pop()
+            return list.shift()
         }
         const size = ()=>{
             return list.length
