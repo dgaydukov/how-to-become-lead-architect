@@ -17,6 +17,38 @@
  *
  */
 (()=>{
+    /**
+     * Generate nested array at first place
+     * @param n
+     * @returns {*[]}
+     */
+    const buildNestedArray = (depth, maxLength)=>{
+        const getRand = (maxValue)=>{
+            return Math.round(Math.random()*maxValue)
+        }
+        let nested = [getRand(maxLength), []]
+        let list = [];
+        for(let i = 1; i < depth; i++){
+            if(i == 1){
+                list = nested[1]
+            }
+            else{
+                for(let k = 0; i < list.length; k++){
+                    if(typeof list[k] == 'object'){
+                        list = list[k]
+                        break
+                    }
+                }
+            }
+            const loopMaxLen = getRand(maxLength)
+            for(let j = 0; j < loopMaxLen; j++){
+                list.push(getRand(1)==1?getRand(maxLength):[])
+            }
+        }
+        return nested
+    }
+
+
     const flatten = (arr)=>{
         const flatten = []
         let maxDepth=0;
@@ -47,7 +79,7 @@
     )
 
 
-    const _flatten = (arr)=>{
+    const stringFlatten = (arr)=>{
         return arr.toString().split(",").map(n=>Number(n))
     }
 
@@ -60,6 +92,10 @@
 })();
 
 
+/**
+ * Here is interesting solution. We use BFS, that's why our array sorted by the depth.
+ * So in this case the last element would be 66 (not 2) because 66 has the largest nested depth length
+ */
 (()=>{
     const flatten = (arr)=>{
         const flatten = []
