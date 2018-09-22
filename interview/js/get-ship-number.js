@@ -49,19 +49,18 @@
             arr.push(cell)
         }
         let list = []
-        console.log("******************start******************")
+        const horizontalBorder = "-".repeat(m*2+1)
+        console.log(horizontalBorder)
         for(let i = 0; i < m * n; i++){
-            list.push(arr[i])
+            list.push(arr[i]==0?" ":"*")
             if((i+1) % m == 0){
-                console.log(list.join(" "))
+                console.log(`|${list.join(" ")}|`)
                 list = []
             }
         }
-        console.log("*******************end*******************")
-
+        console.log(horizontalBorder)
         return arr
     }
-
 
     console.log(
         getShipNumber(8, 8)
