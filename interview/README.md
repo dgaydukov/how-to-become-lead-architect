@@ -15,6 +15,7 @@ where related to some algorithmic tasks, that's why initially I put it there. Bu
 Some interesting questions, I was asked when attend an interview
 
 * [call-and-apply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/call-and-apply.js)
+* [call-and-apply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/call-and-apply.js)
 * [curry-sum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/curry-sum.js)
 * [ds-queue-on-two-stacks](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/ds-queue-on-two-stacks.js)
 * [ds-stack-on-two-queus](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/ds-stack-on-two-queus.js)
