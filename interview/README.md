@@ -27,5 +27,6 @@ Some interesting questions, I was asked when attend an interview
 * [inheritance](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/inheritance.js)
 * [last-survivor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/last-survivor.js)
 * [memory-limit-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/memory-limit-sort.js)
+* [paralell-promise-get-failed-num](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/paralell-promise-get-failed-num.js)
 * [promisify](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/promisify.js)
 * [sequential-promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/sequential-promise.js)
