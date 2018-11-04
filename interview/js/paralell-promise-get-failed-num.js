@@ -5,6 +5,11 @@
 
 
 (async ()=>{
+    /**
+     * simple async function, that resolves or rejects based on passed number n
+     * 
+     * @param {*} n 
+     */
     const asyncFunc = n => {
         return new Promise((resolve, reject)=>{
             setTimeout(()=>{
@@ -16,6 +21,12 @@
         })
     }
 
+    /**
+     * run paralell execution, but differ from simple promise.all, we don't reject on first reject.
+     * Instead we always resolve, but counts unsuccessfull resolves
+     * 
+     * @param {*} n 
+     */
     const registerParallel = async (n) => {
         const arr = Array.from({length: n}, (x,i) => i);
         const result = await Promise.all(
