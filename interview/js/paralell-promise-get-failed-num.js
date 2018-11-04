@@ -40,16 +40,20 @@
                 }
             })
         );
-        let failed = 0;
+        let resolved = 0;
+        let rejected = 0;
         result.map(item => {
             if(item.ex){
-                failed++;
+                rejected++;
+            }
+            else{
+                resolved++;
             }
         });
-        return {failed}
+        return {resolved, rejected}
     };
     
     console.log(
-        await registerParallel(5),
+        await registerParallel(10),
     );
-});
+})();
