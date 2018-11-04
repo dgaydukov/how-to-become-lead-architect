@@ -1,5 +1,5 @@
 /**
- * 
+ * The task: execunte n promises in paralell, and in the end output the success & failed number
  */
 
 
@@ -16,52 +16,7 @@
         })
     }
 
-    const register = async (n)=>{
-        let failed = 0;
-        for(let i = 0; i < n; i++){
-            try{
-                await asyncFunc(Math.round(Math.random()*10));
-            }
-            catch(ex){
-                failed++;
-            }
-        }
-        return {total: n, failed}
-    }
-
-    console.log('start')
-    // console.log(
-    //     await register(10)
-    // );
-
     const registerParallel = async (n) => {
-        const arr = []
-        for(let i = 0; i < n; i++){
-            arr.push(i)
-        }
-        const result = await Promise.all(
-            arr.map(item=>{
-                return new Promise(async(resolve)=>{
-                    try{
-                        await asyncFunc(Math.round(Math.random()*10));
-                        resolve({});
-                    }
-                    catch(ex){
-                        resolve({ex})
-                    }
-                })
-            })
-        );
-        let failed = 0;
-        result.map(item => {
-            if(item.ex){
-                failed++;
-            }
-        });
-        return {failed}
-    }
-
-    const registerParallel2 = async (n) => {
         const arr = Array.from({length: n}, (x,i) => i);
         const result = await Promise.all(
             arr.map(async (item) => {
@@ -84,6 +39,6 @@
     };
     
     console.log(
-        await registerParallel2(10)
+        await registerParallel(5),
     );
 });
