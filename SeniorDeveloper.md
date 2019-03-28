@@ -4,6 +4,7 @@
 
 Well, before we dive into a path on becomming senior developer in js, we should stop and answer, who is this mysterious SeniorDev.
 As I can judge, SeniorDev is the guy who can solve things. No matter what, any task that was set up for him, he can find a solution.
+Senior dev can easily become a teamlead. But to become a teamlead, you should have some knowledge devops. So you need to know, what is `docker`, `image`, `container`, 'docker compose`, `docker swarm`, `kubernetes`.
 
 ## Tasks
 The tasks are pretty broad. You can't just say "I can solve this, this and this, so I'm SeniorDev".
