@@ -1,9 +1,9 @@
 /**
- * 
+ * Given an array of dna strings find the string with longest substring
  */
 
 (()=>{
-    const getMaxSubstr = (symbols: string[], strings: string[]) => {
+    const getMaxSubstr = (symbols, strings) => {
       const hash = {};
       symbols.map(s=>{
         hash[s]=1;
