@@ -18,6 +18,7 @@ Some interesting questions, I was asked when attend an interview
 * [call-and-apply](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/call-and-apply.js)
 * [curry-sum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/curry-sum.js)
 * [dna-longest-substring](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/dna-longest-substring.js)
+* [domino](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/domino.js)
 * [ds-queue-on-two-stacks](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/ds-queue-on-two-stacks.js)
 * [ds-stack-on-two-queus](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/ds-stack-on-two-queus.js)
 * [fibonacci-tail-recursion](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/fibonacci-tail-recursion.js)
