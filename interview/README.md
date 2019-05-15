@@ -30,6 +30,7 @@ Some interesting questions, I was asked when attend an interview
 * [inheritance](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/inheritance.js)
 * [last-survivor](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/last-survivor.js)
 * [living-cell](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/living-cell.js)
+* [longest-duplicate-substring](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/longest-duplicate-substring.js)
 * [memory-limit-sort](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/memory-limit-sort.js)
 * [object-with-highest-value-oneline](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/object-with-highest-value-oneline.js)
 * [paralell-promise-get-failed-num](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/paralell-promise-get-failed-num.js)
