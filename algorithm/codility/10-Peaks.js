@@ -1,6 +1,5 @@
-'use strict';
-
 (()=>{
+
     const getPeaksCount = arr => {
         let count = 0;
         let len = arr.length;
@@ -30,11 +29,11 @@
                 const start = i * subArrLen;
                 const end = (i+1) * subArrLen;
                 const subArr = [];
-                if(arr[start-1] !== undefined){
+                if(arr[start-1]){
                     subArr.push(arr[start-1]);
                 }
                 subArr.push(...arr.slice(start, end));
-                if(arr[end] !== undefined){
+                if(arr[end]){
                     subArr.push(arr[end]);
                 }
                 if(!isPeak(subArr)){
@@ -59,4 +58,5 @@
 
     const arr = [1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2];
     console.log(solution(arr));
+
 })();
