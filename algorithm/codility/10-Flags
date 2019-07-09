@@ -1,5 +1,3 @@
-'use strict';
-
 (()=>{
     const getPeaksCount = arr => {
         let count = 0;
