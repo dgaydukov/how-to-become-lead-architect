@@ -22,8 +22,8 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js) / [Solution](https://app.codility.com/demo/results/trainingWC3TR8-J38/)
 
 * [Lesson 2](https://codility.com/programmers/lessons/2-arrays/) 
-    * [OddOccurrencesInArray](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-OddOccurrencesInArray.js)
-    * [CyclicRotation](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-CyclicRotation.js)
+    * [OddOccurrencesInArray](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-OddOccurrencesInArray.js) / [Solution](https://app.codility.com/demo/results/training7X5JGG-45W/)
+    * [CyclicRotation](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-CyclicRotation.js) / [Solution](https://app.codility.com/demo/results/trainingZYYCRC-XK7/)
 
 
 * [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) 
