@@ -25,12 +25,16 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [OddOccurrencesInArray](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-OddOccurrencesInArray.js) / [Solution](https://app.codility.com/demo/results/training7X5JGG-45W/)
     * [CyclicRotation](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-CyclicRotation.js) / [Solution](https://app.codility.com/demo/results/trainingZYYCRC-XK7/)
 
-
 * [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) 
     * [FrogJmp](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-FrogJmp.js) / [Solution](https://app.codility.com/demo/results/training922HS7-RCD/)
     * [PermMissingElem](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-PermMissingElem.js) / [Solution](https://app.codility.com/demo/results/trainingNGTBPE-P2Y/)
     * [TapeEquilibrium](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-TapeEquilibrium.js) / [Solution](https://app.codility.com/demo/results/trainingAA8VX9-US2/)
 
+* [Lesson 4](https://app.codility.com/programmers/lessons/4-counting_elements/) 
+    * [PermCheck](https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/) / [Solution](https://app.codility.com/demo/results/training2K4TDC-R92/)
+    * [FrogRiverOne](https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/) / [Solution](https://app.codility.com/demo/results/training49NFHK-3U9/)
+    * [MaxCounters](https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/) / [Soluion](https://app.codility.com/demo/results/trainingF3QYN4-PRR/)
+    * [MissingInteger](https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/) / [Solution](https://app.codility.com/demo/results/trainingHNWXKJ-B8X/)
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
