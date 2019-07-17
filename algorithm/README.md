@@ -36,6 +36,12 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [MaxCounters](https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/) / [Soluion](https://app.codility.com/demo/results/trainingF3QYN4-PRR/)
     * [MissingInteger](https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/) / [Solution](https://app.codility.com/demo/results/trainingHNWXKJ-B8X/)
 
+* [Lesson 5](https://app.codility.com/programmers/lessons/5-prefix_sums/)
+    * [PassingCars](https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/) / [Solution](https://app.codility.com/demo/results/trainingXRQG74-2MS/)
+    * [GenomicRangeQuery](https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/) / [Solution](https://app.codility.com/demo/results/trainingV4GG6G-VWW/)
+    * [MinAvgTwoSlice](https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/) / [Solution](https://app.codility.com/demo/results/trainingAHAF23-AVZ/)
+    * [CountDiv](https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/) / [Solution](https://app.codility.com/demo/results/training74P7ZU-PRC/)
+
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
     * [StrSymmetryPoint](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-StrSymmetryPoint.js)
