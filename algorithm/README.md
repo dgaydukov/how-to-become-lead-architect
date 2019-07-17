@@ -27,9 +27,9 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 
 * [Lesson 3](https://codility.com/programmers/lessons/3-time_complexity/) 
-    * [FrogJmp](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-FrogJmp.js)
-    * [PermMissingElem](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-PermMissingElem.js)
-    * [TapeEquilibrium](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-TapeEquilibrium.js)
+    * [FrogJmp](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-FrogJmp.js) / [Solution](https://app.codility.com/demo/results/training922HS7-RCD/)
+    * [PermMissingElem](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-PermMissingElem.js) / [Solution](https://app.codility.com/demo/results/trainingNGTBPE-P2Y/)
+    * [TapeEquilibrium](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/3-TapeEquilibrium.js) / [Solution](https://app.codility.com/demo/results/trainingAA8VX9-US2/)
 
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
