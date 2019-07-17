@@ -19,7 +19,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 ###### Codility
 * [Lesson 1](https://codility.com/programmers/lessons/1-iterations/) 
-    * [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js) - [Result](https://app.codility.com/demo/results/trainingWC3TR8-J38/)
+    * [BinaryGap](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/1-BinaryGap.js) / [Solution](https://app.codility.com/demo/results/trainingWC3TR8-J38/)
 
 * [Lesson 2](https://codility.com/programmers/lessons/2-arrays/) 
     * [OddOccurrencesInArray](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/tasks/2-OddOccurrencesInArray.js)
