@@ -42,6 +42,12 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [MinAvgTwoSlice](https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/) / [Solution](https://app.codility.com/demo/results/trainingAHAF23-AVZ/)
     * [CountDiv](https://app.codility.com/programmers/lessons/5-prefix_sums/count_div/) / [Solution](https://app.codility.com/demo/results/training74P7ZU-PRC/)
 
+* [Lesson 6](https://app.codility.com/programmers/lessons/6-sorting/)
+    * [MaxProductOfThree](https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/) / [Solution](https://app.codility.com/demo/results/trainingBVV5SH-HP8/)
+    * [Distinct](https://app.codility.com/programmers/lessons/6-sorting/distinct/) / [Solution](https://app.codility.com/demo/results/training2FXC5E-ZUY/)
+    * [Triangle](https://app.codility.com/programmers/lessons/6-sorting/triangle/) / [Solution](https://app.codility.com/demo/results/training77FQF7-XTW/)
+    * [NumberOfDiscIntersections](https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/) / [Solution]()
+
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
     * [StrSymmetryPoint](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-StrSymmetryPoint.js)

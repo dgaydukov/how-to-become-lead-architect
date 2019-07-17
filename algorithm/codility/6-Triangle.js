@@ -1,52 +1,38 @@
 'use strict';
 
-/**
- * sort function on numeric values
- * @param arr
- */
-const sort = (arr) => arr.sort((a,b)=>a-b);
+(() => {
+    /**
+     * sort function on numeric values
+     * @param arr
+     */
+    const sort = (arr) => arr.sort((a, b) => a - b);
 
-/**
- * helper function to check if 3 sides can be a triangle
- * @param a
- * @param b
- * @param c
- */
-const isTriangle = (a, b, c) => a + b > c && a + c > b && b + c > a;
+    /**
+     * helper function to check if 3 sides can be a triangle
+     * @param a
+     * @param b
+     * @param c
+     */
+    const isTriangle = (a, b, c) => a + b > c && a + c > b && b + c > a;
 
-/**
- * Smart solution, with sorting with O(log n * n)
- * @param arr
- * @returns {number}
- */
-const solution = (arr) => {
-    const sorted = sort(arr),
-        len = sorted.length;
-    for(let i = 0; i < len - 2; i++){
-        if(isTriangle(sorted[i], sorted[i+1], sorted[i+2])){
-            return 1;
-        }
-    }
-    return 0;
-}
-
-/**
- * Simple solution with O(n^2)
- * @param arr
- * @returns {number}
- */
-const solution2 = (arr) => {
-    const len = arr.length;
-    for(let i = 0; i < len; i++){
-        for(var j = i+1; j < len-2; j++){
-            if(isTriangle(arr[i], arr[j], arr[j+1])){
+    /**
+     * Smart solution, with sorting with O(log n * n)
+     * @param arr
+     * @returns {number}
+     */
+    const solution = (arr) => {
+        const sorted = sort(arr),
+            len = sorted.length;
+        for (let i = 0; i < len - 2; i++) {
+            if (isTriangle(sorted[i], sorted[i + 1], sorted[i + 2])) {
                 return 1;
             }
         }
+        return 0;
     }
-    return 0;
-}
 
-const arr = [10, 2, 5, 1, 8, 20];
+    const arr = [10, 2, 5, 1, 8, 20];
 
-console.log(solution(arr), solution2(arr));
+    console.log(solution(arr), solution2(arr));
+
+})();
