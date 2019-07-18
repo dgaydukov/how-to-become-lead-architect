@@ -46,7 +46,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [MaxProductOfThree](https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/) / [Solution](https://app.codility.com/demo/results/trainingBVV5SH-HP8/)
     * [Distinct](https://app.codility.com/programmers/lessons/6-sorting/distinct/) / [Solution](https://app.codility.com/demo/results/training2FXC5E-ZUY/)
     * [Triangle](https://app.codility.com/programmers/lessons/6-sorting/triangle/) / [Solution](https://app.codility.com/demo/results/training77FQF7-XTW/)
-    * [NumberOfDiscIntersections](https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/) / [Solution]()
+    * [NumberOfDiscIntersections](https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/) / [Solution](https://app.codility.com/demo/results/trainingE9TH5T-2GK/)
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)

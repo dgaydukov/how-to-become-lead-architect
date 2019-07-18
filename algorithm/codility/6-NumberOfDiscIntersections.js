@@ -17,7 +17,6 @@
         for (let i = 0; i < len; i++) {
             for (let j = i + 1; j < len; j++) {
                 const intersect = arr[i] + arr[j] + i - j;
-                //console.log(arr[i], arr[j], arr, i, j, intersect);
                 if (intersect >= 0) {
                     counter++;
                 }
@@ -35,4 +34,46 @@
         solution([1, 2, 3, 4, 5])
     );
 
+})();
+
+
+
+(() => {
+    /**
+     * Smart solution
+     * Since we need to count number of intersection we can have 2 array: one with starts and second with ends
+     * And on every step we calculate number of open circles and add them to total number, and when we meet closing
+     * we decrese number of circles
+     * 
+     * @param {*} arr 
+     */
+    const solution = arr => {
+        const starts = [], ends = [];
+        for (let i = 0; i < arr.length; i++) {
+            starts.push(i - arr[i]);
+            ends.push(i + arr[i]);
+        }
+        let opened = 0, crossed = 0, index = 0;
+        starts.sort((a, b) => a - b);
+        ends.sort((a, b) => a - b);
+        for (let i = 0; i < arr.length; i++) {
+            while (ends[index] < starts[i]) {
+                opened--;
+                index++;
+            }
+            crossed += opened;
+            if (crossed > 10 ** 7) {
+                return -1;
+            }
+            // console.log(starts[i], opened)
+            opened++;
+        }
+        return crossed;
+    }
+
+
+    console.log(
+        solution([1, 5, 2, 1, 4, 0]),
+        solution([1, 2, 3, 4, 5])
+    );
 })();
