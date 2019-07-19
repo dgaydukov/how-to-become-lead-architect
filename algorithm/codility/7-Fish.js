@@ -1,34 +1,38 @@
 'use strict';
 
-/**
- * Quick way to check
- *
- * @param str
- * @returns {number}
- */
-const solution = (A, B) => {
-    const len = A.length;
-    let prev = B[0];
-    for(let i = 1; i < len; i++){
-        if(prev != B[i]){
-            console.log(A[i-1], A[i]);
-            if(A[i-1] > A[i]){
-                A.splice(i-1, 1);
+(() => {
+    /**
+     * Quick way to check
+     * We use stack for all fish who goes upstream, and when we meet downstream fish we pop from the stack
+     * until we eat donwstream fish, or stack is empty
+     *
+     * @param str
+     * @returns {number}
+     */
+    const solution = (A, B) => {
+        const len = A.length;
+        const stack = [];
+        for(let i = 0; i < len; i++){
+            if(B[i] == 1){
+                stack.push(A[i]);
+                A[i] = null;
             }
             else{
-                A.splice(i, 1);
+                while(stack[stack.length-1] < A[i]){
+                    stack.pop();
+                }
+                if(stack.length > 0){
+                    A[i] = null;
+                }
             }
         }
-        else{
-            prev = B[i];
-        }
+        return stack.length + A.filter(k=>k).length;
     }
-    //console.log(A)
-    return A.length;
-}
 
 
-console.log(
-    solution([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]),
-    solution([1], [0])
-);
+    console.log(
+        solution([4, 3, 2, 1, 5, 1], [0, 1, 1, 1, 0, 1]),
+        solution([4, 3, 2, 1, 5], [0, 1, 0, 0, 0]),
+        solution([1], [0])
+    );
+})();

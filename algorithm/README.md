@@ -48,6 +48,12 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [Triangle](https://app.codility.com/programmers/lessons/6-sorting/triangle/) / [Solution](https://app.codility.com/demo/results/training77FQF7-XTW/)
     * [NumberOfDiscIntersections](https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/) / [Solution](https://app.codility.com/demo/results/trainingE9TH5T-2GK/)
 
+* [Lesson 7](https://app.codility.com/programmers/lessons/7-stacks_and_queues/)
+    * [Brackets](https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/) / [Solution](https://app.codility.com/demo/results/training2J7CN6-WHN/)
+    * [Fish](https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/) / [Solution](https://app.codility.com/demo/results/trainingMYJNDU-UZE/)
+    * [Nesting](https://app.codility.com/programmers/lessons/7-stacks_and_queues/nesting/) / [Solution](https://app.codility.com/demo/results/trainingTYXE7C-2U4/)
+    * [StoneWall](https://app.codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/) / [Solution](https://app.codility.com/demo/results/trainingR92RE3-ECM/)
+
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
     * [StrSymmetryPoint](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-StrSymmetryPoint.js)
