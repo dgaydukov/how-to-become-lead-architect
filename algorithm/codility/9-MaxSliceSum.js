@@ -2,37 +2,20 @@
     /**
      * https://en.wikipedia.org/wiki/Maximum_subarray_problem
      * The idea is super simple once you get it.
-     * Basically we calculate sequence as long as it sum greater than 0. Otherwise we start from beginning.
-     * Cause if later we got big sequese, previous less than 0 will only decrement it, se we can get rid of it
+     * Basically we build new array with sums, and then find max element
      * 
      * 
      * @param {*} arr 
      */
     const solution = (arr) => {
-        let sum = arr[0],
-            max = sum,
-            min = sum,
-            noZero = true;
+        let max = arr[0];
         for (let i = 1; i < arr.length; i++) {
-            sum += arr[i];
-            if (sum < 0) {
-                sum = 0;
+            if (arr[i] < arr[i] + arr[i - 1]) {
+                arr[i] += arr[i - 1];
             }
-            if (sum < arr[i]) {
-                sum = arr[i]
+            if (max < arr[i]) {
+                max = arr[i];
             }
-            if (max < sum) {
-                max = sum;
-            }
-            if (min < arr[i]) {
-                min = arr[i];
-            }
-            if (arr[i] == 0) {
-                noZero = false;
-            }
-        }
-        if (max == 0 && noZero) {
-            max = min;
         }
         return max;
     }

@@ -60,7 +60,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 * [Lesson 9](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/)
     * [MaxProfit](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/) / [Solution](https://app.codility.com/demo/results/training3M4XX8-T3C/)
-    * [MaxSliceSum](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/) / [Solution](https://app.codility.com/demo/results/trainingKCJC4R-77M/)
+    * [MaxSliceSum](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/) / [Solution](https://app.codility.com/demo/results/trainingKVUR4S-XZE/)
     * [MaxDoubleSliceSum](https://app.codility.com/programmers/lessons/9-maximum_slice_problem/max_double_slice_sum/) / [Solution]()
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
