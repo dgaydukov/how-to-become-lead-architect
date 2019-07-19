@@ -8,7 +8,7 @@
      * 
      * @param {*} arr 
      */
-    const solution = arr => {
+    const solution = (arr) => {
         let sum = arr[0],
             max = sum,
             min = sum,
