@@ -6,7 +6,7 @@
      * 
      * @param {*} arr 
      */
-    const solution = arr => {
+    const solution = (arr) => {
         const size = arr.length;
         const hash = {};
         for (let i = 0; i < size; i++) {

@@ -47,7 +47,7 @@
      * 
      * @param {*} arr 
      */
-    const solution = arr => {
+    const solution = (arr) => {
         const starts = [], ends = [];
         for (let i = 0; i < arr.length; i++) {
             starts.push(i - arr[i]);
