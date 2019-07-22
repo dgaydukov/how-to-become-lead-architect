@@ -1,0 +1,14 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "supervisor -e 'js|ejs|node|coffee' index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "supervisor": "0.12.0"
+  }
+}
