@@ -1,10 +1,10 @@
-(()=>{
+(() => {
 
     const getPeaksCount = arr => {
         let count = 0;
         let len = arr.length;
-        for(let i = 1; i < len-1; i++){
-            if(arr[i] > arr[i-1] && arr[i] > arr[i+1]){
+        for (let i = 1; i < len - 1; i++) {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
                 count++;
             }
         }
@@ -13,8 +13,8 @@
 
     const isPeak = arr => {
         const len = arr.length;
-        for(let i = 1; i < len-1; i++){
-            if(arr[i] > arr[i-1] && arr[i] > arr[i+1]){
+        for (let i = 1; i < len - 1; i++) {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
                 return true;
             }
         }
@@ -23,20 +23,20 @@
 
     const isAllPeaks = (arr, peaks) => {
         const len = arr.length;
-        if(len%peaks == 0){
+        if (len % peaks == 0) {
             const subArrLen = len / peaks;
-            for(let i = 0; i < peaks; i++){
+            for (let i = 0; i < peaks; i++) {
                 const start = i * subArrLen;
-                const end = (i+1) * subArrLen;
+                const end = (i + 1) * subArrLen;
                 const subArr = [];
-                if(arr[start-1]){
-                    subArr.push(arr[start-1]);
+                if (arr[start - 1]) {
+                    subArr.push(arr[start - 1]);
                 }
                 subArr.push(...arr.slice(start, end));
-                if(arr[end]){
+                if (arr[end]) {
                     subArr.push(arr[end]);
                 }
-                if(!isPeak(subArr)){
+                if (!isPeak(subArr)) {
                     return false;
                 }
             }
@@ -47,8 +47,8 @@
 
     const solution = arr => {
         let peaks = getPeaksCount(arr);
-        while(peaks > 0){
-            if(isAllPeaks(arr, peaks)){
+        while (peaks > 0) {
+            if (isAllPeaks(arr, peaks)) {
                 return peaks;
             }
             peaks--;
