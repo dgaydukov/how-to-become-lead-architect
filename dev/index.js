@@ -6,9 +6,7 @@
         arr[1]=0;
         for(let i = 2; i < size-1; i++){
             if(min > arr[i]){
-                console.log(arr[i-1])
                 arr[i-1] += min;
-                console.log(arr[i-1])
                 min = arr[i];
                 arr[i] = 0;
             }
@@ -20,7 +18,6 @@
                 arr[i] += prev;
             }
             else{
-                console.log("break")
                 min = 0
             }
             if(max < arr[i]){
@@ -40,8 +37,10 @@
         // solution([-8, 10, 20, -5, -7, -4]) == 30,
         // solution([-2, -3, -4, 1, -5, -6, -7]) == 1,
 
-        //solution([0, 6, -1, -10, 6, -30, -20, 9, -10, 0]),
-        solution([3, 2, 6, -1, 4, 5, -1, 2])
+        //solution([0, 6, -1, -10, 6, -30, -20, 9, -10, 9,0]),
+        //solution([3, 2, 6, -1, 4, 5, -1, 2])
+
+        solution([1, 1, 0, 10, -100, 10, 0])
     );
     
 })();
