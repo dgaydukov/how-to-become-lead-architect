@@ -7,7 +7,7 @@
      * 
      * @param {*} arr 
      */
-    const solution = arr => {
+    const solution = (arr) => {
         const size = arr.length;
         const peakArr = [];
         for (let i = 1; i < size - 1; i++) {

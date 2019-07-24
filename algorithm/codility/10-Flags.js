@@ -1,5 +1,5 @@
 (() => {
-    const getPeaksCount = arr => {
+    const getPeaksCount = (arr) => {
         let count = 0;
         let len = arr.length;
         for (let i = 1; i < len - 1; i++) {
