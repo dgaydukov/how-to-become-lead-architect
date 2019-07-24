@@ -1,48 +1,53 @@
-(()=>{
+(() => {
+    /**
+     * Naive solution with O(N**2) complexity, gives 100% correctness, but fails on perfomance
+     * https://app.codility.com/demo/results/training4C5H96-PPW/
+     * 
+     * @param {*} arr 
+     */
     const solution = (arr) => {
-        const size = arr.length,
-            base = [...arr];
-        let max = 0, min = arr[1];
-        arr[1]=0;
-        for(let i = 2; i < size-1; i++){
-            if(min > arr[i]){
-                arr[i-1] += min;
-                min = arr[i];
-                arr[i] = 0;
+        const size = arr.length;
+        const peaksArr = [];
+        for (let i = 1; i < size - 1; i++) {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+                peaksArr.push(i);
             }
-            if(arr[i-1] > 0){
-                let prev = arr[i-1];
-                if(base[i-1]>prev){
-                    prev = base[i-1]
-                }
-                arr[i] += prev;
-            }
-            else{
-                min = 0
-            }
-            if(max < arr[i]){
-                max = arr[i];
-            }
-            console.log(i, arr[i], arr[i-1], min, max)
         }
-        return max;
+        const peaksSize = peaksArr.length;
+        let flags = peaksSize;
+        let prev = peaksArr[0];
+        let prevIndex = 0;
+        let skip = 0;
+        for (let i = 1; i < peaksSize; i++) {
+            //console.log(i, peaksArr[i],prev,  flags)
+            if (peaksArr[i] - prev >= flags) {
+                prev = peaksArr[i];
+            }
+            else if (skip > 0) {
+                skip--;
+            }
+            else {
+                flags--;
+                skip = peaksSize - flags;
+                if (prevIndex > 0) {
+                    let _i = i;
+                    i = prevIndex;
+                    prevIndex = _i;
+                }
+            }
+        }
+        return flags;
     }
 
     console.log(
-        // solution([3, 2, 6, -1, 4, 5, -1, 2]) == 17,
-        // solution([5, 5, 5]) == 0,
-        // solution([5, 17, 0, 3]) == 17,
-        // solution([0, 10, -5, -2, 0]) == 10,
-        // solution([6, 1, 5, 6, 4, 2, 9, 4]) == 26,
-        // solution([-8, 10, 20, -5, -7, -4]) == 30,
-        // solution([-2, -3, -4, 1, -5, -6, -7]) == 1,
+        // solution([5]) == 0,
+        // solution([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]) == 3,
+        // solution([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]) == 2,
+        // solution([1, 3, 2]) == 1,
+        // solution([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2, 2,2, 6, 3]) == 4,
 
-        //solution([0, 6, -1, -10, 6, -30, -20, 9, -10, 9,0]),
-        //solution([3, 2, 6, -1, 4, 5, -1, 2])
-
-        solution([1, 1, 0, 10, -100, 10, 0])
+        solution([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1])
     );
-    
 })();
 
 
@@ -79,5 +84,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // imitate server
-while(true){}
+while (true) { }
