@@ -1,60 +1,41 @@
 (() => {
-    const getPeaksCount = (arr) => {
-        let count = 0;
-        let len = arr.length;
-        for (let i = 1; i < len - 1; i++) {
+    /**
+     * Naive solution with O(N**2) complexity, gives 100% correctness, but fails on perfomance
+     * https://app.codility.com/demo/results/training4C5H96-PPW/
+     * 
+     * @param {*} arr 
+     */
+    const solution = (arr) => {
+        const size = arr.length;
+        const peaksArr = [];
+        for (let i = 1; i < size - 1; i++) {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
-                count++;
+                peaksArr.push(i);
             }
         }
-        return count;
-    }
-    const getPeaksLength = arr => {
-        let count = 0;
-        let len = arr.length;
-        const lens = [];
-        for (let i = 1; i < len - 1; i++) {
-            count++;
-            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
-                lens.push(count);
-                count = 0;
+        const peaksSize = peaksArr.length;
+        let peaks = peaksSize;
+        while (peaks > 0) {
+            let flags = 1;
+            let prev = peaksArr[0];
+            for (let i = 1; i < peaksSize; i++) {
+                if (peaksArr[i] - prev >= peaks) {
+                    flags++;
+                    prev = peaksArr[i];
+                }
             }
-        }
-        lens.shift();
-        return lens;
-    }
-
-    const canPutFlags = (flags, peaks, lens) => {
-        const len = lens.length;
-        let length = 0;
-        for (let i = 0; i < len; i++) {
-            if (lens[i] + length < flags) {
-                peaks--;
-                length += lens[i];
+            if (flags >= peaks) {
+                return peaks;
             }
-            else {
-                length = 0;
-            }
-            if (flags > peaks) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    const solution = arr => {
-        const peaks = getPeaksCount(arr);
-        let flags = peaks;
-        const lens = getPeaksLength(arr);
-        while (flags > 0) {
-            if (canPutFlags(flags, peaks, lens)) {
-                return flags;
-            }
-            flags--;
+            peaks--;
         }
         return 0;
     }
 
-    const arr = [1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2];
-    console.log(solution(arr));
+    console.log(
+        solution([5]) == 0,
+        solution([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]) == 3,
+        solution([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]) == 2,
+        solution([1, 3, 2]) == 1
+    );
 })();
