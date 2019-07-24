@@ -66,7 +66,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
 * [Lesson 10](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/)
     * [CountFactors](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/count_factors/) / [Solution](https://app.codility.com/demo/results/trainingY3YYKS-TDN/)
     * [MinPerimeterRectangle](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/min_perimeter_rectangle/) / [Solution](https://app.codility.com/demo/results/trainingWPUFNM-YRY/)
-    * [Peaks](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/) / [Solution]()
+    * [Peaks](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/) / [Solution](https://app.codility.com/demo/results/training77YKSD-RZH/)
     * [Flags](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/) / [Solution]()
 
 
