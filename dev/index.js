@@ -1,3 +1,3 @@
-
-// imitate server
-while (true) { }
+(() => {
+    console.log("hello world");
+})();

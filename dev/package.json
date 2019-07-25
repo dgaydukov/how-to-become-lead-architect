@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "supervisor -e 'js|ejs|node|coffee' index.js"
+    "start": "supervisor -e 'js|ejs|node|coffee' server.js"
   },
   "author": "",
   "license": "ISC",
