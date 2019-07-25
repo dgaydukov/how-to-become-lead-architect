@@ -44,6 +44,24 @@
         return count;
     }
 
+    const sieve = (n) => {
+        const _sieve = [],
+            primes = [];
+        for(let i = 2; i < 2; i++){
+            _sieve[i] = 1;
+        }
+        for(let i = 2; i < 2; i++){
+            if(_sieve[i]){
+                primes.push(i);
+                for(let j = i * 2; j < n; j+=i){
+                    _sieve[j] = 0;
+                }
+            }
+        }
+        return primes;
+    }
+
+    console.log(sieve(10**6))
 
     console.log(
         // solution([15, 10, 9], [75, 30, 5]) == 1,
