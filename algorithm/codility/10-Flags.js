@@ -8,21 +8,21 @@
      */
     const solution = (arr) => {
         const size = arr.length;
-        const peaksArr = [];
+        const peaks = [];
         for (let i = 1; i < size - 1; i++) {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
-                peaksArr.push(i);
+                peaks.push(i);
             }
         }
-        const peaksSize = peaksArr.length;
-        let peaks = Math.floor(Math.sqrt(peaksArr[peaksSize - 1] - peaksArr[0])) + 1 || 0;
-        for (let i = peaks; i > 0; i--) {
+        const peaksSize = peaks.length;
+        let maxFlagNumber = Math.floor(Math.sqrt(peaks[peaksSize - 1] - peaks[0])) + 1 || 0;
+        for (let i = maxFlagNumber; i > 0; i--) {
             let flags = 1;
-            let prev = peaksArr[0];
+            let prev = peaks[0];
             for (let j = 1; j < peaksSize; j++) {
-                if (peaksArr[j] - prev >= i) {
+                if (peaks[j] - prev >= i) {
                     flags++;
-                    prev = peaksArr[j];
+                    prev = peaks[j];
                 }
             }
             if (flags >= i) {
