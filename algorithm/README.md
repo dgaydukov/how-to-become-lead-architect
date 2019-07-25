@@ -71,7 +71,11 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 * [Lesson 11](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/)
     * [CountSemiprimes](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/) / [Solution](https://app.codility.com/demo/results/training89XDVX-UAP/)
-    * [CountNonDivisible](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/) / [Solution]()
+    * [CountNonDivisible](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_non_divisible/) / [Solution](https://app.codility.com/demo/results/training3JSP55-YXV/)
+
+* [Lesson 12](https://app.codility.com/programmers/lessons/12-euclidean_algorithm/)
+    * [ChocolatesByNumbers](https://app.codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/) / [Solution](https://app.codility.com/demo/results/trainingQDBESN-E4D/)
+    * [CommonPrimeDivisors](https://app.codility.com/programmers/lessons/12-euclidean_algorithm/common_prime_divisors/) / [Solution]()
 
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
