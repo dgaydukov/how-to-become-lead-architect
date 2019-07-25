@@ -70,7 +70,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [Flags](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/) / [Solution](https://app.codility.com/demo/results/trainingJVFZWD-62B/)
 
 * [Lesson 11](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/)
-    * [CountSemiprimes](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/) / [Solution]()
+    * [CountSemiprimes](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/) / [Solution](https://app.codility.com/demo/results/training89XDVX-UAP/)
 
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 

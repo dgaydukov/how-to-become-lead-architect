@@ -1,75 +1,72 @@
-'use strict';
-
-
-const solution = (N, P, Q) => {
-    const len = P.length;
-    const semiPrimes = getSemiPrimes(getPrimes(Math.max(...P, ...Q))),
-        l = semiPrimes.length;
-    const arr = [];
-    for(let i = 0; i < len; i++){
-        arr[i] = 0;
-        for(let j = 0; j < l; j++){
-            if(semiPrimes[j] >= P[i] && semiPrimes[j]<=Q[i]){
-                arr[i]++;
+(() => {
+    /**
+     * The idea is simple
+     * 1. We calculate all primes less than half of semiprimes
+     * 2. Then calculate all semiprimes
+     * 3. Create inversed array with semiprimes, where index - is semiprime, and value - it's position
+     * 4. Create indexedSemiPrimes array with all indexed
+     * 5. For all values just calculate difference
+     * 
+     * https://app.codility.com/demo/results/training89XDVX-UAP/
+     * 
+     * @param {*} N 
+     * @param {*} P 
+     * @param {*} Q 
+     */
+    const solution = (N, P, Q) => {
+        const size = P.length,
+            sieve = [],
+            primes = [],
+            semiPrimes = [],
+            inversedSemiPrimes = [],
+            indexedSemiPrimes = [],
+            result = [];
+        const maxPrime = Math.floor(N / 2) + 1;
+        for (let i = 2; i < maxPrime; i++) {
+            sieve[i] = 1;
+        }
+        for (let i = 2; i < maxPrime; i++) {
+            if (sieve[i]) {
+                primes.push(i);
+                for (let j = i * 2; j < maxPrime; j += i) {
+                    sieve[j] = 0;
+                }
             }
         }
-    }
-    return arr;
-}
-
-
-const getSemiPrimes = (arr)=>{
-    const len = arr.length,
-        semiPrimes = [];
-    for(let i = 0; i < len; i++){
-        for(let j = i; j < len; j++){
-            semiPrimes.push(arr[i]*arr[j]);
-        }
-    }
-    return semiPrimes;
-}
-
-
-const getPrimes = (n) => {
-    let iteration = 0;
-    const primes = [];
-    for(let i = 2; i <=n; i++){
-        let isPrime = true;
-        const q = Math.floor(Math.sqrt(i));
-        for(let j = 2; j <=q; j++){
-            iteration++;
-            if(i % j == 0){
-                isPrime = false;
-                break;
+        const primesLen = primes.length;
+        for (let i = 0; i < primesLen; i++) {
+            for (let j = i; j < primesLen; j++) {
+                const semiPrime = primes[i] * primes[j];
+                if (semiPrime <= N) {
+                    semiPrimes.push(semiPrime);
+                }
             }
         }
-        if(isPrime){
-            primes.push(i)
+        semiPrimes.sort((a, b) => a - b);
+        const semiPrimeLen = semiPrimes.length;
+        for (let i = 0; i < semiPrimeLen; i++) {
+            inversedSemiPrimes[semiPrimes[i]] = i + 1;
         }
-    }
-    //console.log("iteration: "+iteration)
-    return primes;
-}
-
-
-
-function getPrimes2(max) {
-    let iteration = 0;
-    var sieve = [], i, j, primes = [];
-    for (i = 2; i <= max; ++i) {
-        if (!sieve[i]) {
-            // i has not been marked -- it is prime
-            primes.push(i);
-            for (j = i << 1; j <= max; j += i) {
-                iteration++;
-                sieve[j] = true;
+        let index = 0;
+        for (let i = 0; i <= N; i++) {
+            if (inversedSemiPrimes[i]) {
+                index = inversedSemiPrimes[i];
             }
+            indexedSemiPrimes.push(index);
         }
+        for (let i = 0; i < size; i++) {
+            let num = indexedSemiPrimes[Q[i]] - indexedSemiPrimes[P[i]];
+            //if starting value is already a semiprime
+            if (inversedSemiPrimes[P[i]]) {
+                num++;
+            }
+            result.push(num);
+        }
+        return result;
     }
-    //console.log("iteration: "+iteration)
-    return primes;
-}
 
-console.log(
-    solution(26, [1, 4, 16], [26, 10, 20]),
-);
+    console.log(
+        //JSON.stringify(solution(26, [1, 4, 16], [26, 10, 20])) == JSON.stringify([10, 4, 0]),
+        solution(26, [1, 4, 16], [26, 10, 20]),
+    );
+})();
