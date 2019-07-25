@@ -1,7 +1,8 @@
 (() => {
     /**
-     * Naive solution with O(N**2) complexity, gives 100% correctness, but fails on perfomance
-     * https://app.codility.com/demo/results/training4C5H96-PPW/
+     * Max possible flags would be squary root from peak difference (from first to last)
+     * 
+     * https://app.codility.com/demo/results/trainingJVFZWD-62B/
      * 
      * @param {*} arr 
      */
@@ -14,20 +15,19 @@
             }
         }
         const peaksSize = peaksArr.length;
-        let peaks = peaksSize;
-        while (peaks > 0) {
+        let peaks = Math.floor(Math.sqrt(peaksArr[peaksSize - 1] - peaksArr[0])) + 1 || 0;
+        for (let i = peaks; i > 0; i--) {
             let flags = 1;
             let prev = peaksArr[0];
-            for (let i = 1; i < peaksSize; i++) {
-                if (peaksArr[i] - prev >= peaks) {
+            for (let j = 1; j < peaksSize; j++) {
+                if (peaksArr[j] - prev >= i) {
                     flags++;
-                    prev = peaksArr[i];
+                    prev = peaksArr[j];
                 }
             }
-            if (flags >= peaks) {
-                return peaks;
+            if (flags >= i) {
+                return i;
             }
-            peaks--;
         }
         return 0;
     }
@@ -36,6 +36,8 @@
         solution([5]) == 0,
         solution([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]) == 3,
         solution([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]) == 2,
-        solution([1, 3, 2]) == 1
+        solution([1, 3, 2]) == 1,
+        solution([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2, 2, 2, 6, 3]) == 4,
+        solution([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1]) == 4,
     );
 })();
