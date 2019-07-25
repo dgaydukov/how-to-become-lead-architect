@@ -69,6 +69,9 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [Peaks](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/peaks/) / [Solution](https://app.codility.com/demo/results/training77YKSD-RZH/)
     * [Flags](https://app.codility.com/programmers/lessons/10-prime_and_composite_numbers/flags/) / [Solution](https://app.codility.com/demo/results/trainingJVFZWD-62B/)
 
+* [Lesson 11](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/)
+    * [CountSemiprimes](https://app.codility.com/programmers/lessons/11-sieve_of_eratosthenes/count_semiprimes/) / [Solution]()
+
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
