@@ -1,3 +1,5 @@
+'use strict';
+
 (() => {
     /**
      * First we calculate number of peaks. Then we get number of intervals. It's all divisors of total number in array to number of peaks to 1

@@ -1,3 +1,3 @@
 require('./index');
-// imitate server
+// imitate server\
 while (true) { }

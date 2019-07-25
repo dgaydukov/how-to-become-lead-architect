@@ -1,3 +1,5 @@
+'use strict';
+
 (() => {
     /**
      * The idea is simple

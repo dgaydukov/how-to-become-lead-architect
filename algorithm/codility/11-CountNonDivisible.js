@@ -1,3 +1,5 @@
+'use strict';
+
 (() => {
     /**
      * First we create array with unique values (just not to repeat operations)
