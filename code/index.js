@@ -1,74 +1,75 @@
-'use strict';
-
 (() => {
-    const solution = (arr1, arr2) => {
-        const size = arr1.length,
-            sieve = [],
-            primes = [];
-        let max = arr1[0];
+    const __fib = (n) => n < 2 ? 1 : __fib(n - 1) + __fib(n - 2);
+    const solution = (arr) => {
+        const size = arr.length,
+            leaves = [],
+            hash = {};
+        for(let i = 0; i < size; i++){
+            const fib = __fib(i);
+            hash[fib] = 1;
+            if(fib > size){
+                break;
+            }
+        }
+        if (hash[size + 1]) {
+            return 1;
+        }
         for (let i = 0; i < size; i++) {
-            if (max < arr1[i]) {
-                max = arr1[i];
-            }
-            if (max < arr2[i]) {
-                max = arr2[i];
+            if (arr[i] == 1) {
+                leaves.push(i + 1);
             }
         }
-        for (let i = 2; i <= max; i++) {
-            sieve[i] = 1;
+        leaves.push(size + 1);
+        const pos = {};
+        for (let i = 0; i < leaves.length; i++){
+            pos[leaves[i]] = i;
         }
-        for (let i = 2; i <= max; i++) {
-            if (sieve[i]) {
-                primes.push(i);
-                for (let j = i * 2; j <= max; j += i) {
-                    sieve[j] = 0;
+        let index = leaves.length-1;
+        let stop = 0;
+        const stack = [];
+        let sum = 0;
+        console.log(leaves, hash)
+        while(true){
+            const lenToNextLeaf = leaves[index] - sum;
+            console.log({index, stack, lenToNextLeaf, sum})
+            if(hash[lenToNextLeaf]){
+                stack.push(lenToNextLeaf);
+                sum += lenToNextLeaf;
+                if(sum == size + 1){
+                    return stack.length;
+                }
+                index = leaves.length-1;
+            }
+            else{
+                index--;
+                if(index < pos[stack[stack.length-1]]){
+                    sum -= stack.pop();
+                }
+                if(index == -1){
+                    if(stack.length > 0){
+                        index = pos[stack.pop()]
+                    }
+                    else{
+                        return -1;
+                    }
                 }
             }
-        }
-        let count = 0;
-        const primeLen = primes.length;
-        for (let i = 0; i < size; i++) {
-            const n1 = arr1[i],
-                n2 = arr2[i];
-            let check = true;
-            for (let j = 0; j < primeLen; j++) {
-                if (!((n1 % primes[j] == 0 && n2 % primes[j] == 0) || (n1 % primes[j] != 0 && n2 % primes[j] != 0))) {
-                    check = false;
-                    break;
-                }
-            }
-            if (check) {
-                count++;
-            }
-        }
-        return count;
-    }
+            
 
-    const sieve = (n) => {
-        const _sieve = [],
-            primes = [];
-        for(let i = 2; i < 2; i++){
-            _sieve[i] = 1;
-        }
-        for(let i = 2; i < 2; i++){
-            if(_sieve[i]){
-                primes.push(i);
-                for(let j = i * 2; j < n; j+=i){
-                    _sieve[j] = 0;
-                }
+
+            stop++;
+            if(stop == 10**1){
+                console.log(`reach stop limit`);
+                break;
             }
         }
-        return primes;
+        return -1;
     }
-
-    console.log(sieve(10**6))
 
     console.log(
-        // solution([15, 10, 9], [75, 30, 5]) == 1,
-        // solution([2, 1, 2], [1, 2, 2]) == 1,
-        // solution([7, 17, 5, 3], [7, 11, 5, 2]) == 2,
-        // solution([3, 9, 20, 11], [9, 81, 5, 13]) == 2,
-
-        solution([3, 9, 20, 11], [9, 81, 5, 13]),
+        //solution([0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0]) == 3,
+        //solution([0, 0, 0]) == -1,
+        
+        solution([0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]),
     )
 })();
