@@ -1,4 +1,15 @@
 (() => {
+    /**
+     * Naive solution
+     * So called brute-force. Basically we create a list of all primes from 2 to max (max - is maximum value from two arrays)
+     * Then for every element we check, that each prime either a divider or not
+     * The problem is that by the method we can calculate primes up to 10**7, that's why solution is not optimal
+     * https://app.codility.com/demo/results/trainingKY4ZGC-YSP/
+     * 
+     * 
+     * @param {*} arr1 
+     * @param {*} arr2 
+     */
     const solution = (arr1, arr2) => {
         const size = arr1.length,
             sieve = [],
@@ -44,11 +55,9 @@
 
 
     console.log(
-        // solution([15, 10, 9], [75, 30, 5]) == 1,
-        // solution([2, 1, 2], [1, 2, 2]) == 1,
-        // solution([7, 17, 5, 3], [7, 11, 5, 2]) == 2,
-        // solution([3, 9, 20, 11], [9, 81, 5, 13]) == 2,
-
-        solution([3, 9, 20, 11], [9, 81, 5, 13]),
+        solution([15, 10, 9], [75, 30, 5]) == 1,
+        solution([2, 1, 2], [1, 2, 2]) == 1,
+        solution([7, 17, 5, 3], [7, 11, 5, 2]) == 2,
+        solution([3, 9, 20, 11], [9, 81, 5, 13]) == 2,
     )
 })();
