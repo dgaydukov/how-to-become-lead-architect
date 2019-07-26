@@ -79,6 +79,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
 
 * [Lesson 13](https://app.codility.com/programmers/lessons/13-fibonacci_numbers/)
     * [Ladder](https://app.codility.com/programmers/lessons/13-fibonacci_numbers/ladder/) / [Solution](https://app.codility.com/demo/results/training39JTRP-QA8/)
+    * [FibFrog](https://app.codility.com/programmers/lessons/13-fibonacci_numbers/fib_frog/) / [Solution]
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
