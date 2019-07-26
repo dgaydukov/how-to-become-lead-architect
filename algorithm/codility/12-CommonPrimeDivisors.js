@@ -61,3 +61,80 @@
         solution([3, 9, 20, 11], [9, 81, 5, 13]) == 2,
     )
 })();
+
+
+'use strict';
+
+(() => {
+    /**
+     * Simple function to find Greater common divisor of 2 numbers using Euclid Algorithm
+     * 
+     * @param {*} a 
+     * @param {*} b 
+     */
+    const __gcd = (a, b) => {
+        if (a % b == 0) {
+            return b;
+        }
+        return __gcd(b, a % b)
+    }
+    /**
+     * All magic goes here
+     * 1. If 2 numbers are equal than they have all common divisors (both primes and not)
+     * 2. If at least one of the number 1, then they don't have any prime divisors (since 1 is not prime and don't have any divisors)
+     * 3. If GCD of 2 numbers 1 (so they don't have any common divisors) that also means there is no common prime divisors
+     * 4. We should donwgrade both numbers with gcd until they reach 1
+     * 
+     * https://app.codility.com/demo/results/trainingGSPU76-JE4/
+     * 
+     * @param {*} a 
+     * @param {*} b 
+     */
+    const __check = (a, b) => {
+        if (a == b) {
+            return true;
+        }
+        if (a == 1 || b == 1) {
+            return false;
+        }
+        const gcd = __gcd(a, b);
+        if (gcd == 1) {
+            return false;
+        }
+        let m = a / gcd, n = b / gcd;
+        while (m != 1) {
+            const _m = __gcd(m, gcd);
+            if (_m == 1) {
+                return false;
+            }
+            m /= _m;
+        }
+        while (n != 1) {
+            const _n = __gcd(n, gcd);
+            if (_n == 1) {
+                return false;
+            }
+            n /= _n;
+        }
+        return true;
+    }
+    const solution = (arr1, arr2) => {
+        const size = arr1.length;
+        let count = 0;
+        for (let i = 0; i < size; i++) {
+            if (__check(arr1[i], arr2[i])) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log(
+        solution([15, 10, 9], [75, 30, 5]) == 1,
+        solution([2, 1, 2], [1, 2, 2]) == 1,
+        solution([7, 17, 5, 3], [7, 11, 5, 2]) == 2,
+        solution([3, 9, 20, 11], [9, 81, 5, 13]) == 2,
+        solution([1, 35, 12, 64], [1, 119, 126, 62]) == 1,
+        solution([24, 64], [72, 62]) == 1,
+    )
+})();
