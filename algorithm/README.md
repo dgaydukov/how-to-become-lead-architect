@@ -82,11 +82,7 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [FibFrog](https://app.codility.com/programmers/lessons/13-fibonacci_numbers/fib_frog/) / [Solution]
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
-    * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js)
-    * [StrSymmetryPoint](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-StrSymmetryPoint.js)
-    * [TreeHeight](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-TreeHeight.js)
-    * [ArrayInversionCount](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-ArrayInversionCount.js)
-    * [PolygonConcavityIndex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-PolygonConcavityIndex.js)
+    * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js) / [Solution](https://app.codility.com/demo/results/trainingXMJXEB-AEP/)
 
 
 ###### Cryptography
