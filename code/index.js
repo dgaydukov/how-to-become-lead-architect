@@ -1,25 +1,35 @@
 (() => {
-    const solution = (arr, max) => {
+    /**
+     * Knapsack DP solution.
+     * Create 2D array of size+1 (as i/row) and weight+1 (as j/column), init all with 0.
+     * First row and column will stay at 0. For no item, for every weight from 0 to weight the max value would be 0
+     * The save true to first column. For every item for 0 weight the max value would be 0
+     * 
+     * @param {*} arr 
+     * @param {*} weight 
+     */
+    const solution = (arr, weight) => {
         const size = arr.length;
-        for (let i = 0; i < size; i++) {
-            const item = arr[i];
-            item.vpi = item.v / item.w;
-        }
-        arr.sort((a, b) => b.vpi - a.vpi);
-        console.log(arr)
-        let sum = 0;
-        for (let i = 0; i < size; i++) {
-            const item = arr[i];
-            if (max >= item.w) {
-                max -= item.w;
-                sum += item.v;
+        const res = [];
+        for (let i = 0; i <= size; i++) {
+            res[i] = [];
+            for (let j = 0; j <= weight; j++) {
+                res[i][j] = 0;
             }
         }
-        console.log(max)
-        return sum;
+        for (let i = 1; i <= size; i++) {
+            const w = arr[i - 1].w,
+                v = arr[i - 1].v;
+            for (let j = 1; j <= weight; j++) {
+                res[i][j] = w > j ? res[i - 1][j] : Math.max(res[i - 1][j], res[i - 1][j - w] + v);
+            }
+        }
+        return res[size][weight];
     }
+
     console.log(
-        //solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 2, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6) == 25,
+        // solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 2, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6) == 25,
+        // solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6) == 19,
         // solution([
         //     { w: 70, v: 135 },
         //     { w: 73, v: 139 },
@@ -38,72 +48,8 @@
         //     { w: 120, v: 240 },
         // ], 750) == 1458,
 
-        //solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6)
+        solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6)
     );
-
-
-    /*
-    // Input:
-// Values (stored in array v)
-// Weights (stored in array w)
-// Number of distinct items (n)
-// Knapsack capacity (W)
-// NOTE: The array "v" and array "w" are assumed to store all relevant values starting at index 1.
-
-for j from 0 to W do:
-    m[0, j] := 0
-
-for i from 1 to n do:
-    for j from 0 to W do:
-        if w[i] > j then:
-            m[i, j] := m[i-1, j]
-        else:
-            m[i, j] := max(m[i-1, j], m[i-1, j-w[i]] + v[i])
-    */
-
-    const solution2 = (arr, W) => {
-        const size = arr.length;
-        const res = [];
-        for (let i = 0; i <= size; i++) {
-            res[i] = [];
-        }
-        for (let i = 0; i < W; i++) {
-            res[0][i] = 0;
-        }
-        for (let i = 1; i <= size; i++) {
-            for (let j = 0; j < W; j++) {
-                const w = arr[i-1].w, 
-                    v = arr[i-1].v;
-                res[i][j] = w > j ? res[i - 1][j] : Math.max(res[i - 1][j], res[i - 1][j - w] + v);
-            }
-        }
-        console.log(res)
-        return res[size][W-1];
-    }
-
-    const solution3 = (arr, weight) => {
-        const size = arr.length;
-        const res = [];
-        arr.sort((a,b)=>a.w==b.w ? a.v-b.v : a.w-b.w);
-        for(let i = 0; i <= size; i++){
-            res[i] = [];
-            for(let j = 0; j <= weight; j++){
-                res[i][j] = 0;
-            }
-        }
-        for(let i = 1; i <= size; i++){
-            const w = arr[i].w, v = arr[i].v;
-            for(let j = 1; j <= weight; j++){
-                res[i][j] = w > j ? res[i-1][j] : Math.max(res[i-1][j], res[i-1][j-w]+v);
-            }
-        }
-        console.log(res)
-    }
-
-    console.log(
-        solution3([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6),
-        //solution2([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6),
-    )
 })();
 
 
