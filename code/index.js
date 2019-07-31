@@ -72,20 +72,37 @@ for i from 1 to n do:
         }
         for (let i = 1; i <= size; i++) {
             for (let j = 0; j < W; j++) {
-                const w = arr[i-1].w, v = arr[i-1].v;
-                if (w > j) {
-                    res[i][j] = res[i - 1][j];
-                }
-                else {
-                    res[i][j] = Math.max(res[i - 1][j], res[i - 1][j - w] + v);
-                }
+                const w = arr[i-1].w, 
+                    v = arr[i-1].v;
+                res[i][j] = w > j ? res[i - 1][j] : Math.max(res[i - 1][j], res[i - 1][j - w] + v);
             }
         }
+        console.log(res)
         return res[size][W-1];
     }
 
+    const solution3 = (arr, weight) => {
+        const size = arr.length;
+        const res = [];
+        arr.sort((a,b)=>a.w==b.w ? a.v-b.v : a.w-b.w);
+        for(let i = 0; i <= size; i++){
+            res[i] = [];
+            for(let j = 0; j <= weight; j++){
+                res[i][j] = 0;
+            }
+        }
+        for(let i = 1; i <= size; i++){
+            const w = arr[i].w, v = arr[i].v;
+            for(let j = 1; j <= weight; j++){
+                res[i][j] = w > j ? res[i-1][j] : Math.max(res[i-1][j], res[i-1][j-w]+v);
+            }
+        }
+        console.log(res)
+    }
+
     console.log(
-        solution2([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6),
+        solution3([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6),
+        //solution2([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6),
     )
 })();
 
