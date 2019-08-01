@@ -27,6 +27,7 @@
         return res[size][weight];
     }
 
+
     console.log(
         // solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 2, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6) == 25,
         // solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6) == 19,
@@ -48,11 +49,59 @@
         //     { w: 120, v: 240 },
         // ], 750) == 1458,
 
-        solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6)
+        solution([{ w: 3, v: 10 }, { w: 1, v: 3 }, { w: 3, v: 9 }, { w: 2, v: 5 }, { w: 1, v: 6 }], 6),
     );
+});
+
+(()=>{
+    const solution = (arr, weight) => {
+        const size = arr.length;
+        arr.sort((a,b)=>b.v/b.w-a.v/a.w);
+        console.log(arr)
+        let maxPrice = 0, index = 0;;
+        while(weight > 0){
+            if(arr[index].w <= weight){
+                weight -= arr[index].w;
+                maxPrice += arr[index].v;
+            }
+            else{
+                index++;
+            }
+        }
+        return maxPrice;
+    }
+
+    const solution2 = (arr, weight) => {
+        if(weight <= 0){
+            return 0;
+        }
+        let max = 0;
+        for(let i = 0; i < weight; i++){
+            max = Math.max(max, arr[i].v + solution2(arr, weight-i-1))
+            console.log({i, weight, v: arr[i].v, max})
+        }
+        console.log(`before return weight: ${weight}, max: ${max}`)
+        return max;
+    }
+
+    const solution3 = (arr, weight) => {
+        const F = [arr[0].v, arr[0].v];
+        for(let i = 2; i <= weight; i++){
+            F[i] = Math.max(arr[i-1].v, F[i-1]+F[i-2]);
+        }
+        //console.log(F)
+        return F[weight];
+    }
+
+    console.log(
+        // solution([{w:1, v:1},{w:2, v:5},{w:3, v:8},{w:4, v:9},{w:5, v:10},{w:6, v:17},{w:7, v:17},{w:8, v:20}], 8)==22,
+        // solution([{w:1, v:3},{w:2, v:5},{w:3, v:8},{w:4, v:9},{w:5, v:10},{w:6, v:17},{w:7, v:17},{w:8, v:20}], 8)==24,
+
+
+        solution2([{w:1, v:1},{w:2, v:6},{w:3, v:8},{w:4, v:9}], 4),
+        solution3([{w:1, v:1},{w:2, v:6},{w:3, v:8},{w:4, v:9}], 4),
+    )
 })();
-
-
 
 
 
