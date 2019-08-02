@@ -85,11 +85,18 @@
     }
 
     const solution3 = (arr, weight) => {
-        const F = [arr[0].v, arr[0].v];
-        for(let i = 2; i <= weight; i++){
-            F[i] = Math.max(arr[i-1].v, F[i-1]+F[i-2]);
+        const F = [0];
+        for(let i = 1; i <= weight; i++){
+            let max = 0;
+            for(let j = 1; j <= i; j++){
+                const v = arr[j-1].v + F[i-j];
+                if(max < v){
+                    max = v;
+                }
+            }
+            F[i] = max;
         }
-        //console.log(F)
+        console.log(F)
         return F[weight];
     }
 
@@ -98,7 +105,7 @@
         // solution([{w:1, v:3},{w:2, v:5},{w:3, v:8},{w:4, v:9},{w:5, v:10},{w:6, v:17},{w:7, v:17},{w:8, v:20}], 8)==24,
 
 
-        solution2([{w:1, v:1},{w:2, v:6},{w:3, v:8},{w:4, v:9}], 4),
+        //solution2([{w:1, v:1},{w:2, v:6},{w:3, v:8},{w:4, v:9}], 4),
         solution3([{w:1, v:1},{w:2, v:6},{w:3, v:8},{w:4, v:9}], 4),
     )
 })();
