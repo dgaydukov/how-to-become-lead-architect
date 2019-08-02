@@ -20,6 +20,7 @@
         for (let i = 1; i <= weight; i++) {
             let max = 0;
             for (let j = 1; j <= i; j++) {
+                // we count rod length from 1 to n, but array starts at index 0, so we should take it as j-1, not j
                 const v = arr[j - 1].v + F[i - j];
                 if (max < v) {
                     max = v;
