@@ -258,4 +258,23 @@
         solution([0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0])
 
     )
+});
+
+
+(()=>{
+    const solution = (arr, k, max) => {
+        const size = arr.length;
+        let sum = 0;
+        for(let i = 0; i < size; i++){
+            sum += arr[i];
+        }
+        console.log(sum, size)
+    }
+
+
+    console.log(
+        //solution([2,1,5,1,2,2,2], 3, 5) == 6,
+
+        solution([2,1,5,1,2,2,2], 3, 5)
+    )
 })();
