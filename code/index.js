@@ -1,44 +1,33 @@
 (() => {
-    /**
-     * We can approve the situation a little bit, to O(n*m/2)
-     * The point is that whenever we have found interval we remove it from array, so next iteration we don't check it anymore
-     * 
-     * https://app.codility.com/demo/results/trainingP6Z5SD-H2R/
-     * 
-     * @param {*} A 
-     * @param {*} B 
-     * @param {*} C 
-     */
-    const solution = (A, B, C) => {
-        const pSize = A.length,
-            nSize = C.length,
-            arr = [];
-        let nails = 0;
-        for (let i = 0; i < pSize; i++) {
-            arr.push([A[i], B[i]]);
+    const solution = (k, max, arr) => {
+        const size = arr.length;
+        let _k = k+1, subSum = 0;
+        max = Number.MIN_SAFE_INTEGER;
+        for(let i = 0; i < size; i++){
+            max = Math.max(max, arr[i]);
         }
-        for (let i = 0; i < nSize; i++) {
-            nails++;
-            const nail = C[i];
-            for (let j = arr.length - 1; j >= 0; j--) {
-                if (nail >= arr[j][0] && nail <= arr[j][1]) {
-                    arr.splice(j, 1);
+        while (_k > k) {
+            _k = 1;
+            for (let i = 0; i < size; i++) {
+                subSum += arr[i];
+                if (subSum > max) {
+                    _k++;
+                    subSum = 0;
+                    i--;
                 }
             }
-            if (arr.length == 0) {
-                return nails;
-            }
+            console.log(_k, k , max)
+            max++;
         }
-        return -1;
+        return max-1;
     }
 
     console.log(
-        // solution([1, 4, 5, 8], [4, 5, 9, 10], [4, 6, 7, 10, 2]) == 4,
-        // solution([1, 4, 5, 8], [4, 5, 9, 10], [2, 10, 7, 6, 4]) == 5,
-        // solution([1, 4, 5, 8], [4, 5, 9, 10], [10, 4, 6, 7, 2]) == 3,
-        // solution([2], [2], [1]) == -1,
-        // solution([3, 3], [4, 4], [3, 4]) == 1,
+        // solution(3, 5, [5, 3]) == 5,
+        // solution(3, 5, [2, 1, 5, 1, 2, 2, 2]) == 6,
+        // solution(1, 1, [0]) == 0,
+        // solution(1, 10, [5, 3]) == 8,
 
-        solution([1, 4, 5, 8], [4, 5, 9, 10], [2, 10, 7, 6, 4])
+        solution(1, 10, [5, 3])
     )
-})();
+});
