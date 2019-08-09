@@ -1,60 +1,54 @@
 (() => {
     /**
-     * Advanced solution. Basically we again go from back to front, but this time we guess the max number
-     * with binary search, instead of incrementing it 1 by 1
+     * We search nails for every plank using binary search
      * 
-     * https://app.codility.com/demo/results/trainingC5PYZ7-PPZ/
-     * 
-     * @param {*} k 
-     * @param {*} m 
-     * @param {*} arr 
+     * @param {*} A 
+     * @param {*} B 
+     * @param {*} C 
      */
-    const solution = (k, m, arr) => {
-        const size = arr.length;
-        let max = arr[0],
-            sum = arr[0];
-        for (let i = 1; i < size; i++) {
-            max = Math.max(max, arr[i]);
-            sum += arr[i];
-        }
-        let start = max,
-            end = sum,
-            mid = Math.ceil((start + end) / 2),
-            parts = getParts(arr, mid);
-        while (start <= end) {
-            if (parts > k) {
-                start = mid + 1;
+    const solution = (A, B, C) => {
+        const pSize = A.length,
+            nSize = C.length,
+            nails = [],
+            nailHash = {};
+        for (let i = 0; i < nSize; i++) {
+            const nail = C[i];
+            if (nailHash[nail] === undefined) {
+                nailHash[nail] = i;
+                nails.push(nail);
             }
             else {
-                end = mid - 1;
-            }
-            mid = Math.ceil((start + end) / 2);
-            parts = getParts(arr, mid);
-        }
-        return mid;
-    }
-    const getParts = (arr, max) => {
-        const size = arr.length;
-        let parts = 1,
-            subSum = 0;;
-        for (let i = 0; i < size; i++) {
-            subSum += arr[i];
-            if (subSum > max) {
-                parts++;
-                subSum = arr[i];
+                nailHash[nail] = Math.min(nailHash[nail], i);
             }
         }
-        return parts;
+        nails.sort((a, b) => a - b);
+        const uniqNailSize = nails.length;
+        for (let i = 0; i < pSize; i++) {
+            const from = A[i], to = B[i];
+            let start = 0, end = uniqNailSize, mid = Math.ceil((start+end)/2);
+            while(start <= end){
+                if(nails[mid] >= from){
+                    if(nails[mid] <= to){
+
+                    }
+                    else{
+
+                    }
+                }
+                else{
+                    start = mid + 1;
+                }
+            }
+        }
+        return -1;
     }
 
     console.log(
-        solution(3, 5, [2, 1, 5, 1, 2, 2, 2]) == 6,
-        solution(3, 5, [5, 3]) == 5,
-        solution(2, 5, [5, 3]) == 5,
-        solution(1, 1, [0]) == 0,
-        solution(1, 1, [1]) == 1,
-        solution(1, 10, [5, 3]) == 8,
-        solution(1, 10000, [10000]) == 10000,
-        solution(3, 90, [10, 20, 30, 40, 50, 60, 70, 80, 90]) == 170,
+        // solution([1, 4, 5, 8], [4, 5, 9, 10], [4, 6, 7, 10, 2]) == 4,
+        // solution([2], [2], [1]) == -1,
+        // solution([3, 3], [4, 4], [3, 4]) == 1,
+        // solution([1, 4, 5, 8], [4, 5, 9, 10], [10, 4, 6, 7, 2]) == 3,
+
+        solution([1, 4, 5, 8], [4, 5, 9, 10], [4, 6, 7, 10, 2, 4, 10])
     )
 })();
