@@ -82,7 +82,9 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [FibFrog](https://app.codility.com/programmers/lessons/13-fibonacci_numbers/fib_frog/) / [Solution](https://app.codility.com/demo/results/trainingZMTTEA-TE8/)
 
 * [Lesson 14](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/)
-    * [MinMaxDivision](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/) / [Solution]()
+    * [MinMaxDivision](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/) / [Solution](https://app.codility.com/demo/results/trainingC5PYZ7-PPZ/)
+    * [NailingPlanks](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/nailing_planks/) / [Soluti(on]
+    
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
     * [SqlSum](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/algorithm/codility/99-SqlSum.js) / [Solution](https://app.codility.com/demo/results/trainingXMJXEB-AEP/)
