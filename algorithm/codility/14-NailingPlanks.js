@@ -87,3 +87,64 @@
         solution([1, 4, 5, 8], [4, 5, 9, 10], [10, 4, 6, 7, 2]) == 3,
     )
 })();
+
+
+(() => {
+    /**
+     * The best approach with O(M*Log(N)) time complexity
+     * 
+     * We use prefix sum algorithm to check can we nail all planks with some numbers of nails
+     * And we use binary search to choose the right minimum number of nails
+     * 
+     * https://app.codility.com/demo/results/trainingGKK7JS-CXG/
+     * 
+     * @param {*} A 
+     * @param {*} B 
+     * @param {*} C 
+     */
+    const solution = (A, B, C) => {
+        let start = 1,
+            end = C.length,
+            result = -1;
+        while (start <= end) {
+            const mid = Math.floor((start + end) / 2);
+            if (nailed(A, B, C, mid)) {
+                result = mid;
+                end = mid - 1;
+            }
+            else {
+                start = mid + 1;
+            }
+        }
+        return result;
+    }
+
+    const nailed = (A, B, C, nails) => {
+        const pSize = A.length,
+            // cause the max value is 2 of length
+            max = C.length * 2 + 1,
+            arr = [];
+        for (let i = 0; i < max; i++) {
+            arr[i] = 0;
+        }
+        for (let i = 0; i < nails; i++) {
+            arr[C[i]] = 1;
+        }
+        for (let i = 1; i < max; i++) {
+            arr[i] += arr[i - 1];
+        }
+        for (let i = 0; i < pSize; i++) {
+            if (arr[B[i]] - arr[A[i] - 1] < 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    console.log(
+        solution([1, 4, 5, 8], [4, 5, 9, 10], [4, 6, 7, 10, 2]) == 4,
+        solution([2], [2], [1]) == -1,
+        solution([3, 3], [4, 4], [3, 4]) == 1,
+        solution([1, 4, 5, 8], [4, 5, 9, 10], [10, 4, 6, 7, 2]) == 3,
+    )
+})();
