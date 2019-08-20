@@ -30,6 +30,10 @@
 
     console.log(
         solution(6, [3, 4, 5, 5, 2]) == 9,
+        solution(6, [3, 4, 5, 4, 2]) == 11,
+        solution(6, [3, 4, 5, 6, 4, 2]) == 17,
+        solution(6, [4, 1, 1, 5, 1]) == 8,
+        solution(6, [1, 2, 3, 4, 5, 3]) == 18,
     )
 })();
 
@@ -39,7 +43,7 @@
      * so if we have 1,2,3,4,5 - all unique numbers, the number of slices is n*(n+1)/2
      * So we keep track of unique interval, and when it breaks we rebuild it
      * 
-     * https://app.codility.com/demo/results/training5KV8UY-FTX/
+     * https://app.codility.com/demo/results/trainingGN8PKD-KZ8/
      * 
      * @param {*} m 
      * @param {*} arr 
@@ -57,9 +61,6 @@
             }
             else {
                 count += n * (n + 1) / 2;
-                if (count >= max) {
-                    return max;
-                }
                 const index = hash[arr[i]];
                 n = i - index;
                 const diff = n - 1;
@@ -68,6 +69,53 @@
                 for (let j = index + 1; j <= i; j++) {
                     hash[arr[j]] = j
                 }
+            }
+        }
+        count += n * (n + 1) / 2;
+        if (count >= max) {
+            return max;
+        }
+        return count;
+    }
+
+    console.log(
+        solution(6, [3, 4, 5, 5, 2]) == 9,
+        solution(6, [3, 4, 5, 4, 2]) == 11,
+        solution(6, [3, 4, 5, 6, 4, 2]) == 17,
+        solution(6, [4, 1, 1, 5, 1]) == 8,
+        solution(6, [1, 2, 3, 4, 5, 3]) == 18,
+    )
+})();
+
+
+(() => {
+    /**
+     * Improvement from the previous approach, basically we don't recreate hash every time,
+     * but check fo lastIndex (index when last break of unique sequence happened)
+     * 
+     * https://app.codility.com/demo/results/trainingSNACCX-UDA/
+     * 
+     * @param {*} m 
+     * @param {*} arr 
+     */
+    const solution = (m, arr) => {
+        const size = arr.length,
+            max = 10 ** 9;
+        let hash = {},
+            count = 0,
+            n = 0,
+            lastIndex = 0;
+        for (let i = 0; i < size; i++) {
+            if (hash[arr[i]] === undefined || hash[arr[i]] < lastIndex) {
+                hash[arr[i]] = i;
+                n++;
+            }
+            else {
+                count += n * (n + 1) / 2;
+                lastIndex = hash[arr[i]];
+                n = i - lastIndex;
+                const diff = n - 1;
+                count -= diff * (diff + 1) / 2;
                 hash[arr[i]] = i;
             }
         }
@@ -84,5 +132,6 @@
         solution(6, [3, 4, 5, 6, 4, 2]) == 17,
         solution(6, [4, 1, 1, 5, 1]) == 8,
         solution(6, [1, 2, 3, 4, 5, 3]) == 18,
+        solution(6, [1, 2, 3, 4, 5, 3, 2, 1]) == 27,
     )
 })();
