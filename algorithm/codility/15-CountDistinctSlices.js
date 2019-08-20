@@ -6,7 +6,7 @@
      * https://app.codility.com/demo/results/trainingEGVRM4-9SK/
      * 
      */
-    solution = (m, arr) => {
+    const solution = (m, arr) => {
         const size = arr.length,
             max = 10 ** 9;
         let count = 0;
@@ -30,5 +30,59 @@
 
     console.log(
         solution(6, [3, 4, 5, 5, 2]) == 9,
+    )
+})();
+
+(() => {
+    /**
+     * More advanced solution. We can notice that the number of intervals in case of unique sequence is the total sum
+     * so if we have 1,2,3,4,5 - all unique numbers, the number of slices is n*(n+1)/2
+     * So we keep track of unique interval, and when it breaks we rebuild it
+     * 
+     * https://app.codility.com/demo/results/training5KV8UY-FTX/
+     * 
+     * @param {*} m 
+     * @param {*} arr 
+     */
+    const solution = (m, arr) => {
+        const size = arr.length,
+            max = 10 ** 9;
+        let hash = {},
+            count = 0,
+            n = 0;
+        for (let i = 0; i < size; i++) {
+            if (hash[arr[i]] === undefined) {
+                hash[arr[i]] = i;
+                n++;
+            }
+            else {
+                count += n * (n + 1) / 2;
+                if (count >= max) {
+                    return max;
+                }
+                const index = hash[arr[i]];
+                n = i - index;
+                const diff = n - 1;
+                count -= diff * (diff + 1) / 2;
+                hash = {}
+                for (let j = index + 1; j <= i; j++) {
+                    hash[arr[j]] = j
+                }
+                hash[arr[i]] = i;
+            }
+        }
+        count += n * (n + 1) / 2;
+        if (count >= max) {
+            return max;
+        }
+        return count;
+    }
+
+    console.log(
+        solution(6, [3, 4, 5, 5, 2]) == 9,
+        solution(6, [3, 4, 5, 4, 2]) == 11,
+        solution(6, [3, 4, 5, 6, 4, 2]) == 17,
+        solution(6, [4, 1, 1, 5, 1]) == 8,
+        solution(6, [1, 2, 3, 4, 5, 3]) == 18,
     )
 })();
