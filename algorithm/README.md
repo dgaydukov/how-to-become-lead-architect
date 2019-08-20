@@ -84,6 +84,9 @@ Algorithms is very important in developer life. If you want to be a good dev you
 * [Lesson 14](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/)
     * [MinMaxDivision](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/) / [Solution](https://app.codility.com/demo/results/trainingC5PYZ7-PPZ/)
     * [NailingPlanks](https://app.codility.com/programmers/lessons/14-binary_search_algorithm/nailing_planks/) / [Solution](https://app.codility.com/demo/results/trainingGKK7JS-CXG/)
+
+* [Lesson 15](https://app.codility.com/programmers/lessons/15-caterpillar_method/)
+    * [CountDistinctSlices](https://app.codility.com/programmers/lessons/15-caterpillar_method/count_distinct_slices/) / [Solution]()
     
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
