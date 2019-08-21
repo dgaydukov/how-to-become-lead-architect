@@ -29,7 +29,7 @@
 
     (() => {
         /**
-         * Execution for 10k takes on average 800sec
+         * Execution for 10k takes on average 260sec
          */
         const arr = [], n = 10 ** 4;
         for (let i = 0; i < n; i++) {
