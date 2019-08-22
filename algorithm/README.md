@@ -90,6 +90,10 @@ Algorithms is very important in developer life. If you want to be a good dev you
     * [CountTriangles](https://app.codility.com/programmers/lessons/15-caterpillar_method/count_triangles/) / [Solution](https://app.codility.com/demo/results/trainingJWS8VG-VT9/)
     * [AbsDistinct](https://app.codility.com/programmers/lessons/15-caterpillar_method/abs_distinct/) / [Solution](https://app.codility.com/demo/results/training6N48AQ-C68/)
     * [MinAbsSumOfTwo](https://app.codility.com/programmers/lessons/15-caterpillar_method/min_abs_sum_of_two/) / [Solution](https://app.codility.com/demo/results/trainingJ3Z3BT-VK3/)
+
+* [Lesson 16](https://app.codility.com/programmers/lessons/16-greedy_algorithms/)
+    * [TieRopes](https://app.codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/) / [Solution](https://app.codility.com/demo/results/trainingQ73HSR-8MV/)
+    * [MaxNonoverlappingSegments](https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/) / [Solution]()
     
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
