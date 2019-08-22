@@ -94,6 +94,9 @@ Algorithms is very important in developer life. If you want to be a good dev you
 * [Lesson 16](https://app.codility.com/programmers/lessons/16-greedy_algorithms/)
     * [TieRopes](https://app.codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/) / [Solution](https://app.codility.com/demo/results/trainingQ73HSR-8MV/)
     * [MaxNonoverlappingSegments](https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/) / [Solution](https://app.codility.com/demo/results/trainingDYA7KF-GKT/)
+
+* [Lesson 17](https://app.codility.com/programmers/lessons/17-dynamic_programming/)
+    * [NumberSolitaire](https://app.codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/) / [Solution]()
     
 
 * [Lesson 99](https://app.codility.com/programmers/lessons/99-future_training/) 
