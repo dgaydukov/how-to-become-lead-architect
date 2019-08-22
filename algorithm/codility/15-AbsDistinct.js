@@ -1,6 +1,6 @@
 (() => {
     /**
-     * Simple solution with O(n) time complexity
+     * Simple solution with O(N) time complexity
      * 
      * https://app.codility.com/demo/results/training6N48AQ-C68/
      * 

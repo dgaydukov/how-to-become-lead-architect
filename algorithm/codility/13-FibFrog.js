@@ -6,7 +6,7 @@
      * there is 1 step to get to 5
      * there are 2 steps to get to 7 (one from 5 + 1 to 5 itself)
      * there are 3 steps to get to 12 (1 from 7 + 2 to 7 itself)
-     * Unfortunately time complexity is O(n**2). Cause for every leaf we shold check it against all previous leaves
+     * Unfortunately time complexity is O(N^2). Cause for every leaf we shold check it against all previous leaves
      * 
      * https://app.codility.com/demo/results/trainingBUK8RX-HKX/
      * 

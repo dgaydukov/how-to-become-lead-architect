@@ -1,6 +1,6 @@
 (() => {
     /**
-     * Naive solution with O(n^2) time complexity
+     * Naive solution with O(N^2) time complexity
      * 
      * https://app.codility.com/demo/results/trainingU9K2AJ-4JK/
      * 

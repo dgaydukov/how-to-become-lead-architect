@@ -43,7 +43,7 @@
 
 (() => {
     /**
-     * More advanced solution with O(n**2) time complexity
+     * More advanced solution with O(N^2) time complexity
      * The main difference here, is that we don't count thrid side (c) from the start. 
      * Instead we use precalculated value. Imageine that with a and b we can build 5 triangles max
      * That meand for a+1 and b+1 we can build this 5, plus some more. So we don't have to run this 5 times, cause we already can 

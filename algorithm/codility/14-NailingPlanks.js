@@ -1,6 +1,6 @@
 (() => {
     /**
-     * Naive approach with time complexity O(n*m)
+     * Naive approach with time complexity O(N*M)
      * Basically for every nail we check, can we found interval. If yes, we mark this interval as visited
      * And continue until we mark all intervals or finish our nails
      * 

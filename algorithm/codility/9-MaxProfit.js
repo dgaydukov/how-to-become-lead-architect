@@ -2,7 +2,7 @@
 
 (()=>{
     /**
-     * Naive solution solution with O(n^2) time complexity,
+     * Naive solution solution with O(N^2) time complexity,
      * Perfomance: 66%
      * https://app.codility.com/demo/results/training3NETS9-RM8/
      *

@@ -26,7 +26,7 @@
 (() => {
 
     /**
-     * Smart solution with O(sqrt(n)) time complexity
+     * Smart solution with O(sqrt(N)) time complexity
      * The idea is that we find divisors only to the sqrt(n) number. And if we found one, we enlarge counter by 2, because divisor ara double itself
      * 24 / 2 (so we have, divisors are 2 & 12)
      * 24 /3 ( 3 & 8)

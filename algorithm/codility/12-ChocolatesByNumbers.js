@@ -2,7 +2,7 @@
 
 (() => {
     /**
-     * Simple solution with time complexity O(n+m)
+     * Simple solution with time complexity O(N+M)
      * 
      * https://app.codility.com/demo/results/trainingA8QB5X-79S/
      *
