@@ -2,30 +2,30 @@
 
 ## Content
 * [Intro](#intro)
-* [C](#always-use-promise/async-await-(never-use-callbacks))
-* [C++](#use-eventemitter-when-need-to-connect-multiple-classes)
-* [JavaScript/TypeScript](#always-use-typescript)
-* [Java](#always-write-tests)
+* [C](#c)
+* [C++](#c++)
+* [JavaScript/TypeScript](#javascript/typescript)
+* [Java](#java)
 
 ### Intro
 
-
- 
-
-
+There are a lot of fuss over the internet about passing params by value or by reference. If everything is clear with primitive types (number, boolean), it's get tough with complex types (arrays and objects).
+Here is my attempt to clarify things.
 
 ### C
 
-I think there are should be no comments. Always write tests.
+```c
+```
 
 ### C++
 
-I think there are should be no comments. Always write tests.
+```c++
+```
 
 
 ### JavaScript/TypeScript
 
-Here I'm using `typescript` so to be compecent with all other languages
+Here I'm using `TypeScript` so to be compecent with all other languages. `JavaScript` has only 1 way to pass params, by value.
 
 ```typescript
 (()=>{
@@ -63,7 +63,7 @@ Here I'm using `typescript` so to be compecent with all other languages
 
 ### Java
 
-Java works the same as `javascript`, so here is the code
+`Java` works the same as `javascript`. `Java` has only 1 way to pass params, by value.
 
 ```java
 

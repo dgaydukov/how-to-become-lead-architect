@@ -20,6 +20,7 @@ This section will be organised as a list of articles with source code examples
 * [Private variables inside js classes](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/js-class-private-variable.md)
 * [Multi-threading Node.js](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/multi-threaded-nodejs.md)
 * [Node.js Express vs Koa](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/nodejs-express-vs-koa.md)
+* [Pass-by-value vs Pass-by-reference with C/C++/JavaScript/Java examples](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/pass-by-value-vs-pass-by-reference.md)
 * [Promise Parallel vs Sequential execution](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/promise-paralles-vs-sequential.md)
 * [Promise.race real world example](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/promise-race-real-wordl-example.md)
 * [REST & Socket with Repository pattern](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/rest-socket-repository.md)
