@@ -3,8 +3,8 @@
 ## Content
 * [Intro](#intro)
 * [C](#c)
-* [C++](#c++)
-* [JavaScript/TypeScript](#javascript/typescript)
+* [C++](#c\+\+)
+* [JavaScript/TypeScript](#javascript\/typescript)
 * [Java](#java)
 
 ### Intro
