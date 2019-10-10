@@ -195,9 +195,9 @@ public class App {
     public static void main(String args[]) {
         Number n = 1;
         Dog dog = new Dog(NAME_MAX);
-        System.out.println("primitive: " + n + ", name: " + dog.getName());
+        System.out.println("primitive: " + n + ", name: " + dog.getName()); // primitive: 1, name: Max
         modify(n, dog);
-        System.out.println("primitive: " + n + ", name: " + dog.getName());
+        System.out.println("primitive: " + n + ", name: " + dog.getName()); // primitive: 1, name: Charlie
     }
 
     public static void modify(Number primitive, Dog complex) {
