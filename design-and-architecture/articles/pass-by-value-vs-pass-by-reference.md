@@ -10,7 +10,10 @@
 ### Intro
 
 There are a lot of fuss over the internet about passing params by value or by reference. If everything is clear with primitive types (number, boolean), it's get tough with complex types (arrays and objects).
-Here is my attempt to clarify things.
+Here is my attempt to clarify things. To answer short most languages pass only by value. But when we pass complex object, it pass value of it pointer. That's why as long as we change pointer values we change actual object,
+but when we assign new object to pointer inside function, this pointer is no longer point to external object, and all operations are done to local copy instead.
+`C/C++` has notion of pointers, so we can pass pointer to pointer (`**`). In such case we can change object inside function even if we assing it new object.
+`C++` has references by which we can also change values.
 
 ### C
 
@@ -69,9 +72,9 @@ int main(){
     int val = 1;
     int pointer = 1;
     int ref = 1;
-    std::cout << "val: " << val << ", pointer: " << pointer << ", ref: " << ref << std::endl;
+    std::cout << "val: " << val << ", pointer: " << pointer << ", ref: " << ref << std::endl; // val: 1, pointer: 1, ref: 1
     modifyPrimitives(val, &pointer, ref);
-    std::cout << "val: " << val << ", pointer: " << pointer << ", ref: " << ref << std::endl;
+    std::cout << "val: " << val << ", pointer: " << pointer << ", ref: " << ref << std::endl; // val: 1, pointer: 2, ref: 2
 
     std::cout << std::endl;
 
@@ -80,9 +83,9 @@ int main(){
     Dog dRef(NAME_MAX);
     Dog *dRefPointer = new Dog(NAME_MAX);
     Dog *dDblPointer = new Dog(NAME_MAX);
-    std::cout << "val: " << dVal.getName() << ", pointer: " << dPointer.getName() << ", ref: " << dRef.getName() << ", ref: " << dRefPointer->getName() << ", ref: " << dDblPointer->getName() << std::endl;
+    std::cout << "val: " << dVal.getName() << ", pointer: " << dPointer.getName() << ", ref: " << dRef.getName() << ", dRefPointer: " << dRefPointer->getName() << ", dDblPointer: " << dDblPointer->getName() << std::endl; // val: Max, pointer: Max, ref: Max, dRefPointer: Max, dDblPointer: Max
     modifyObjects(dVal, &dPointer, dRef, dRefPointer, &dDblPointer);
-    std::cout << "val: " << dVal.getName() << ", pointer: " << dPointer.getName() << ", ref: " << dRef.getName() << ", ref: " << dRefPointer->getName() << ", ref: " << dDblPointer->getName() << std::endl;
+    std::cout << "val: " << dVal.getName() << ", pointer: " << dPointer.getName() << ", ref: " << dRef.getName() << ", dRefPointer: " << dRefPointer->getName() << ", dDblPointer: " << dDblPointer->getName() << std::endl; // val: Max, pointer: Charlie, ref: Charlie, dRefPointer: Oscar, dDblPointer: Oscar
     
 
     return 0;
