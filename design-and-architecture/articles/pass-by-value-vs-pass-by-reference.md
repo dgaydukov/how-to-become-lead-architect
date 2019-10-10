@@ -67,6 +67,39 @@ Here I'm using `TypeScript` so to be compecent with all other languages. `JavaSc
 
 ```java
 
+class Dog {
+    private String name;
+
+    public Dog(String _name) {
+        this.setName(_name);
+    }
+
+    public void setName(String _name) {
+        name = _name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class App {
+    public static void main(String args[]) {
+        Number n = 1;
+        Dog dog = new Dog("Max");
+        System.out.println("primitive: " + n + ", name: " + dog.getName());
+        modify(n, dog);
+        System.out.println("primitive: " + n + ", name: " + dog.getName());
+    }
+
+    public static void modify(Number primitive, Dog complex) {
+        primitive = 2; // modify local copy of passed param
+
+        complex.setName("Ralf"); // modify passed param
+
+        complex = new Dog("Gooi"); // create new local copy, since here all is done with newly created local copy
+    }
+}
 ```
 
 
