@@ -18,6 +18,39 @@ but when we assign new object to pointer inside function, this pointer is no lon
 ### C
 
 ```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Dog
+{
+    char *name;
+};
+
+void setName(struct Dog *dog, char *_name){
+    strcpy(dog->name, _name);
+}
+
+char *getName(struct Dog *dog){
+    return dog->name;
+}
+
+void initDog(struct Dog *dog, char *_name){
+    setName(dog, _name);
+}
+
+
+
+
+int main(){
+    struct Dog d;
+    initDog(&d, "Max");
+    printf("%s\n", getName(&d));
+    setName(&d, "Charlie");
+    printf("%s\n", getName(&d));
+
+    return 0;
+}
 ```
 
 ### C++
