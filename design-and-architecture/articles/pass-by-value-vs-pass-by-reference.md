@@ -95,37 +95,39 @@ int main(){
 Here I'm using `TypeScript` so to be compecent with all other languages. `JavaScript` has only 1 way to pass params, by value.
 
 ```typescript
-(()=>{
-    class Dog{
-        private name: string;
+const NAME_MAX: string = "Max";
+const NAME_CHARLIE: string = "Charlie";
+const NAME_OSCAR: string = "Oscar";
 
-        constructor(_name: string){
-            this.setName(_name);
-        }
+class Dog{
+    private name: string;
 
-        setName(_name: string){
-            this.name = _name;
-        }
-
-        getName(){
-            return this.name;
-        }
+    constructor(_name: string){
+        this.setName(_name);
     }
 
-    const modify = (primitive: number, complex: Dog) => {
-        primitive = 2; // modify local copy of passed param
-        
-        complex.setName("Ralf"); // modify passed param
-
-        complex = new Dog("Gooi"); // create new local copy, since here all is done with newly created local copy
+    setName(_name: string){
+        this.name = _name;
     }
 
-    const n = 1;
-    const dog = new Dog("Max");
-    console.log(n, dog.getName()); // 1, Max
-    modify(n, dog);
-    console.log(n, dog.getName()); // 1, Ralf
-})();
+    getName(){
+        return this.name;
+    }
+}
+
+const modify = (primitive: number, complex: Dog) => {
+    primitive = 2; // modify local copy of passed param
+    
+    complex.setName(NAME_CHARLIE); // modify passed param
+
+    complex = new Dog(NAME_OSCAR); // create new local copy, since here all is done with newly created local copy
+}
+
+const n = 1;
+const dog = new Dog(NAME_MAX);
+console.log(n, dog.getName()); // 1, Max
+modify(n, dog);
+console.log(n, dog.getName()); // 1, Ralf
 ```
 
 ### Java
@@ -133,7 +135,6 @@ Here I'm using `TypeScript` so to be compecent with all other languages. `JavaSc
 `Java` works the same as `javascript`. `Java` has only 1 way to pass params, by value.
 
 ```java
-
 class Dog {
     private String name;
 
@@ -151,9 +152,13 @@ class Dog {
 }
 
 public class App {
+    private static String NAME_MAX = "Max";
+    private static String NAME_CHARLIE = "Charlie";
+    private static String NAME_OSCAR = "Oscar";
+
     public static void main(String args[]) {
         Number n = 1;
-        Dog dog = new Dog("Max");
+        Dog dog = new Dog(NAME_MAX);
         System.out.println("primitive: " + n + ", name: " + dog.getName());
         modify(n, dog);
         System.out.println("primitive: " + n + ", name: " + dog.getName());
@@ -162,9 +167,9 @@ public class App {
     public static void modify(Number primitive, Dog complex) {
         primitive = 2; // modify local copy of passed param
 
-        complex.setName("Ralf"); // modify passed param
+        complex.setName(NAME_CHARLIE); // modify passed param
 
-        complex = new Dog("Gooi"); // create new local copy, since here all is done with newly created local copy
+        complex = new Dog(NAME_OSCAR); // create new local copy, since here all is done with newly created local copy
     }
 }
 ```
