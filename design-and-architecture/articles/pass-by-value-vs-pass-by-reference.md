@@ -63,6 +63,8 @@ void modifyObjects(struct Dog d, struct Dog* dPointer){
 
     dPointer = malloc(sizeof(struct Dog)); // reassign pointer to local object, since here all changes affect local scope
     setName(dPointer, NAME_OSCAR);
+
+    free(dPointer);
 }
 
 int main(){
@@ -86,6 +88,7 @@ int main(){
     modifyObjects(d, dPointer);
     printf("d: %s, dPointer: %s\n", getName(&d), getName(dPointer)); // d: Max, dPointer: Charlie
 
+    free(dPointer);
     return 0;
 }
 ```
