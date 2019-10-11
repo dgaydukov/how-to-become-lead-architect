@@ -162,6 +162,8 @@ int main(){
     modifyObjects(dVal, &dPointer, dRef, dRefPointer, &dDblPointer);
     std::cout << "val: " << dVal.getName() << ", pointer: " << dPointer.getName() << ", ref: " << dRef.getName() << ", dRefPointer: " << dRefPointer->getName() << ", dDblPointer: " << dDblPointer->getName() << std::endl; // val: Max, pointer: Charlie, ref: Charlie, dRefPointer: Oscar, dDblPointer: Oscar
     
+    delete dRefPointer;
+    delete dDblPointer;
 
     return 0;
 }
