@@ -17,14 +17,22 @@ but when we assign new object to pointer inside function, this pointer is no lon
 
 ### C
 
+In `C` we can pass primitives and objects as copies or as pointers. When we pass as copy, of course we can't change value outside function scope, cause we are working with local copy.
+But when we do pass as pointer, as long as we change pointer, all changes affect external variable. But once we reassign our pointer to new variable inside function scope, our pointer is no longer
+pointing to our external variable, so since now all changes to pointer affect 
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+char NAME_MAX[] = "Max";
+char NAME_CHARLIE[] = "Charlie";
+char NAME_OSCAR[] = "Oscar";
+
 struct Dog
 {
-    char *name;
+    char name[10];
 };
 
 void setName(struct Dog *dog, char *_name){
@@ -40,14 +48,43 @@ void initDog(struct Dog *dog, char *_name){
 }
 
 
+void modifyPrimitives(int val, int* pointer){
+    val = 2; // local copy, won't modify external variable
+    *pointer = 2; // will modify external variable
 
+    int localVal = 3;
+    pointer = &localVal; // reassign pointer to local variable, since here all pointer modification affect local variable, not external one
+    *pointer = 5; // will change value of localVal to 5
+}
+
+void modifyObjects(struct Dog d, struct Dog* dPointer){
+    setName(&d, NAME_CHARLIE); // local copy, won't modify external variable
+    setName(dPointer, NAME_CHARLIE); // will modify external variable
+
+    dPointer = malloc(sizeof(struct Dog)); // reassign pointer to local object, since here all changes affect local scope
+    setName(dPointer, NAME_OSCAR);
+}
 
 int main(){
+    int val = 1;
+    int pointer = 1;
+    printf("val: %d, pointer: %d \n", val, pointer); // val: 1, pointer: 1
+    modifyPrimitives(val, &pointer);
+    printf("val: %d, pointer: %d \n", val, pointer); // val: 1, pointer: 2
+
+    printf("\n");
+
+
     struct Dog d;
-    initDog(&d, "Max");
-    printf("%s\n", getName(&d));
-    setName(&d, "Charlie");
-    printf("%s\n", getName(&d));
+    initDog(&d, NAME_MAX);
+
+    struct Dog* dPointer = malloc(sizeof(struct Dog));
+    initDog(dPointer, NAME_MAX);
+
+
+    printf("d: %s, dPointer: %s\n", getName(&d), getName(dPointer)); // d: Max, dPointer: Max
+    modifyObjects(d, dPointer);
+    printf("d: %s, dPointer: %s\n", getName(&d), getName(dPointer)); // d: Max, dPointer: Charlie
 
     return 0;
 }
