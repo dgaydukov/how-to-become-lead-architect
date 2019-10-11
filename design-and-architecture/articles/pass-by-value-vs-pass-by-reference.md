@@ -19,7 +19,7 @@ but when we assign new object to pointer inside function, this pointer is no lon
 
 In `C` we can pass primitives and objects as copies or as pointers. When we pass as copy, of course we can't change value outside function scope, cause we are working with local copy.
 But when we do pass as pointer, as long as we change pointer, all changes affect external variable. But once we reassign our pointer to new variable inside function scope, our pointer is no longer
-pointing to our external variable, so since now all changes to pointer affect 
+pointing to our external variable, so since now all changes to pointer affect local variable.
 
 ```c
 #include <stdio.h>
@@ -91,6 +91,8 @@ int main(){
 ```
 
 ### C++
+
+`C++` probably the most versatile language. It allows to pass variable in 3 ways. As copy of value, as pointer to value, or as reference to value.
 
 ```c++
 #include <iostream>
@@ -165,7 +167,8 @@ int main(){
 
 ### JavaScript/TypeScript
 
-Here I'm using `TypeScript` so to be compecent with all other languages. `JavaScript` has only 1 way to pass params, by value.
+Here I'm using `TypeScript` so to be compecent with all other languages. `JavaScript` has only 1 way to pass params, by value. Basically passing object in `JavaScript` is equivalen to pass pointer to object in languages like `C/C++`. Logic is the same, as long as we modify object, we modify external object, but
+once we reassign object to new class inside function, our object points to this new class, so since now all changes are done to local copy.
 
 ```typescript
 const NAME_MAX: string = "Max";
@@ -205,7 +208,8 @@ console.log(n, dog.getName()); // 1, Ralf
 
 ### Java
 
-`Java` works the same as `javascript`. `Java` has only 1 way to pass params, by value.
+`Java` works the same as `javascript`. `Java` has only 1 way to pass params, by value. Basically passing object in `Java` is equivalen to pass pointer to object in languages like `C/C++`. Logic is the same, as long as we modify object, we modify external object, but
+once we reassign object to new class inside function, our object points to this new class, so since now all changes are done to local copy.
 
 ```java
 class Dog {
