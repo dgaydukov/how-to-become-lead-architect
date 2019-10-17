@@ -36,3 +36,4 @@ Some interesting questions, I was asked when attend an interview
 * [paralell-promise-get-failed-num](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/paralell-promise-get-failed-num.js)
 * [promisify](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/promisify.js)
 * [sequential-promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/sequential-promise.js)
+* [throttle-vs-debounce](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/interview/js/throttle-vs-debounce.js)
