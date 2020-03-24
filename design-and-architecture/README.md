@@ -31,3 +31,6 @@ This section will be organised as a list of articles with source code examples
 
 
 ### List of Java Articles
+
+* [My top list of certification for java developers](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/java/my-top-list-of-certification-for-java-developers.md)
+* [My top list of presentations for java developers](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/java/my-top-list-of-presentations-for-java-developers.md)
