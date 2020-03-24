@@ -27,6 +27,7 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
 * [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
 * [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
+* [TOGAF Certified Architect](https://certification.opengroup.org/examinations/togaf/togaf9-combined) - 1 exam (combined, but can be divided on 2)
 
 Soft skills
 
