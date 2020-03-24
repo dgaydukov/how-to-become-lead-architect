@@ -22,10 +22,11 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 3 exams
 * [Red Hat Certified Architect](https://www.redhat.com/en/services/all-certifications-exams) - 3 exams
 * [Confluent Certified Apache Kafka Professional](https://www.confluent.io/certification) - 1 exam
-* [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html)
-* [MongoDB Certified Professional](https://university.mongodb.com/certification)
-* [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html)
-* [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect)
+* [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
+* [MongoDB Certified Professional](https://university.mongodb.com/certification) - 2 exams
+* [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
+* [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
+* [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
 
 Soft skills
 
