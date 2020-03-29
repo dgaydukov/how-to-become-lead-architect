@@ -17,17 +17,17 @@ So to sum up, it may help directly (like some company will hire you or promote y
 
 
 ### Short list
-* [Oracle Certified Java11 Professional](https://education.oracle.com/products/trackp_815) - 2 exams
+* [Oracle Certified Java11 Professional](https://education.oracle.com/products/trackp_815) - 2 exams (programmer1 & programmer2)
 * [Pivotal Certified Spring5 Professional](https://store.education.pivotal.io/confirm-course?courseid=EDU-1202) - 1 exam
-* [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 3 exams
+* [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
+* [TOGAF Certified Architect](https://certification.opengroup.org/examinations/togaf/togaf9-combined) - 1 exam (combined, but can be divided on 2)
+* [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
 * [Red Hat Certified Architect](https://www.redhat.com/en/services/all-certifications-exams) - 3 exams
 * [Confluent Certified Apache Kafka Professional](https://www.confluent.io/certification) - 1 exam
-* [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
 * [MongoDB Certified Professional](https://university.mongodb.com/certification) - 2 exams
 * [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
 * [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
 * [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
-* [TOGAF Certified Architect](https://certification.opengroup.org/examinations/togaf/togaf9-combined) - 1 exam (combined, but can be divided on 2)
 
 Soft skills
 
