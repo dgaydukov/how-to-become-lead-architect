@@ -20,6 +20,8 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [Oracle Certified Java11 Professional](https://education.oracle.com/products/trackp_815) - 2 exams (programmer1 & programmer2)
 * [Pivotal Certified Spring5 Professional](https://store.education.pivotal.io/confirm-course?courseid=EDU-1202) - 1 exam
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
+* [Project Management Professional](https://www.pmi.org/certifications/types/project-management-pmp) - 1 exam
+    * [PMP Exam Prep](https://www.amazon.com/PMP-Exam-Prep-Eighth-Updated/dp/1932735658)
 * [TOGAF Certified Architect](https://certification.opengroup.org/examinations/togaf/togaf9-combined) - 1 exam (combined, but can be divided on 2)
 * [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
 * [Red Hat Certified Architect](https://www.redhat.com/en/services/all-certifications-exams) - 3 exams
@@ -28,11 +30,10 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
 * [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
 * [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
+* [Scrum Master Professional](https://www.scrum.org/professional-scrum-master-i-certification) - 3 exams
 
 Soft skills
 
-* [Scrum Master Professional](https://www.scrum.org/professional-scrum-master-i-certification) - 3 exams
-* [Project Management Professional](https://www.pmi.org/certifications/types/project-management-pmp) - 1 exam
 
 
 
