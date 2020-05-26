@@ -22,6 +22,8 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
 * [Project Management Professional](https://www.pmi.org/certifications/types/project-management-pmp) - 1 exam
     * [PMP Exam Prep](https://www.amazon.com/PMP-Exam-Prep-Eighth-Updated/dp/1932735658)
+* [CodeChef Certified Data Structure & Algorithms Programme](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) - good cert on algorithms, one of it's kind. Can be good if you are preparing for interview in one of big tech companies
+* [ML](https://aws.amazon.com/certification/certified-machine-learning-specialty) / [Networking](https://aws.amazon.com/certification/certified-advanced-networking-specialty) - aws interesting specialty certs. Can be useful if you want to improve your knowledge in particular domain field
 * [TOGAF Certified Architect](https://certification.opengroup.org/examinations/togaf/togaf9-combined) - 1 exam (combined, but can be divided on 2)
 * [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
 * [Red Hat Certified Architect](https://www.redhat.com/en/services/all-certifications-exams) - 3 exams
