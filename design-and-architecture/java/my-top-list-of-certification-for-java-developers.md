@@ -20,14 +20,19 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [Oracle Certified Java11 Professional](https://education.oracle.com/products/trackp_815) - 2 exams (programmer1 & programmer2)
 * [Pivotal Certified Spring5 Professional](https://store.education.pivotal.io/confirm-course?courseid=EDU-1202) - 1 exam
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
-* [Cisco Certified Network Associate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html) - 1 exam to learn a lot of cool stuff about networking. This should be taken before aws networking. You can take a look at other [cisco certs](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list.html)
-    * [Основы компьютерных сетей](https://habr.com/en/post/307252) - 9 articles for ccna (in russian)
-    * [Сети для самых маленьких](https://habr.com/ru/post/133453) - 9 articles for networking
-* [Project Management Professional](https://www.pmi.org/certifications/types/project-management-pmp) - 1 exam
-    * [PMP Exam Prep](https://www.amazon.com/PMP-Exam-Prep-Eighth-Updated/dp/1932735658)
+* [AWS Certified Machine Learning](https://aws.amazon.com/certification/certified-machine-learning-specialty) - 1 specialty exam
+* Network Cert
+    * [AWS Certified Advanced Networking](https://aws.amazon.com/certification/certified-advanced-networking-specialty) - 1 specialty exam (you may consider taking cisco/comptia first)
+    * [CompTIA Network+](https://www.comptia.org/certifications/network) - you can take a look at their other certs
+    * [Cisco Certified Network Associate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html) - 1 exam to learn a lot of cool stuff about networking. This should be taken before aws networking. You can take a look at other [cisco certs](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list.html)
+        * [Основы компьютерных сетей](https://habr.com/en/post/307252) - 9 articles for CCNA (in russian)
+        * [Сети для самых маленьких](https://habr.com/ru/post/133453) - 9 articles for networking
 * [CodeChef Certified Data Structure & Algorithms Programme](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) - good cert on algorithms, one of it's kind. Can be good if you are preparing for interview in one of big tech companies
-* [ML](https://aws.amazon.com/certification/certified-machine-learning-specialty) / [Networking](https://aws.amazon.com/certification/certified-advanced-networking-specialty) - aws interesting specialty certs. Can be useful if you want to improve your knowledge in particular domain field
 * [TOGAF Certified Architect](https://certification.opengroup.org/examinations/togaf/togaf9-combined) - 1 exam (combined, but can be divided on 2)
+* Project Manager
+    * [Project Management Professional](https://www.pmi.org/certifications/types/project-management-pmp) - 1 exam
+        * [PMP Exam Prep](https://www.amazon.com/PMP-Exam-Prep-Eighth-Updated/dp/1932735658)
+    * [Scrum Master Professional](https://www.scrum.org/professional-scrum-master-i-certification) - 3 exams
 * [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
 * [Red Hat Certified Architect](https://www.redhat.com/en/services/all-certifications-exams) - 3 exams
 * [Confluent Certified Apache Kafka Professional](https://www.confluent.io/certification) - 1 exam
@@ -35,7 +40,6 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
 * [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
 * [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
-* [Scrum Master Professional](https://www.scrum.org/professional-scrum-master-i-certification) - 3 exams
 
 Soft skills
 
