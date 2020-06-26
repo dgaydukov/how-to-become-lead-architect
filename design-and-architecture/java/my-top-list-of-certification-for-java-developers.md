@@ -23,8 +23,9 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [AWS Certified Machine Learning](https://aws.amazon.com/certification/certified-machine-learning-specialty) - 1 specialty exam
 * Network Cert
     * [AWS Certified Advanced Networking](https://aws.amazon.com/certification/certified-advanced-networking-specialty) - 1 specialty exam (you may consider taking cisco/comptia first)
+    * [Cisco Cert Path](https://www.cisco.com/c/dam/en_us/training-events/certifications/career-path.pdf) - select your path of CCNA/CCNP/CCDE (Design expert)
     * [CompTIA Network+](https://www.comptia.org/certifications/network) - you can take a look at their other certs
-    * [Cisco Certified Network Associate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html) - 1 exam to learn a lot of cool stuff about networking. This should be taken before aws networking. You can take a look at other [cisco certs](https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list.html)
+    * [Cisco Certified Network Associate](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html) - 1 exam to learn a lot of cool stuff about networking. This should be taken before aws networking. 
         * [Основы компьютерных сетей](https://habr.com/en/post/307252) - 9 articles for CCNA (in russian)
         * [Сети для самых маленьких](https://habr.com/ru/post/133453) - 9 articles for networking
 * [CodeChef Certified Data Structure & Algorithms Programme](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) - good cert on algorithms, one of it's kind. Can be good if you are preparing for interview in one of big tech companies
