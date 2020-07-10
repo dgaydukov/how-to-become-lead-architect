@@ -10,7 +10,7 @@
 * [Dependency Inversion](#dependency-inversion)
 * [Correct use of singleton pattern](#correct-use-of-singleton-pattern)
 * [Interface can force classes to call some method](#interface-can-force-classes-to-call-some-method)
-
+* [Beware of @Async](#beware-of-async)
 
 
 
@@ -215,3 +215,72 @@ class PrinterRegister{
 register => com.example.spring5.OldPrinter@71e9ddb4
 register => com.example.spring5.NewPrinter@4961f6af
 ```
+
+
+### Beware of @Async
+You should use annotation `@Async` with care. Cause sometimes it can really play bad. Let's suppose we have a code
+```java
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import lombok.Data;
+
+public class App{
+    public static void main(String[] args) {
+        var context = new AnnotationConfigApplicationContext(App.class.getPackageName());
+        var service = context.getBean(MyService.class);
+        service.update("user-123", 30, "Mike");
+    }
+}
+
+
+@Service
+class MyService{
+    @Autowired
+    private UserRepository userRepository;
+    
+    public void update(String id, int age, String name){
+        updateAge(id, age);
+        updateName(id, name);
+    }
+    
+    public void updateAge(String id, int age){
+        Optional<User> optional = userRepository.findById(id);
+        if (optional.isPresent()) {
+            User user = optional.get();
+            user.setAge(age);
+            userRepository.save(user);
+        }
+    }
+
+    public void updateName(String id, String name){
+        Optional<User> optional = userRepository.findById(id);
+        if (optional.isPresent()) {
+            User user = optional.get();
+            user.setName(name);
+            userRepository.save(user);
+        }
+    }
+}
+
+@Data
+class User{
+    private String id;
+    private int age;
+    private String name;
+}
+
+@Repository
+interface UserRepository extends JpaRepository<User, String>{
+    
+}
+```
+Both functions update user object using Repository pattern. As you know hibernate update not single instance but rather whole object.
+So far everything works well, but if you put `@Async` at `updateAge` You can get race condition, where it would start to run and another function `updateName` start
+to run just right after it, and finish first. In this case first name would be changed to new name, and then age would be changed, but age would use old name, cause 
+repository update not a signle field, but all fields that are available in model.
