@@ -5,6 +5,9 @@
     * Sterling & Shapiro  - The Art of Prolog
     * Solve in prolog all codility tasks
 * Architect
+    * [Uncle Bob - Clean code (2008)](https://www.amazon.com/gp/product/B001GSTOAM)
+    * [Uncle Bob - Clean Coder (2011)](https://www.amazon.com/gp/product/B0050JLC9Y)
+    * [Uncle Bob - Clean Architecture (2017)](https://www.amazon.com/gp/product/B075LRM681)
     * Designing Data-Intensive Applications
     * Enterprise Integration Patterns - Designing, Building And Deploying Messaging Solutions
     * Programming ground up
