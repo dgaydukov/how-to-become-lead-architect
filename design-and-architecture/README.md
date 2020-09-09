@@ -5,12 +5,10 @@
 * [List of Articles](#list-of-articles)
 
 ### Description
-
 In this section i'm going to describe all problems related to design and arhitecture of modern application, including both Backend and Frontend solutions.
 This section will be organised as a list of articles with source code examples
 
 ### List of Articles
-
 * [10 Tips to write HighLoad Node.js Apps](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/10-tips-to-write-highload-nodejs-app.md)
 * [Async Await inside a Loop](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/async-await-inside-a-loop.md)
 * [Async Await vs Promise](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/articles/async-await-vs-promise.md)
@@ -31,7 +29,6 @@ This section will be organised as a list of articles with source code examples
 
 
 ### List of Java Articles
-
 * [How Spring force you to use solid and to be a senior developer](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/java/how-spring-force-you-to-use-solid.md)
 * [Top list of books to read to become a real professional](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/java/my-top-list-books-to-read.md)
 * [My top list of certification for java developers](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/design-and-architecture/java/my-top-list-of-certification-for-java-developers.md)
