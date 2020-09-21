@@ -3,7 +3,9 @@
 * Prolog
     * Ivan Bratko - Prolog Programming for AI
     * Sterling & Shapiro  - The Art of Prolog
-    * Solve in prolog all codility tasks
+    * Solve in prolog all [codility](https://app.codility.com/programmers/lessons/1-iterations) tasks
+* Graph DB
+    * [Kelvin R. Lawrence - PRACTICAL GREMLIN](https://kelvinlawrence.net/book/Gremlin-Graph-Guide.html)
 * Architect
     * [Uncle Bob - Clean code (2008)](https://www.amazon.com/gp/product/B001GSTOAM)
     * [Uncle Bob - Clean Coder (2011)](https://www.amazon.com/gp/product/B0050JLC9Y)
