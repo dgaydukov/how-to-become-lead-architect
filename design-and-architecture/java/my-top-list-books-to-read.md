@@ -3,8 +3,6 @@
 * Hacking
     * Вторжение. Краткая история русских хакеров
     * Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground
-* Java
-    * The Art of Multiprocessor Programming
 * Computer Architecture
     * Bit by Bit: An Illustrated History of Computers
     * Digital Design and Computer Architecture
