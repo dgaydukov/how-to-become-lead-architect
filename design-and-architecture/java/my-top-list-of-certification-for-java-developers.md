@@ -20,7 +20,9 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [Oracle Certified Java11 Professional](https://education.oracle.com/products/trackp_815) - 2 exams (programmer1 & programmer2)
 * [Pivotal Certified Spring5 Professional](https://store.education.pivotal.io/confirm-course?courseid=EDU-1202) - 1 exam
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
+* [AWS Certified Data Analytics](https://aws.amazon.com/certification/certified-data-analytics-specialty) - 1 specialty exam
 * [AWS Certified Machine Learning](https://aws.amazon.com/certification/certified-machine-learning-specialty) - 1 specialty exam
+* [Certified Ethical Hacker](https://cert.eccouncil.org/certified-ethical-hacker.html) - take this one (take a look at other their certs)
 * [Certified OpenStack Administrator](https://www.openstack.org/coa) - open-source cloud certification
 * Algo Cert
     * [CodeChef Certified Data Structure & Algorithms Programme](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) - good cert on algorithms, one of it's kind. Can be good if you are preparing for interview in one of big tech companies
@@ -37,23 +39,9 @@ So to sum up, it may help directly (like some company will hire you or promote y
         * [PMP Exam Prep](https://www.amazon.com/PMP-Exam-Prep-Eighth-Updated/dp/1932735658)
     * [Scrum Master Professional](https://www.scrum.org/professional-scrum-master-i-certification) - 3 exams
 * Other
-    * [EC-Council’s Certified Secure Programmer](https://cert.eccouncil.org/certified-ethical-hacker.html) - many different exams (choose what you would like)
     * [Red Hat Certified Architect](https://www.redhat.com/en/services/all-certifications-exams) - 3 exams
     * [Confluent Certified Apache Kafka Professional](https://www.confluent.io/certification) - 1 exam
     * [MongoDB Certified Professional](https://university.mongodb.com/certification) - 2 exams. But it's not useful anymore, it's better to accomplish aws database specialty
     * [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
     * [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
     * [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
-
-Soft skills
-
-
-
-
-
-### Full List with description
-
-### List of passed exams with preparation material
-
-* [OCPJP11](https://github.com/dgaydukov/cert-ocpjp11)
-* [Spring5](https://github.com/dgaydukov/cert-spring5)
