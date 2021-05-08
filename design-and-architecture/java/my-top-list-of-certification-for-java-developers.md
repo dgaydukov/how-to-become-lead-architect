@@ -17,7 +17,7 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [Pivotal Certified Spring5 Professional](https://store.education.pivotal.io/confirm-course?courseid=EDU-1202) - 1 exam
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
 * [AWS Certified Machine Learning](https://aws.amazon.com/certification/certified-machine-learning-specialty) - 1 specialty exam
-* [Chartered Financial Analyst](https://www.cfainstitute.org/en/programs/cfa/exam) - 3 exams over 2 years
+* [FRM (Financial Risk Manager)](https://www.garp.org/frm/fees-payments)
     * [Reminiscences of a Stock Operator](https://www.amazon.com/Reminiscences-Stock-Operator-Edwin-Lef%C3%A8vre/dp/0471770884)
     * [Options, Futures, and Other Derivatives](https://www.amazon.com/Options-Futures-Other-Derivatives-9th/dp/0133456315)
     * [choose books from here](https://www.quora.com/What-investment-books-or-sources-of-learning-does-Jonathan-Jones-recommend)
@@ -25,10 +25,11 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [Certified Ethical Hacker](https://cert.eccouncil.org/certified-ethical-hacker.html) - take this one (take a look at other their certs)
 * [Certified OpenStack Administrator](https://www.openstack.org/coa) - open-source cloud certification
 * Finance certs
+    * [FRM (Financial Risk Manager)](https://www.garp.org/frm/fees-payments) - 2 part exam over 2 years (part 1 - computer-based 100 questions, part 2 - pencil & paper 80 questions)
     * [CFA (Chartered Financial Analyst)](https://www.cfainstitute.org/en/programs/cfa/exam) - 3 exams over 2 years
+    These 2 are specific to planning & accounting, for general knowledge only above 2 would be enough
     * [CFP (Certified Financial Planner)](https://www.cfp.net/get-certified/certification-process)- 2 exams for 3 hours with 40 min break for 1 day with 170 questions total, 1 year prep advised
     * [CPA (Certified Public Accountant)](https://future.aicpa.org/resources/toolkit/cpa-exam) - licence by American Institute of Certified Public Accountants, very useful if you plan to live in USA, you can represent clients to IRA
-    * [FRM (Financial Risk Manager)](https://www.garp.org/frm/fees-payments) - 2 part exam over 2 years (part 1 - computer-based 100 questions, part 2 - pencil & paper 80 questions)
 * Algo Cert
     * [CodeChef Certified Data Structure & Algorithms Programme](https://www.codechef.com/certification/data-structures-and-algorithms/prepare) - good cert on algorithms, one of it's kind. Can be good if you are preparing for interview in one of big tech companies
 * Network Cert
