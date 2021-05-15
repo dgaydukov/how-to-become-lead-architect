@@ -26,7 +26,8 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [Certified OpenStack Administrator](https://www.openstack.org/coa) - open-source cloud certification
 * Finance certs
     * [FRM (Financial Risk Manager)](https://www.garp.org/frm/fees-payments) - 2 part exam over 2 years (part 1 - computer-based 100 questions, part 2 - pencil & paper 80 questions)
-    * [CQF (Certificate in Quantitative Finance)](https://www.cqf.com/about-cqf/financing-cqf/fees) - 1 year part-time education, mix of programming + risk management
+    * [CQF (Certificate in Quantitative Finance)](https://www.cqf.com/about-cqf/financing-cqf/fees) - 1 year part-time education, mix of programming + risk management. 
+    Yet some people argue that value of course is not great & it's better to get MFE(Master in Financial Engineering) from a good university
     * [CFA (Chartered Financial Analyst)](https://www.cfainstitute.org/en/programs/cfa/exam) - 3 exams over 2 years
     These 2 are specific to planning & accounting, for general knowledge only above 2 would be enough
     * [CFP (Certified Financial Planner)](https://www.cfp.net/get-certified/certification-process)- 2 exams for 3 hours with 40 min break for 1 day with 170 questions total, 1 year prep advised
