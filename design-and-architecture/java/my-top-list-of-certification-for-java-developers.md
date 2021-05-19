@@ -21,6 +21,8 @@ So to sum up, it may help directly (like some company will hire you or promote y
     * [Reminiscences of a Stock Operator](https://www.amazon.com/Reminiscences-Stock-Operator-Edwin-Lef%C3%A8vre/dp/0471770884)
     * [Options, Futures, and Other Derivatives](https://www.amazon.com/Options-Futures-Other-Derivatives-9th/dp/0133456315)
     * [choose books from here](https://www.quora.com/What-investment-books-or-sources-of-learning-does-Jonathan-Jones-recommend)
+    * add finance books here
+    * The Remains of the Day - both read book & watch movie
 * [AWS Certified Data Analytics](https://aws.amazon.com/certification/certified-data-analytics-specialty) - 1 specialty exam
 * [Certified Ethical Hacker](https://cert.eccouncil.org/certified-ethical-hacker.html) - take this one (take a look at other their certs)
 * [Certified OpenStack Administrator](https://www.openstack.org/coa) - open-source cloud certification
@@ -53,7 +55,3 @@ So to sum up, it may help directly (like some company will hire you or promote y
     * [CCA Spark and Hadoop Developer](https://www.cloudera.com/about/training/certification/cca-spark.html) - 1 exam
     * [Google Professional Cloud Architect](https://cloud.google.com/certification/cloud-architect) - 3 exams
     * [Associate Android Developer](https://developers.google.com/certification/associate-android-developer) - 1 exam
-
-### TODO
-* add finance books here
-* The Remains of the Day - both read book & watch movie

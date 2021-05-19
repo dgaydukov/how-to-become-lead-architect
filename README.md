@@ -36,18 +36,3 @@ Please read [SeniorDeveloper](https://github.com/dgaydukov/how-to-become-a-senio
 * [BlockChain](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/blockchain/README.md) for all interesting stuff about blockchain & bitcoin.
 * [Design & Architecture problems](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/tree/master/design-%26-architecture) for design & artitecture proglems.
 * [Regex](https://github.com/dgaydukov/how-to-become-a-senior-js-developer/blob/master/regex/README.md) for interesting internet articles you should read.
-
-
-### Authors
-* **Gaydukov Dmitiry** - *Initial work* - [ReactVsAngular](https://github.com/dgaydukov/react-vs-angular)
-
-### TODO
-A full list of what needs to be accomplished across different projects:
-
-* [java] write custom MinMax collector
-* [java] java serialization filters (writeResolve, readResolve)
-* [java] java micro benchmarking https://openjdk.java.net/projects/code-tools/jmh/ to advanced, dead code elimination (benchmark with million loop)
-* [java] lombok annotation processor
-* [spring] different security filters for different urls vs multiple times extending WebSecurityConfigurerAdapter
-* [spring] spring integration example with security
-* [spring] eureka/ribbon spring app load balancer example vs. aws lb
