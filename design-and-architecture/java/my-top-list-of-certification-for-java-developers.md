@@ -18,12 +18,12 @@ So to sum up, it may help directly (like some company will hire you or promote y
 * [AWS Certified Solution Architect Professional](https://aws.amazon.com/certification/) - 2 exams (associate & professional)
 * [AWS Certified Machine Learning](https://aws.amazon.com/certification/certified-machine-learning-specialty) - 1 specialty exam
 * [FRM (Financial Risk Manager)](https://www.garp.org/frm/fees-payments)
+    * Bitcoin Billionaires: A True Story of Genius, Betrayal, and Redemption 
+    * The Infinite Machine: How an Army of Crypto-Hackers Is Building the Next Internet with Ethereum
+    * [Stocks for the Long Run 5/E: The Definitive Guide to Financial Market Returns & Long-Term Investment Strategies](https://www.amazon.com/Stocks-Long-Run-Definitive-Investment/dp/0071800514)
     * [Reminiscences of a Stock Operator](https://www.amazon.com/Reminiscences-Stock-Operator-Edwin-Lef%C3%A8vre/dp/0471770884)
     * [Options, Futures, and Other Derivatives](https://www.amazon.com/Options-Futures-Other-Derivatives-9th/dp/0133456315)
     * [choose books from here](https://www.quora.com/What-investment-books-or-sources-of-learning-does-Jonathan-Jones-recommend)
-    * add finance books here
-    * The Remains of the Day - both read book & watch movie
-    * https://www.youtube.com/watch?v=f6Yli_ntaSU
 * [AWS Certified Data Analytics](https://aws.amazon.com/certification/certified-data-analytics-specialty) - 1 specialty exam
 * [Certified Ethical Hacker](https://cert.eccouncil.org/certified-ethical-hacker.html) - take this one (take a look at other their certs)
 * [Certified OpenStack Administrator](https://www.openstack.org/coa) - open-source cloud certification
