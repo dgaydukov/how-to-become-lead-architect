@@ -1,0 +1,271 @@
+
+<!-- saved from url=(0068)http://www.cs.trincoll.edu/~ram/cpsc352/notes/prolog/factsrules.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>PROLOG Facts, Rules and Queries</title>
+</head>
+<body>
+
+<center><h2>Facts, Rules and Queries</h2></center>
+
+<h3>Symbols</h3>
+
+<p>Prolog expressions are comprised of the following truth-functional
+symbols, which have the same interpretation as in the predicate
+calculus.
+
+</p><blockquote>
+<table border="1">
+<tbody><tr><th>English</th> <th>Predicate Calculus</th>  <th>PROLOG</th>
+</tr><tr>
+  <th>and</th><th>^</th>     <th>,</th>
+</tr>
+<tr>
+  <th>or</th><th>v</th>     <th>;</th>
+</tr>
+<tr>
+  <th>if</th><th>--&gt;</th>     <th>:-</th>
+</tr>
+<tr>
+  <th>not</th><th>~</th>     <th>not</th>
+</tr>
+  
+</tbody></table>
+</blockquote>
+
+<h3>Variables and Names</h3>
+
+Variables begin with an uppercase letter. Predicate names, function
+names, and the names for objects must begin with a lowercase letter.
+Rules for forming names are the same as for the predicate calculus.
+
+<pre>    mother_of
+    male
+    female
+    greater_than
+    socrates
+</pre>
+
+<h3>Facts</h3>
+
+A <b>fact</b> is a predicate expression that makes a declarative
+statement about the problem domain.  Whenever a variable occurs in a
+Prolog expression, it is assumed to be <b>universally quantified</b>.
+Note that all Prolog sentences must end with a period.
+
+<blockquote>
+<pre>likes(john, susie).                   /* John likes Susie */
+likes(X, susie).                      /* Everyone likes Susie */
+likes(john, Y).                       /* John likes everybody */
+likes(john, Y), likes(Y, john).       /* John likes everybody and everybody likes John */
+likes(john, susie); likes(john,mary). /* John likes Susie or John likes Mary */
+not(likes(john,pizza)).               /* John does not like pizza */
+likes(john,susie) :- likes(john,mary)./* John likes Susie if John likes Mary.
+</pre>
+</blockquote>
+
+<h3>Rules</h3>
+
+A <b>rule</b> is a predicate expression that uses logical implication
+(:-) to describe a relationship among facts. Thus a Prolog rule takes
+the form
+
+<pre>   left_hand_side :- right_hand_side .
+</pre>
+
+<p>This sentence is interpreted as: <i>left_hand_side <b>if</b>
+right_hand_side</i>.  The <b>left_hand_side</b> is restricted to a
+<b>single, positive, literal</b>, which means it must consist of a
+positive atomic expression. It cannot be negated and it cannot contain
+logical connectives.  
+
+</p><p> This notation is known as a <b>Horn clause</b>.  In Horn clause
+logic, the left hand side of the clause is the conclusion, and must be
+a single positive literal. The right hand side contains the premises.
+The Horn clause calculus is equivalent to the first-order predicate
+calculus.
+
+</p><p>Examples of valid rules:
+
+</p><blockquote>
+<pre>friends(X,Y) :- likes(X,Y),likes(Y,X).            /* X and Y are friends if they like each other */
+hates(X,Y) :- not(likes(X,Y)).                    /* X hates Y if X does not like Y. */
+enemies(X,Y) :- not(likes(X,Y)),not(likes(Y,X)).  /* X and Y are enemies if they don't like each other */
+</pre>
+</blockquote>
+
+<p>Examples of invalid rules:
+
+</p><blockquote>
+<pre>left_of(X,Y) :- right_of(Y,X)                     /* Missing a period */
+likes(X,Y),likes(Y,X) :- friends(X,Y).            /* LHS is not a single literal */
+not(likes(X,Y)) :- hates(X,Y).                    /* LHS cannot be negated */
+</pre>
+</blockquote>
+
+<h3>Queries</h3>
+
+The Prolog interpreter responds to <b>queries</b> about the facts and rules
+represented in its database. The database is assumed to represent what is
+true about a particular problem domain. In making a query you are asking
+Prolog whether it can prove that your query is true. If so, it answers
+"yes" and displays any <b>variable bindings</b> that it made in coming up
+with the answer. If it fails to prove the query true, it answers "No". 
+
+<p> Whenever you run the Prolog interpreter, it will <b>prompt</b> you
+with <b>?-</b>.  For example, suppose our database consists of the 
+following facts about a fictitious family.
+
+</p><blockquote>
+<pre>father_of(joe,paul).
+father_of(joe,mary).
+mother_of(jane,paul).
+mother_of(jane,mary).
+male(paul).
+male(joe).
+female(mary).
+female(jane).
+</pre>
+</blockquote>
+
+<p>We get the following results when we make queries about this
+database. (I've added comments, enclosed in /*..*/, to interpret each query.)
+
+</p><blockquote>
+<pre>Script started on Wed Oct 01 14:29:32 2003
+sh-2.05b$ gprolog
+GNU Prolog 1.2.16
+By Daniel Diaz
+Copyright (C) 1999-2002 Daniel Diaz
+| ?- ['family.pl'].
+compiling /home/ram/public_html/cpsc352/prolog/family.pl for byte code...
+/home/ram/public_html/cpsc352/prolog/family.pl compiled, 9 lines read - 999 bytes written, 94 ms
+
+(10 ms) yes
+| ?- listing.
+
+mother_of(jane, paul).
+mother_of(jane, mary).
+
+male(paul).
+male(joe).
+
+female(mary).
+female(jane).
+
+father_of(joe, paul).
+father_of(joe, mary).
+
+(10 ms) yes
+| ?- father_of(joe,paul).
+
+true ? 
+
+yes
+| ?- father_of(paul,mary).
+
+no
+| ?- father_of(X,mary).
+
+X = joe
+
+yes
+| ?- 
+Prolog interruption (h for help) ? h
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? e
+sh-2.05b$ exit
+
+script done on Wed Oct 01 14:30:50 2003
+</pre>
+</blockquote>
+
+<p><b>Closed World Assumption.</b> The Prolog interpreter assumes that
+the database is a <b>closed world</b> -- that is, if it cannot prove
+something is true, it assumes that it is false. This is also known as
+<b>negation as failure</b> -- that is, something is false if PROLOG
+cannot prove it true given the facts and rules in its database. In
+this case, in may well be (in the real world), that Paul is the father
+of Mary, but since this cannot be proved given the current family
+database, Prolog concludes that it is false. So PROLOG assumes that
+its database contains complete knowledge of the domain it is being
+asked about.
+
+
+
+</p><h3>Prolog's Proof Procedure</h3>
+
+In responding to queries, the Prolog interpreter uses a
+<b>backtracking</b> search, similar to the one we study in Chapter 3
+of Luger.  To see how this works, let's add the following rules to our
+database:
+
+<pre>   parent_of(X,Y) :- father_of(X,Y).       /* Rule #1 */
+   parent_of(X,Y) :- mother_of(X,Y).       /* Rule #2 */
+</pre>
+
+<p>And let's trace how PROLOG would process the query. Suppose the
+facts and rules of this database are arranged in the order
+in which they were input. This trace assumes you know how
+<a href="http://www.cs.trincoll.edu/~ram/cpsc352/notes/unification.html#unify">unification</a> works.
+
+</p><pre>   ?- parent_of(jane,mary).
+</pre>
+
+<pre>  parent_of(jane,mary)     /* Prolog starts here and searches
+                              for a matching fact or rule. */
+    parent_of(X,Y)         /* Prolog unifies the query with the rule #1
+                              using {jane/X, mary/Y}, giving
+                              parent_of(jane,mary) :- father_of(jane,mary) */
+    father_of(jane,mary)   /* Prolog replaces LHS with RHS and searches. */
+                           /* This fails to match father_of(joe,paul) and  
+                              and father_of(joe,mary), so this FAILS. */
+                           /* Prolog BACKTRACKS to the other rule #2 and
+                              unifies with {jane/X, mary/Y}, so it matches
+                              parent_of(jane,mary) :- mother_of(jane,mary) */
+    mother_of(jane,mary)   /* Prolog replaces LHS with RHS and searches. */
+                       
+    YES.                   /* Prolog finds a match with a literal and so succeeds.
+</pre>
+
+<p>Here's a trace of this query using Prolog's <b>trace</b> predicate:
+
+</p><pre>| ?- trace,parent_of(jane,mary).
+{The debugger will first creep -- showing everything (trace)}
+   1  1  Call: parent_of(jane,mary) ?
+   2  2  Call: father_of(jane,mary) ?
+   2  2  Fail: father_of(jane,mary) ?
+   2  2  Call: mother_of(jane,mary) ?
+   2  2  Exit: mother_of(jane,mary) ?
+   1  1  Exit: parent_of(jane,mary) ?
+
+yes
+{trace}
+| ?-
+</pre>
+
+<h3>Exercises</h3>
+
+<ol>
+  <li>Download the <a href="http://www.cs.trincoll.edu/~ram/cpsc352/prolog/family.pl">family.pl</a> file. 
+</li><li>Add a <tt>male()</tt> rule that includes all fathers as males.
+</li><li>Add a <tt>female()</tt> rule that includes all mothers as females.
+
+</li><li>Add the following rules to the family database: 
+<pre>   son_of(X,Y)
+   daughter_of(X,Y)
+   sibling_of(X,Y)
+   brother_of(X,Y)
+   sister_of(X,Y)
+</pre>
+
+</li><li>Given the addition of the <tt>sibling_of</tt> rule, and
+assuming the above order for the facts and rules, show the
+PROLOG trace for the query <tt>sibling_of(paul,mary)</tt>.
+
+
+
+</li></ol></body></html>
