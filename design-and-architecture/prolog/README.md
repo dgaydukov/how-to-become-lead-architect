@@ -25,7 +25,8 @@ useless in modern world. And practice shows it, top 30 programming language all 
 with some niche, but this niche is extremely small.
 
 Syntax:
-* [5 min introduction](5_min_Intro.html)
+* [5 min introduction](http://www.cs.trincoll.edu/~ram/cpsc352/notes/prolog/factsrules.html)
+* best book - Ivan Bratko - Prolog Programming for AI
 * variables start with uppercase letter or underscore
 * structures - complex objects like `date(1, may, 2022)`, we can use variables inside structures like `date(Day, may, 2022)`, 
 since Day starts from capital letter it's variable, and we can use any value there. Internally structures stored as trees.
