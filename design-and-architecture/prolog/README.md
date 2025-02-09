@@ -1,8 +1,5 @@
 # Demistifying prolog
-For a long time prolog was a mystery to me, especially if you come from imperative background, where programming language is pretty dumb, and you need
-to specify exactly what to do. And now you have some magical declarative language where you don't need to do it, just specify what-to-do and prolog would figure out
-how-to-do. Looks like magic. Yet now in this short article you would see that prolog is not magic, it's very similar to SQL language, and it suitable for only
-selected list of problems. You can't solve everything there. That's why it hasn't gained much traction since early 90s.
+For a long time prolog was a mystery to me, especially if you come from imperative background, where programming language is pretty dumb, and you need to specify exactly how-to-do. And now  you have some "magical" declarative language where you don't need to do it, just specify what-to-do and prolog would figure out how-to-do. Looks like magic. Yet now in this short article you would see that prolog is not magic, it's very similar to SQL language, and it suitable for only selected list of problems. You can't solve everything there. That's why it hasn't gained much traction since early 90s.
 
 Prolog is logical declarative programming language:
 * logical - it's best operated on objects and their relations
@@ -15,14 +12,9 @@ So, prolog is a programming language with:
 * tree-based data structures
 * backtracking
 
-At first glance it looks like magic, that you just say what-to-do and prolog internally decides how to do it, yet there is no magic.
-Just like SQL, you just add some data and relations between them, and then you just query it.
-In my opinion, it even more limited than any imperative language like c++/java, cause there is only small area where prolog can be applied,
-also you can solve any prolog-like problem in imperative language, but not vice-versa.
+At first glance it looks like magic, that you just say what-to-do and prolog internally decides how-to-do it, yet there is no magic. Just like SQL, you just add some data and relations between them, and then you just query it. In my opinion, it even more limited than any imperative language like c++/java, cause there is only small area where prolog can be applied, also you can solve any prolog-like problem in imperative language, but not vice-versa.
 
-Conclusion: prolog is a nice language to learn, especially for students, or if you just want to broaden you knowledge, yet it's pretty
-useless in modern world. And practice shows it, top 30 programming language all - imperative, and prolog only somewhere in the bottom,
-with some niche, but this niche is extremely small.
+Conclusion: prolog is a nice language to learn, especially for students, or if you just want to broaden you knowledge, yet it's pretty useless in modern world. And practice shows it, top 30 programming language all - imperative, and prolog only somewhere in the bottom, with some niche, but this niche is extremely small.
 
 Syntax:
 * [5 min introduction](http://www.cs.trincoll.edu/~ram/cpsc352/notes/prolog/factsrules.html)
