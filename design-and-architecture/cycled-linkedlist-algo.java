@@ -2,7 +2,7 @@
  * Famous turtoise and hare algorithm to determine if linked list is cycled
  * Basic idea is that we use 2 pointers, one is slow, other is fast, and if at some point they meet, that means list is cyclic
  */
-public class App{
+class App{
     public static void main(String[] args) {
         LinkedListNode<Integer> l1 = new LinkedListNode<>(1);
         LinkedListNode<Integer> l2 = new LinkedListNode<>(2);
