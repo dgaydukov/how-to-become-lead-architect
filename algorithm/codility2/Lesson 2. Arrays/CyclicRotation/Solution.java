@@ -12,15 +12,16 @@ class Solution {
         if (n == arr.length || n == 0 || arr.length == 0 || arr.length == 1){
             return arr;
         }
-        int[] rotated = new int[arr.length];
+        // reduce the rotation number if it exceeds array len. If array size is 10 and we need 15 rotations is the same as 5.
         n = n % arr.length;
+        int[] out = new int[arr.length];
         int j = arr.length - n;
         for (int i = 0; i < arr.length; i++){
-            rotated[i] = arr[j++];
+            out[i] = arr[j++];
             if (j == arr.length){
                 j = 0;
             }
         }
-        return rotated;
+        return out;
     }
 }
