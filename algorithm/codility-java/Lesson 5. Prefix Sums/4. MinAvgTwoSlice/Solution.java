@@ -3,6 +3,7 @@ package com.codility.java;
 /**
  * The trick is that you don't need to check all possible slices, only those of length 2 and 3
  * This is from pure math, if avg of 2 or 3 would always be less or equal to all other consecutive slices
+ * You can take any sets of 4 or more number, then break down into subsets of 2, and you will find that their minAvg is less or equal to minAvg of larget set
  * That's why we can solve this problem with O(n) time
  * Just calculate minAvg for all 2 and 3 for each loop, and just don't forget to calculate minAvg2 for last 2 elements
  *
