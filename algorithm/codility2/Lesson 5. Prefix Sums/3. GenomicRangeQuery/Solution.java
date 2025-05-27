@@ -37,6 +37,55 @@ class Solution {
     }
 }
 
+
+/**
+ * Advanced solution: using prefix sum for each ACGT symbol it's own array
+ * By doing this, we can determine how many letters ACGT in given range in constant O(1) time
+ * For example in range 2-5, we have 2C and 1G. So prefix sum algo is very helpful here
+ *
+ * https://app.codility.com/demo/results/training7ZQAGK-SDZ/
+ */
+class Solution {
+    public int[] solution(String str, int[] arr1, int[] arr2) {
+        int len = str.length() + 2;
+        int[] A = new int[len];
+        int[] C = new int[len];
+        int[] G = new int[len];
+        int[] T = new int[len];
+        int a = 0, c = 0, g = 0, t = 0;
+        for (int i = 0; i < str.length(); i++) {
+            switch (str.charAt(i)) {
+                case 'A' -> a++;
+                case 'C' -> c++;
+                case 'G' -> g++;
+                case 'T' -> t++;
+            };
+            A[i+1] = a;
+            C[i+1] = c;
+            G[i+1] = g;
+            T[i+1] = t;
+        }
+        int[] res = new int[arr1.length];
+        for (int i = 0; i < arr1.length; i++) {
+            int numberOfA = A[arr2[i]+1]-A[arr1[i]];
+            int numberOfC = C[arr2[i]+1]-C[arr1[i]];
+            int numberOfG = G[arr2[i]+1]-G[arr1[i]];
+            int numberOfT = T[arr2[i]+1]-T[arr1[i]];
+
+            if (numberOfA > 0){
+                res[i] = 1;
+            } else if (numberOfC > 0) {
+                res[i] = 2;
+            } else if (numberOfG > 0) {
+                res[i] = 3;
+            } else if (numberOfT > 0) {
+                res[i] = 4;
+            }
+        }
+        return res;
+    }
+}
+
 class Test {
     public static void main(String[] args) {
         Solution s = new Solution();
